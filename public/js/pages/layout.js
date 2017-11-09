@@ -12,7 +12,6 @@ $("#more_nav").mouseout(function () {
     $("#more_nav").stop().animate({right:'-380px'},100);
 })
 $("#header-bg").mouseover(function () {
-    console.log("hhhh");
     $("#header-bg").stop().css("backgroundColor",'rgba(0, 0, 0, 0.6)');
 });
 $("#header-bg").mouseout(function () {
