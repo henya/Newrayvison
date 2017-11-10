@@ -221,7 +221,7 @@ var ddfullscreenslider = (function($){
 				anchorval = "#" + anchorval
 				hasharray.push([anchorval, i])
 				var title = $curslide.data('title') || anchorval
-				var $navli = $('<li><a href="' + anchorval +'" title="' + title +'">' +"0"+ (i + 1) + '</a></li>').appendTo($nav)
+				var $navli = $('<li><a href="' + anchorval +'"  id='+"selected" +(i + 1) +'   title="' + title +'">' +"0"+ (i + 1) + ' </a></li>').appendTo($nav)
 				var $navlink = $navli.find('a:eq(0)')
 				$navli.on('click touchstart', function(e){
 					thisslider.slideTo(i)

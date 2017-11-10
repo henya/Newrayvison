@@ -45,7 +45,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
             </article>
 
             <article class="slide second">
-          <div class="container">
+          <div class="container" id="second">
                   <div class="second_text" >
                       <img src="<?php echo $this->basePath('img/index/Render.png')?>">
              <h3>全球领先的云渲染平台</h3>
@@ -167,8 +167,14 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
     });
     window.scrollReveal = new scrollReveal();
 
+  var selectedParent2 = $("#selected1").parent();
+    console.log(selectedParent2)
+  console.log(selectedParent2.hasClass("selected"));
 
-
+if(selectedParent2.hasClass("selected")){
+    debugger;
+    console.log('henya')
+}
 
 
 </script>
