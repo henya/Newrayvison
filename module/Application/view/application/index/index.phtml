@@ -1,193 +1,180 @@
 <?php
-$this->headScript()->prependFile($this->basePath('js/pages/index/sonpScroll.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/scrollReveal.min.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/jquery.mousewheel.min.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/jquery.slimscroll.min.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreenslider.js'));
+
 ?>
-<style>
-   .content{
-       width: 100%;
-       height: 100%;
-   }
-    #container {
-        overflow: hidden;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-    }
+<div class="main-container" id="index-page" >
 
-    #background_video {
-        position: absolute;
-
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-
-        object-fit: cover;
-        height: 100%; width: 100%;
-    }
-
-    #video_cover {
-        position: absolute;
-
-        width: 100%; height: 100%;
-
-        background: url('img/index/bg_01.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    #video_controls {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
-    #play img {
-        width: 100px;
-    }
-    #pause img {
-        width: 90px;
-    }
-    #pause {
-        display: none;
-    }
-
-    @media (min-width: 768px) {
-        #video_controls {
-            display: none;
-        }
-    }
-
-
-    /*视觉差的样式*/
-
-    *{
-        padding: 0;
-        margin: 0;
-        border: none;
-    }
-    #first{
-        background-color: cornflowerblue;
-        background-image: url("/img/index/bg_01.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #second{
-        background-color: cornflowerblue;
-        background-image: url("/img/index/bg_02.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-   #third{
-       background-color: cornflowerblue;
-       background-image: url("/img/index/bg_03.jpg");
-       background-attachment: fixed;
-       background-repeat: no-repeat;
-       background-size: cover;
-   }
-   #fourth{
-       background-color: cornflowerblue;
-       background-image: url("/img/index/bg_04.jpg");
-       background-attachment: fixed;
-       background-repeat: no-repeat;
-       background-size: cover;
-   }
-   #fifth{
-       background-color: cornflowerblue;
-       background-attachment: fixed;
-       background-repeat: no-repeat;
-       background-size: cover;
-   }
-
-
-
-</style>
-
-
-
-
-<div class="main-container " id="index-page" style="width: 100%;height: 100%">
-
-
-    <!--    <div id="container">-->
-    <!--        <video id="background_video" loop muted></video>-->
-    <!--        <div id="video_cover"></div>-->
-    <!--        <div id="overlay"></div>-->
-    <!--        <div id="video_controls">-->
-    <!--                      <span id="play">-->
-    <!--<!--                        <img src="play.png">-->
-    <!--                      </span>-->
-    <!--            <span id="pause">-->
-    <!--<!--                        <img src="pause.png">-->
-    <!--                      </span>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <div class="sonp-section sonp-full" id="first">
-        <p style="">
-            Smooth ONe Page Scroll - [SONP]
-        </p>
-<!--        <a onclick="$('.sonp-section').nextPage()">Tour</a>-->
-    </div>
-
-    <div class="sonp-section sonp-full" id="second">
-
-    </div>
-
-    <div class="sonp-section sonp-full" id="third">
-
-    </div>
-    <div class="sonp-section sonp-full" id="fourth">
-
-    </div>
-    <div class="sonp-section sonp-small" id="fifth">
-        <footer>
-            <div class="container foot">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12"></div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="row font-talk" style="padding: 0 50px">
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <div class="wechatq">
-                                    <img src="<?php echo $this->basePath('img/common/wechat_q.png')?>">
-                                </div>
-                                <a href="" class="wechat"></a>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <a href="" class="weibo"></a>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <a href="" class="facebook"></a>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                <a href="" class="linkedin"></a>
-                            </div>
+    <section id="dowebok" class="dd_fullscreenslider">
+        <div class="slidewrapper">
+            <article class="slide">
+                <div class="container">
+                <div class="row first">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-4">
+                        <div class="first_center" data-scroll-reveal>
+                            <p>
+                                THE MOST USER-FRIENDLY VISUAL<br/>
+                                CLOUD COMPUTING PLATFORM
+                            </p>
+                            <h3>最<span>贴近</span>用户的</br>
+                                视觉<span>云计算</span></br>服务平台</h3>
+                            <span class="first_text">超85%CG工作室的选择</span>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                    <div class="col-md-3"></div>
                 </div>
-                <div class="row bottom-link">
-                    <div class="col-md-3 col-sm-3 col-xs-12"></div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <ul>
-                            <li><a href="">关于瑞云</a> <span class="link-line"></span></li>
-                            <li><a href="">新闻中心</a><span class="link-line"></span></li>
-                            <li><a href="">成功案例</a><span class="link-line"></span></li>
-                            <li><a href="">联系我们</a><span class="link-line"></span></li>
-                            <li><a href="">加入瑞云</a></li>
-                        </ul>
+                </div>
+                    <div id="container">
+                        <video id="background_video" loop muted></video>
+                        <div id="video_cover"></div>
+                        <div id="overlay"></div>
+                        <div id="video_controls">
+                                      <span id="play">
+                <!--                        <img src="play.png">-->
+                                      </span>
+                            <span id="pause">
+                <!--                        <img src="pause.png">-->
+                                      </span>
+                        </div>
+
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"></div>
-                </div>
-                <p class="recording">
-                    © 2017 深圳市瑞云科技有限公司 粤ICP备12028569号-2
-                </p>
+                <a href="javascript:;" class="ic_pagearr"></a>
+            </article>
+
+            <article class="slide second">
+          <div class="container">
+                  <div class="second_text" >
+                      <img src="<?php echo $this->basePath('img/index/Render.png')?>">
+             <h3>全球领先的云渲染平台</h3>
+              <p>7天24小时服务 · 奥斯卡专业服务团队 · 随时可用 · 好莱坞级安全</p>
+              <p>影视 · 动画 · 效果图 · 一站渲染</p>
+              <a>了解更多</a>
+              </div>
+            <div class="second_img">
+                <ul>
+                    <li class="second_one">
+                        <a class="second_img1"></a>
+                        <div class="second_img1_info">
+                            <p>荣获第86届奥斯卡最佳动画短片</p>
+                        </div>
+                    </li>
+                    <li class="second_two"><a class="second_img2"></a>
+                        <div class="second_img2_info">
+                            <p>荣获第86届奥斯卡最佳动画短片</p>
+                        </div>
+                    </li>
+                    <li class="second_three"><a class="second_img3"></a>
+                        <div class="second_img3_info">
+                            <p>荣获第86届奥斯卡最佳动画短片</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </footer>
-    </div>
+
+
+          </div>
+            </article>
+
+            <article class="slide three">
+                <div class="container">
+                    <div class="three_text">
+                        <img src="<?php echo $this->basePath('img/index/raysync.png')?>">
+                        <h3>镭速企业级大文件传输</h3>
+                        <p>完美解决客户跨国传输、远距离传输、大文件传输等问题</p>
+                        <a>了解更多</a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="slide four">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-3">&nbsp;</div>
+                      <div class="col-md-6" style="padding: 0px">
+                          <div class="four_text">
+                              <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
+                              <h3>更高效的审片协作平台</h3>
+                              <p>随时随地解决视频上传 评审 团队协作问题</p>
+                              <a>了解更多</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">&nbsp;</div>
+                  </div>
+
+                  <div class="page-footer" style="line-height: 0px">
+                      <footer>
+                          <div class="container foot">
+                              <div class="row">
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <div class="row font-talk" style="padding: 0 50px">
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <div class="wechatq">
+                                                  <img src="<?php echo $this->basePath('img/common/wechat_q.png')?>">
+                                              </div>
+                                              <a href="" class="wechat"></a>
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <a href="" class="weibo"></a>
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <a href="" class="facebook"></a>
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <a href="" class="linkedin"></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                              </div>
+                              <div class="row bottom-link">
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <ul>
+                                          <li><a href="">关于瑞云</a> <span class="link-line"></span></li>
+                                          <li><a href="">新闻中心</a><span class="link-line"></span></li>
+                                          <li><a href="">成功案例</a><span class="link-line"></span></li>
+                                          <li><a href="">联系我们</a><span class="link-line"></span></li>
+                                          <li><a href="">加入瑞云</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                              </div>
+                              <p class="recording">
+                                  © 2017 深圳市瑞云科技有限公司 粤ICP备12028569号-2
+                              </p>
+                          </div>
+                      </footer>
+
+                  </div>
+              </div>
+            </article>
+        </div>
+    </section>
 </div>
 
+<script>
+    var fss;
+    $(function() {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok',
+            addHash:true
+        });
+    });
+    window.scrollReveal = new scrollReveal();
+
+
+
+
+
+</script>
 <?php
-//$this->inlineScript()->appendFile($this->basePath('js/pages/index/bideo.js'));
-//$this->inlineScript()->appendFile($this->basePath('js/pages/index/main.js'));
+$this->inlineScript()->appendFile($this->basePath('js/pages/index/bideo.js'));
+$this->inlineScript()->appendFile($this->basePath('js/pages/index/main.js'));
 ?>
 
 
