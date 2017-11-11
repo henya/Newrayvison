@@ -52,7 +52,7 @@ var ddfullscreenslider = (function($){
 		var mouseslidetimer
 		var swipeevts = {start:"", move:"", end:""}, swipestart = false, dy = 0, bounds = [,], scrollableclass = 'scrollable', bypassdrag = false
 		var initialrun= true // indicate whether this is first time slider has run. After page loads, variable becomes false
-
+// console.log($slider);
 		if (!translatesupport){
 			s.transitionDuration = parseFloat(s.transitionDuration) * 1000
 		}
@@ -121,6 +121,8 @@ var ddfullscreenslider = (function($){
 			mouseslidetimer = setTimeout(function(){
 				mouseslide(deltaY)
 			}, 100)
+			// console.log(deltaY);
+
 			return false
 		})
 
@@ -218,9 +220,12 @@ var ddfullscreenslider = (function($){
 			$slides = $('article.slide').each(function(i){
 				var $curslide = $(this)
 				var anchorval = $curslide.attr('id') || 'slide' + (i+1)
+                // var anchorval = $curslide.attr('id')
 				anchorval = "#" + anchorval
 				hasharray.push([anchorval, i])
+                // console.log(anchorval);
 				var title = $curslide.data('title') || anchorval
+                // var title = anchorval
 				var $navli = $('<li><a href="' + anchorval +'"  id='+"selected" +(i + 1) +'   title="' + title +'">' +"0"+ (i + 1) + ' </a></li>').appendTo($nav)
 				var $navlink = $navli.find('a:eq(0)')
 				$navli.on('click touchstart', function(e){

@@ -5512,14 +5512,26 @@ section.dd_fullscreenslider article.slide .scrollable {
 section.dd_fullscreenslider article.slide:nth-of-type(2) {
   /* 2nd demo slide bgcolor */
   background: url("../img/index/bg_02.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 section.dd_fullscreenslider article.slide:nth-of-type(3) {
   /* 3rd demo slide bgcolor */
   background: url("../img/index/bg_03.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 section.dd_fullscreenslider article.slide:nth-of-type(4) {
   /* 4th demo slide bgcolor */
   background: url("../img/index/bg_04.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 section.dd_fullscreenslider div.closex {
   /* Large x close button inside Slider */
@@ -5791,7 +5803,9 @@ body footer .foot .recording {
 }
 body .page-footer {
   position: absolute;
-  bottom: 0px;
+  bottom: -150px;
+  opacity: 0;
+  transition: all 1.5s;
 }
 body .page-footer footer {
   width: 100%;
@@ -5978,9 +5992,10 @@ body #index-page .first .first_center .first_text {
 body #index-page .second {
   padding-top: 320px;
 }
-body #index-page .second .container {
+body #index-page .second #second {
   margin-top: 300px;
   opacity: 0;
+  transition: all 1.5s;
 }
 body #index-page .second .second_text {
   width: 600px;
@@ -6152,27 +6167,32 @@ body #index-page .second .second_img ul .second_three:hover .second_img3 {
 body #index-page .three {
   padding-top: 320px;
 }
-body #index-page .three .three_text {
+body #index-page .three #three {
+  margin-top: 300px;
+  opacity: 0;
+  transition: all 1.5s;
+}
+body #index-page .three #three .three_text {
   width: 600px;
   float: left;
 }
-body #index-page .three .three_text img {
+body #index-page .three #three .three_text img {
   display: block;
   margin-bottom: 40px;
 }
-body #index-page .three .three_text h3 {
+body #index-page .three #three .three_text h3 {
   font-size: 60px;
   line-height: 66.9264px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 25px;
 }
-body #index-page .three .three_text p {
+body #index-page .three #three .three_text p {
   font-size: 16px;
   line-height: 30px;
   color: #ffffff;
 }
-body #index-page .three .three_text a {
+body #index-page .three #three .three_text a {
   display: inline-block;
   text-align: center;
   padding: 0px 48px;
@@ -6183,22 +6203,27 @@ body #index-page .three .three_text a {
   margin-top: 38px;
   cursor: pointer;
 }
-body #index-page .three .three_text a:hover {
+body #index-page .three #three .three_text a:hover {
   background-color: #2dbec3;
   border: solid 1px #2dbec3;
 }
 body #index-page .four {
   padding-top: 300px;
 }
-body #index-page .four .four_text {
+body #index-page .four #four-text {
+  margin-top: 300px;
+  opacity: 0;
+  transition: all 1.5s;
+}
+body #index-page .four #four-text .four_text {
   text-align: center;
 }
-body #index-page .four .four_text img {
+body #index-page .four #four-text .four_text img {
   display: block;
   margin-bottom: 40px;
   margin: 0 auto;
 }
-body #index-page .four .four_text h3 {
+body #index-page .four #four-text .four_text h3 {
   font-size: 60px;
   line-height: 66.9264px;
   font-weight: 700;
@@ -6206,12 +6231,12 @@ body #index-page .four .four_text h3 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-body #index-page .four .four_text p {
+body #index-page .four #four-text .four_text p {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
 }
-body #index-page .four .four_text a {
+body #index-page .four #four-text .four_text a {
   display: inline-block;
   text-align: center;
   padding: 0px 48px;
@@ -6222,7 +6247,7 @@ body #index-page .four .four_text a {
   margin-top: 38px;
   cursor: pointer;
 }
-body #index-page .four .four_text a:hover {
+body #index-page .four #four-text .four_text a:hover {
   background-color: #2dbec3;
   border: solid 1px #2dbec3;
 }
@@ -6991,6 +7016,24 @@ body #about-page .about-bottom .container .company-position .company-office p:fi
   line-height: 30px;
   letter-spacing: 0.2px;
   color: #333333;
+}
+@media screen and (max-width: 1300px) {
+  #index-page .first .first_center {
+    margin-left: 0%!important;
+  }
+  #index-page .second .second_text {
+    width: 600px;
+    float: left;
+    margin-left: 10%;
+  }
+  #index-page .second .second_img {
+    display: none;
+  }
+  #index-page .three #three .three_text {
+    width: 600px;
+    float: left;
+    margin-left: 10%;
+  }
 }
 /*!
 Animate.css - http://daneden.me/animate

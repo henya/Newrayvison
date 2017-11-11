@@ -243,7 +243,9 @@ body {
   }
   .page-footer{
     position: absolute;
-    bottom: 0px;
+    bottom: -150px;
+    opacity: 0;
+    transition: all 1.5s;
     footer {
       width: 100%;
       background-color: rgba(27, 27, 37, 0);
@@ -428,6 +430,7 @@ body {
     #second{
       margin-top: 300px;
       opacity: 0;
+      transition: all 1.5s;
     }
     .second_text{
       width: 600px;
@@ -597,81 +600,91 @@ body {
   }
   .three{
     padding-top: 320px;
-    .three_text{
-      width: 600px;
-      float: left;
-      img{
-        display: block;
-        margin-bottom: 40px;
-      }
-      h3{
-        font-size: 60px;
-        line-height: 66.9264px;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 25px;
-      }
-      p{
-        font-size: 16px;
-        line-height: 30px;
-        color: #ffffff;
-      }
-      a{
-        display: inline-block;
-        text-align: center;
-        padding: 0px 48px;
-        color: #ffffff;
-        border-radius: 20px 20px 20px 20px;
-        border: solid 1px rgba(255, 255, 255, 1);
-        font-size: 16px;
-        margin-top: 38px;
-        cursor: pointer;
-        &:hover{
-          background-color: rgba(45, 190, 195, 1);
-          border: solid 1px rgba(45, 190, 195, 1);
+    #three {
+      margin-top: 300px;
+      opacity: 0;
+      transition: all 1.5s;
+      .three_text {
+        width: 600px;
+        float: left;
+        img {
+          display: block;
+          margin-bottom: 40px;
         }
-      }
+        h3 {
+          font-size: 60px;
+          line-height: 66.9264px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 25px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          color: #ffffff;
+        }
+        a {
+          display: inline-block;
+          text-align: center;
+          padding: 0px 48px;
+          color: #ffffff;
+          border-radius: 20px 20px 20px 20px;
+          border: solid 1px rgba(255, 255, 255, 1);
+          font-size: 16px;
+          margin-top: 38px;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(45, 190, 195, 1);
+            border: solid 1px rgba(45, 190, 195, 1);
+          }
+        }
 
+      }
     }
   }
   .four{
     padding-top: 300px;
-    .four_text{
-      text-align: center;
-      img{
-        display: block;
-        margin-bottom: 40px;
-        margin: 0 auto;
-      }
-      h3{
-        font-size: 60px;
-        line-height: 66.9264px;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 20px;
-        margin-top: 20px;
-      }
-      p{
-        font-size: 24px;
-        line-height: 30px;
-        color: #ffffff;
-      }
-      a{
-        display: inline-block;
+    #four-text {
+      margin-top: 300px;
+      opacity: 0;
+      transition: all 1.5s;
+      .four_text {
         text-align: center;
-        padding: 0px 48px;
-        color: #ffffff;
-        border-radius: 20px 20px 20px 20px;
-        border: solid 1px rgba(255, 255, 255, 1);
-        font-size: 16px;
-        margin-top: 38px;
-        cursor: pointer;
-        &:hover{
-          background-color: rgba(45, 190, 195, 1);
-          border: solid 1px rgba(45, 190, 195, 1);
+        img {
+          display: block;
+          margin-bottom: 40px;
+          margin: 0 auto;
         }
-      }
+        h3 {
+          font-size: 60px;
+          line-height: 66.9264px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 24px;
+          line-height: 30px;
+          color: #ffffff;
+        }
+        a {
+          display: inline-block;
+          text-align: center;
+          padding: 0px 48px;
+          color: #ffffff;
+          border-radius: 20px 20px 20px 20px;
+          border: solid 1px rgba(255, 255, 255, 1);
+          font-size: 16px;
+          margin-top: 38px;
+          cursor: pointer;
+          &:hover {
+            background-color: rgba(45, 190, 195, 1);
+            border: solid 1px rgba(45, 190, 195, 1);
+          }
+        }
 
+      }
     }
   }
 
@@ -1501,4 +1514,35 @@ body {
   }
 }
 
+}
+@media screen and (max-width: 1300px){
+#index-page{
+  .first{
+    .first_center{
+      margin-left: 0%!important;
+    }
+  }
+  .second{
+    .second_text{
+      width: 600px;
+      float: left;
+      margin-left: 10%;
+    }
+    .second_img{
+      display: none;
+    }
+  }
+  .three{
+    #three {
+      .three_text {
+        width: 600px;
+        float: left;
+        margin-left: 10%;
+      }
+    }
+  }
+
+
+
+}
 }

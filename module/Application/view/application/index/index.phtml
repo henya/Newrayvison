@@ -9,11 +9,11 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
 
     <section id="dowebok" class="dd_fullscreenslider">
         <div class="slidewrapper">
-            <article class="slide">
+            <article class="slide" id="rayvision">
                 <div class="container">
                 <div class="row first">
-                    <div class="col-md-5"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-5 col-sm-4 col-xs-3"> &nbsp;</div>
+                    <div class="col-md-4 col-sm-5 col-xs-5">
                         <div class="first_center" data-scroll-reveal>
                             <p>
                                 THE MOST USER-FRIENDLY VISUAL<br/>
@@ -24,7 +24,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                             <span class="first_text">超85%CG工作室的选择</span>
                         </div>
                     </div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-4">&nbsp;</div>
                 </div>
                 </div>
                     <div id="container">
@@ -44,7 +44,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                 <a href="javascript:;" class="ic_pagearr"></a>
             </article>
 
-            <article class="slide second">
+            <article class="slide second" id="rayvision2">
           <div class="container" id="second">
                   <div class="second_text" >
                       <img src="<?php echo $this->basePath('img/index/Render.png')?>">
@@ -78,8 +78,8 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
           </div>
             </article>
 
-            <article class="slide three">
-                <div class="container">
+            <article class="slide three"id="rayvision3">
+                <div class="container" id="three">
                     <div class="three_text">
                         <img src="<?php echo $this->basePath('img/index/raysync.png')?>">
                         <h3>镭速企业级大文件传输</h3>
@@ -90,11 +90,11 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
 
             </article>
 
-            <article class="slide four">
-              <div class="container">
+            <article class="slide four" id="rayvision4">
+              <div class="container" >
                   <div class="row">
-                      <div class="col-md-3">&nbsp;</div>
-                      <div class="col-md-6" style="padding: 0px">
+                      <div class="col-md-3 col-sm-12 col-xs-12">&nbsp;</div>
+                      <div class="col-md-6 col-sm-12 col-xs-12" style="padding: 0px" id="four-text">
                           <div class="four_text">
                               <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
                               <h3>更高效的审片协作平台</h3>
@@ -102,7 +102,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                               <a>了解更多</a>
                           </div>
                       </div>
-                      <div class="col-md-3">&nbsp;</div>
+                      <div class="col-md-3 col-sm-12 col-xs-12">&nbsp;</div>
                   </div>
 
                   <div class="page-footer" style="line-height: 0px">
@@ -162,19 +162,54 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
     $(function() {
         fss = new ddfullscreenslider({
             sliderid: 'dowebok',
-            addHash:true
+            addHash: false
         });
     });
     window.scrollReveal = new scrollReveal();
 
-  var selectedParent2 = $("#selected1").parent();
-    console.log(selectedParent2)
-  console.log(selectedParent2.hasClass("selected"));
+//    自动载入动画出现事件
+//    var selectedParent2 = $("#selected2").parent();
+//    if(selectedParent2.hasClass("selected")){
+//        $("#second").css({"margin-top":"0px","opacity":"1"})
+//    }
 
-if(selectedParent2.hasClass("selected")){
-    debugger;
-    console.log('henya')
-}
+
+//    鼠标滚动动画出现事件
+$("#dowebok").mousewheel(function () {
+    var selectedParent1 = $("#selected1").parent();
+    var selectedParent2 = $("#selected2").parent();
+    var selectedParent3 = $("#selected3").parent();
+    var selectedParent4 = $("#selected4").parent();
+    if(selectedParent1.hasClass("selected")){
+     $("#second").css({"margin-top":"0px","opacity":"1"})
+    }
+    if(selectedParent2.hasClass("selected")){
+        $("#three").css({"margin-top":"0px","opacity":"1"})
+    }
+    if(selectedParent3.hasClass("selected")){
+        $("#four-text").css({"margin-top":"0px","opacity":"1"})
+        $(".page-footer").css({"bottom":"0px","opacity":"1"})
+    }
+})
+// 键盘上下事件
+
+
+    $(document).on('keyup',function () {
+        var selectedParent1 = $("#selected1").parent();
+        var selectedParent2 = $("#selected2").parent();
+        var selectedParent3 = $("#selected3").parent();
+        var selectedParent4 = $("#selected4").parent();
+        if(selectedParent1.hasClass("selected")){
+            $("#second").css({"margin-top":"0px","opacity":"1"})
+        }
+        if(selectedParent2.hasClass("selected")){
+            $("#three").css({"margin-top":"0px","opacity":"1"})
+        }
+        if(selectedParent3.hasClass("selected")){
+            $("#four-text").css({"margin-top":"0px","opacity":"1"})
+            $(".page-footer").css({"bottom":"0px","opacity":"1"})
+        }
+    });
 
 
 </script>
