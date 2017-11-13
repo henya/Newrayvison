@@ -24,6 +24,19 @@ class IndexController extends AbstractActionController
         ));
     }
 
+
+    public function CaseAction()
+    {
+
+        return new ViewModel(array(
+            "headTitle" => "Render Farm Price | Fox Render Farm",
+            "description" => "Fox Renderfarm is the most cost effective render farm price ever, you can even free try our service before you make any purchase.",
+            "keywords" => "render farm price, CPU render farm price, GPU render farm price, render farm rates",
+        ));
+    }
+
+
+
     /**
      * @return ViewModel
      */

@@ -3,10 +3,8 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/scrollReveal.mi
 $this->headScript()->prependFile($this->basePath('js/pages/index/jquery.mousewheel.min.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/index/jquery.slimscroll.min.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreenslider.js'));
-
 ?>
 <div class="main-container" id="index-page" >
-
     <section id="dowebok" class="dd_fullscreenslider">
         <div class="slidewrapper">
             <article class="slide" id="rayvision">
@@ -191,9 +189,8 @@ $("#dowebok").mousewheel(function () {
         $(".page-footer").css({"bottom":"0px","opacity":"1"})
     }
 })
+
 // 键盘上下事件
-
-
     $(document).on('keyup',function () {
         var selectedParent1 = $("#selected1").parent();
         var selectedParent2 = $("#selected2").parent();

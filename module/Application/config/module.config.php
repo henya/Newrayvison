@@ -74,6 +74,17 @@ return array(
                     ),
                 ),
             ),
+            'case' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/case.html',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'Case',
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(
