@@ -41,6 +41,7 @@ class IndexController extends AbstractActionController
      */
     public function joinUsAction()
     {
+        $this->layout("layout/layout3");
         return new ViewModel(array(
             "headTitle" => "Render Farm Price | Fox Render Farm",
             "description" => "Fox Renderfarm is the most cost effective render farm price ever, you can even free try our service before you make any purchase.",

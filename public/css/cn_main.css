@@ -6282,6 +6282,8 @@ body #join-us .title-h2 {
   line-height: 36px;
   letter-spacing: 0.5px;
   color: #1a323e;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 body #join-us .title-p {
   /*width: 218px;*/
@@ -6293,13 +6295,16 @@ body #join-us .title-p {
   line-height: 36px;
   letter-spacing: -0.1px;
   color: #02a6bc;
+  margin-top: 80px;
 }
 body #join-us .intro-text-p {
-  font-size: 14px;
-  color: #666;
+  font-size: 16px;
+  line-height: 30px;
+  color: #666666;
 }
 body #join-us .width-responsive {
-  width: 1200px;
+  width: 100%;
+  height: 500px;
   margin: 0 auto;
 }
 body #join-us .main-banner {
@@ -6386,7 +6391,7 @@ body #join-us .go-to-see {
   cursor: pointer;
 }
 body #join-us .content-intro {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 body #join-us .intro-text {
   margin-left: 10%;
@@ -6395,12 +6400,12 @@ body #join-us .intro-text {
   line-height: 1.3;
 }
 body #join-us .intro-image {
-  margin: 0px auto;
-  width: 90%;
+  width: 100%;
+  height: 100%;
 }
 body #join-us .content-work {
   background-color: #F1F1F1;
-  height: 409px;
+  height: 500px;
   overflow: hidden;
   margin-right: 0px;
   margin-left: 0px;
@@ -6419,7 +6424,8 @@ body #join-us .work-image {
   position: absolute;
   top: 0;
   right: 0;
-  width: 960px;
+  width: 100%;
+  height: 100%;
 }
 body #join-us .content-recruit {
   margin-bottom: 20px;
@@ -6448,15 +6454,16 @@ body #join-us .triangle-div {
 }
 body #join-us .work-text {
   position: absolute;
-  top: 50%;
+  top: 80px;
   left: 40%;
   margin-top: -100px;
   height: 200px;
   line-height: 1.3;
 }
 body #join-us .content-want {
-  padding: 50px 0;
-  margin-top: 40px;
+  padding: 0px 0;
+  margin-top: 0px;
+  padding-bottom: 90px;
 }
 body #join-us .want-text {
   margin-left: 8%;
@@ -6472,7 +6479,7 @@ body #join-us .more-important {
 }
 body #join-us .want-image {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 80px;
   width: 225px;
   height: 225px;
 }
@@ -6483,6 +6490,10 @@ body #join-us .attention-ray {
 body #join-us .content-get {
   padding: 50px 0;
   background-color: #F7F7F7;
+}
+body #join-us .width-responsive2 {
+  width: 1200px;
+  margin: 0 auto;
 }
 body #join-us .get-image {
   position: relative;
@@ -6521,7 +6532,6 @@ body #join-us .content-welfare span {
 body #join-us .content-welfare {
   padding: 50px 0;
   width: 100%;
-  height: 390px;
   background-image: linear-gradient(48deg, #23cebc 0%, #4ecd96 100%);
   text-align: center;
 }
@@ -6529,7 +6539,9 @@ body #join-us .content-welfare .welfare-import {
   font-size: 24px;
   line-height: 48px;
   font-weight: 600;
-  color: #333333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #ffffff;
 }
 body #join-us .see-position {
   display: inline-block;
@@ -6548,11 +6560,20 @@ body #join-us .send-resume {
   width: 160px;
   height: 36px;
   background-color: #ffcb05;
-  border-radius: 18px 18px 18px 18px;
+  border-radius: 5px;
   font-size: 16px;
-  color: #1a323e;
+  color: #ffffff;
   line-height: 36px;
   cursor: pointer;
+}
+body #join-us .onlineput {
+  line-height: 12.8px;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 45px;
+  font-weight: 700;
 }
 body #join-us .welfare-btn {
   margin-top: 51px;
@@ -7496,7 +7517,10 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 800px) {
-  #index-page #container {
+  body .container {
+    width: 768px;
+  }
+  body #index-page #container {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -7504,7 +7528,7 @@ body #case-page .case-five .case-common-text .img-down {
     right: 0;
     bottom: 0;
   }
-  #index-page #background_video {
+  body #index-page #background_video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -7513,7 +7537,7 @@ body #case-page .case-five .case-common-text .img-down {
     height: 100%;
     width: 100%;
   }
-  #index-page #video_cover {
+  body #index-page #video_cover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -7521,21 +7545,21 @@ body #case-page .case-five .case-common-text .img-down {
     background-size: cover;
     background-position: center;
   }
-  #index-page #video_controls {
+  body #index-page #video_controls {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
   }
-  #index-page #play img {
+  body #index-page #play img {
     width: 100px;
   }
-  #index-page #pause img {
+  body #index-page #pause img {
     width: 90px;
   }
-  #index-page #pause {
+  body #index-page #pause {
     display: none;
   }
-  #index-page .ic_pagearr {
+  body #index-page .ic_pagearr {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -7582,12 +7606,12 @@ body #case-page .case-five .case-common-text .img-down {
       bottom: 45px;
     }
   }
-  #index-page .first {
+  body #index-page .first {
     position: absolute;
     top: 17.6%;
     z-index: 9999;
   }
-  #index-page .first .first_center {
+  body #index-page .first .first_center {
     width: 522px;
     height: 523px;
     padding-top: 130px;
@@ -7597,54 +7621,54 @@ body #case-page .case-five .case-common-text .img-down {
     margin-left: 25%;
     text-align: center;
   }
-  #index-page .first .first_center p {
+  body #index-page .first .first_center p {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     margin-bottom: 10px;
   }
-  #index-page .first .first_center h3 {
+  body #index-page .first .first_center h3 {
     font-size: 60px;
     font-weight: 800;
   }
-  #index-page .first .first_center h3 span {
+  body #index-page .first .first_center h3 span {
     font-size: 60px;
     font-weight: 800;
     color: #2bbfa5;
   }
-  #index-page .first .first_center .first_text {
+  body #index-page .first .first_center .first_text {
     margin-top: 35px;
     display: block;
   }
-  #index-page .second {
+  body #index-page .second {
     padding-top: 320px;
   }
-  #index-page .second #second {
+  body #index-page .second #second {
     margin-top: 0px;
     opacity: 1;
   }
-  #index-page .second .second_text {
+  body #index-page .second .second_text {
     width: 600px;
     float: left;
   }
-  #index-page .second .second_text img {
+  body #index-page .second .second_text img {
     display: block;
     margin-bottom: 40px;
   }
-  #index-page .second .second_text h3 {
+  body #index-page .second .second_text h3 {
     font-size: 60px;
     line-height: 66.9264px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
   }
-  #index-page .second .second_text p {
+  body #index-page .second .second_text p {
     font-size: 16px;
     line-height: 30px;
     color: #ffffff;
   }
-  #index-page .second .second_text a {
+  body #index-page .second .second_text a {
     display: inline-block;
     text-align: center;
     padding: 0px 48px;
@@ -7655,32 +7679,32 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 38px;
     cursor: pointer;
   }
-  #index-page .second .second_text a:hover {
+  body #index-page .second .second_text a:hover {
     background-color: #2dbec3;
     border: solid 1px #2dbec3;
   }
-  #index-page .second .second_img {
+  body #index-page .second .second_img {
     float: right;
     width: 680px;
     margin-top: -130px;
   }
-  #index-page .second .second_img ul {
+  body #index-page .second .second_img ul {
     width: 100%;
   }
-  #index-page .second .second_img ul li {
+  body #index-page .second .second_img ul li {
     float: left;
     width: 33.33333%;
     list-style: none;
     height: 329px;
     text-decoration: none;
   }
-  #index-page .second .second_img ul .second_one .second_img1 {
+  body #index-page .second .second_img ul .second_one .second_img1 {
     display: inline-block;
     width: 100%;
     height: 100%;
     background: url('../img/index/mkb.jpg') no-repeat;
   }
-  #index-page .second .second_img ul .second_one .second_img1_info {
+  body #index-page .second .second_img ul .second_one .second_img1_info {
     padding-left: 13px;
     background-color: #233343;
     opacity: 0.88;
@@ -7688,12 +7712,12 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: -87px;
     visibility: hidden;
   }
-  #index-page .second .second_img ul .second_one .second_img1_info p {
+  body #index-page .second .second_img ul .second_one .second_img1_info p {
     font-size: 14px;
     color: #d6d6d6;
     line-height: 75px;
   }
-  #index-page .second .second_img ul .second_one:hover .second_img1_info {
+  body #index-page .second .second_img ul .second_one:hover .second_img1_info {
     visibility: visible;
     margin-top: -13px;
     transition: margin-top 0.3s;
@@ -7703,7 +7727,7 @@ body #case-page .case-five .case-common-text .img-down {
     /* Safari 和 Chrome */
     -o-transition: margin-top 0.3s;
   }
-  #index-page .second .second_img ul .second_one:hover .second_img1 {
+  body #index-page .second .second_img ul .second_one:hover .second_img1 {
     background: url('../img/index/mkb_hover.jpg') no-repeat;
     margin-top: -75px;
     transition: margin-top 0.3s;
@@ -7713,13 +7737,13 @@ body #case-page .case-five .case-common-text .img-down {
     /* Safari 和 Chrome */
     -o-transition: margin-top 0.3s;
   }
-  #index-page .second .second_img ul .second_two .second_img2 {
+  body #index-page .second .second_img ul .second_two .second_img2 {
     display: inline-block;
     width: 100%;
     height: 100%;
     background: url('../img/index/zl.jpg') no-repeat;
   }
-  #index-page .second .second_img ul .second_two .second_img2_info {
+  body #index-page .second .second_img ul .second_two .second_img2_info {
     padding-left: 13px;
     background-color: #233343;
     opacity: 0.88;
@@ -7727,12 +7751,12 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: -87px;
     visibility: hidden;
   }
-  #index-page .second .second_img ul .second_two .second_img2_info p {
+  body #index-page .second .second_img ul .second_two .second_img2_info p {
     font-size: 14px;
     color: #d6d6d6;
     line-height: 75px;
   }
-  #index-page .second .second_img ul .second_two:hover .second_img2_info {
+  body #index-page .second .second_img ul .second_two:hover .second_img2_info {
     visibility: visible;
     margin-top: -13px;
     transition: margin-top 0.3s;
@@ -7742,7 +7766,7 @@ body #case-page .case-five .case-common-text .img-down {
     /* Safari 和 Chrome */
     -o-transition: margin-top 0.3s;
   }
-  #index-page .second .second_img ul .second_two:hover .second_img2 {
+  body #index-page .second .second_img ul .second_two:hover .second_img2 {
     background: url('../img/index/zl_hover.jpg') no-repeat;
     margin-top: -75px;
     transition: margin-top 0.3s;
@@ -7752,13 +7776,13 @@ body #case-page .case-five .case-common-text .img-down {
     /* Safari 和 Chrome */
     -o-transition: margin-top 0.3s;
   }
-  #index-page .second .second_img ul .second_three .second_img3 {
+  body #index-page .second .second_img ul .second_three .second_img3 {
     display: inline-block;
     width: 100%;
     height: 100%;
     background: url('../img/index/hublot.jpg') no-repeat;
   }
-  #index-page .second .second_img ul .second_three .second_img3_info {
+  body #index-page .second .second_img ul .second_three .second_img3_info {
     padding-left: 13px;
     background-color: #233343;
     opacity: 0.88;
@@ -7766,12 +7790,12 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: -87px;
     visibility: hidden;
   }
-  #index-page .second .second_img ul .second_three .second_img3_info p {
+  body #index-page .second .second_img ul .second_three .second_img3_info p {
     font-size: 14px;
     color: #d6d6d6;
     line-height: 75px;
   }
-  #index-page .second .second_img ul .second_three:hover .second_img3_info {
+  body #index-page .second .second_img ul .second_three:hover .second_img3_info {
     visibility: visible;
     margin-top: -13px;
     transition: margin-top 0.3s;
@@ -7781,7 +7805,7 @@ body #case-page .case-five .case-common-text .img-down {
     /* Safari 和 Chrome */
     -o-transition: margin-top 0.3s;
   }
-  #index-page .second .second_img ul .second_three:hover .second_img3 {
+  body #index-page .second .second_img ul .second_three:hover .second_img3 {
     background: url('../img/index/hublot_hover.jpg') no-repeat;
     margin-top: -75px;
     transition: margin-top 0.3s;
@@ -7791,35 +7815,35 @@ body #case-page .case-five .case-common-text .img-down {
     /* Safari 和 Chrome */
     -o-transition: margin-top 0.3s;
   }
-  #index-page .three {
+  body #index-page .three {
     padding-top: 320px;
   }
-  #index-page .three #three {
+  body #index-page .three #three {
     margin-top: 0px;
     opacity: 1;
     transition: all 1.5s;
   }
-  #index-page .three #three .three_text {
+  body #index-page .three #three .three_text {
     width: 600px;
     float: left;
   }
-  #index-page .three #three .three_text img {
+  body #index-page .three #three .three_text img {
     display: block;
     margin-bottom: 40px;
   }
-  #index-page .three #three .three_text h3 {
+  body #index-page .three #three .three_text h3 {
     font-size: 60px;
     line-height: 66.9264px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
   }
-  #index-page .three #three .three_text p {
+  body #index-page .three #three .three_text p {
     font-size: 16px;
     line-height: 30px;
     color: #ffffff;
   }
-  #index-page .three #three .three_text a {
+  body #index-page .three #three .three_text a {
     display: inline-block;
     text-align: center;
     padding: 0px 48px;
@@ -7830,27 +7854,27 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 38px;
     cursor: pointer;
   }
-  #index-page .three #three .three_text a:hover {
+  body #index-page .three #three .three_text a:hover {
     background-color: #2dbec3;
     border: solid 1px #2dbec3;
   }
-  #index-page .four {
+  body #index-page .four {
     padding-top: 300px;
   }
-  #index-page .four #four-text {
+  body #index-page .four #four-text {
     margin-top: 300px;
     opacity: 0;
     transition: all 1.5s;
   }
-  #index-page .four #four-text .four_text {
+  body #index-page .four #four-text .four_text {
     text-align: center;
   }
-  #index-page .four #four-text .four_text img {
+  body #index-page .four #four-text .four_text img {
     display: block;
     margin-bottom: 40px;
     margin: 0 auto;
   }
-  #index-page .four #four-text .four_text h3 {
+  body #index-page .four #four-text .four_text h3 {
     font-size: 60px;
     line-height: 66.9264px;
     font-weight: 700;
@@ -7858,12 +7882,12 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  #index-page .four #four-text .four_text p {
+  body #index-page .four #four-text .four_text p {
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
   }
-  #index-page .four #four-text .four_text a {
+  body #index-page .four #four-text .four_text a {
     display: inline-block;
     text-align: center;
     padding: 0px 48px;
@@ -7874,11 +7898,11 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 38px;
     cursor: pointer;
   }
-  #index-page .four #four-text .four_text a:hover {
+  body #index-page .four #four-text .four_text a:hover {
     background-color: #2dbec3;
     border: solid 1px #2dbec3;
   }
-  #case-page .ic_pagearr {
+  body #case-page .ic_pagearr {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -7908,24 +7932,24 @@ body #case-page .case-five .case-common-text .img-down {
       bottom: 45px;
     }
   }
-  #case-page .case-one .case-first {
+  body #case-page .case-one .case-first {
     margin-top: 8%;
   }
-  #case-page .case-one .case-first .case-first-text {
+  body #case-page .case-one .case-first .case-first-text {
     width: 635px;
     height: 345px;
     position: relative;
   }
-  #case-page .case-one .case-first .case-first-text .star_img {
+  body #case-page .case-one .case-first .case-first-text .star_img {
     position: absolute;
     top: 0px;
     left: 5%;
   }
-  #case-page .case-one .case-first .case-first-text .first-text {
+  body #case-page .case-one .case-first .case-first-text .first-text {
     position: absolute;
     top: 57%;
   }
-  #case-page .case-one .case-first .case-first-text .first-text h3 {
+  body #case-page .case-one .case-first .case-first-text .first-text h3 {
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -7933,29 +7957,29 @@ body #case-page .case-five .case-common-text .img-down {
     font-weight: 700;
     margin-bottom: 30px;
   }
-  #case-page .case-one .case-first .case-first-text .first-text span {
+  body #case-page .case-one .case-first .case-first-text .first-text span {
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 20px;
   }
-  #case-page .case-one .case-first-logo {
+  body #case-page .case-one .case-first-logo {
     width: 130%;
     margin-left: -18%;
     margin-top: 15%;
   }
-  #case-page .case-one .case-first-logo .logo-first img {
+  body #case-page .case-one .case-first-logo .logo-first img {
     max-width: 100%;
   }
-  #case-page .case-one .case-second-logo {
+  body #case-page .case-one .case-second-logo {
     width: 130%;
     margin-left: -18%;
     margin-top: 60px;
   }
-  #case-page .case-one .case-second-logo .logo-first img {
+  body #case-page .case-one .case-second-logo .logo-first img {
     max-width: 100%;
   }
-  #case-page .case-second .case-common-text:before {
+  body #case-page .case-second .case-common-text:before {
     content: '';
     position: absolute;
     top: 0;
@@ -7964,7 +7988,7 @@ body #case-page .case-five .case-common-text .img-down {
     left: 0;
     filter: blur(20px);
   }
-  #case-page .case-second .case-common-text {
+  body #case-page .case-second .case-common-text {
     padding-top: 5%;
     position: relative;
     padding-left: 30px;
@@ -7972,17 +7996,17 @@ body #case-page .case-five .case-common-text .img-down {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
   }
-  #case-page .case-second .case-common-text .second-top .img-content {
+  body #case-page .case-second .case-common-text .second-top .img-content {
     width: 100%;
     height: 48px;
   }
-  #case-page .case-second .case-common-text .second-top .img-content .img-add {
+  body #case-page .case-second .case-common-text .second-top .img-content .img-add {
     display: block;
     float: right;
     max-width: 48px;
     max-height: 48px;
   }
-  #case-page .case-second .case-common-text .second-top h5 {
+  body #case-page .case-second .case-common-text .second-top h5 {
     line-height: 29.99999px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -7990,7 +8014,7 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 64px;
     margin-bottom: 20px;
   }
-  #case-page .case-second .case-common-text .second-top h3 {
+  body #case-page .case-second .case-common-text .second-top h3 {
     line-height: 59.96527px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -7998,35 +8022,35 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #case-page .case-second .case-common-text .second-top span {
+  body #case-page .case-second .case-common-text .second-top span {
     font-size: 14px;
     display: inline-block;
     line-height: 23.98611px;
     color: #ffffff;
   }
-  #case-page .case-second .case-common-text .second-bottom .case-info-img {
+  body #case-page .case-second .case-common-text .second-bottom .case-info-img {
     margin-top: 70px;
     margin-bottom: 30px;
     text-align: center;
   }
-  #case-page .case-second .case-common-text .second-bottom .case-info-img img {
+  body #case-page .case-second .case-common-text .second-bottom .case-info-img img {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 15px;
   }
-  #case-page .case-second .case-common-text .second-bottom .case-info-img span {
+  body #case-page .case-second .case-common-text .second-bottom .case-info-img span {
     line-height: 17.98958px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 12px;
   }
-  #case-page .case-second .case-common-text .second-bottom p {
+  body #case-page .case-second .case-common-text .second-bottom p {
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 14px;
   }
-  #case-page .case-second .case-common-text .second-bottom .img-down {
+  body #case-page .case-second .case-common-text .second-bottom .img-down {
     display: inline-block;
     padding-right: 20px;
     margin-top: 60px;
@@ -8051,7 +8075,7 @@ body #case-page .case-five .case-common-text .img-down {
       margin-top: 100px;
     }
   }
-  #case-page .case-three .case-common-text:before {
+  body #case-page .case-three .case-common-text:before {
     content: '';
     position: absolute;
     top: 0;
@@ -8060,7 +8084,7 @@ body #case-page .case-five .case-common-text .img-down {
     left: 0;
     filter: blur(20px);
   }
-  #case-page .case-three .case-common-text {
+  body #case-page .case-three .case-common-text {
     position: relative;
     padding-top: 6%;
     padding-left: 30px;
@@ -8068,12 +8092,12 @@ body #case-page .case-five .case-common-text .img-down {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
   }
-  #case-page .case-three .case-common-text .img-add {
+  body #case-page .case-three .case-common-text .img-add {
     display: block;
     float: right;
     max-width: 48px;
   }
-  #case-page .case-three .case-common-text h5 {
+  body #case-page .case-three .case-common-text h5 {
     line-height: 29.99999px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -8081,7 +8105,7 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 75px;
     margin-bottom: 20px;
   }
-  #case-page .case-three .case-common-text h3 {
+  body #case-page .case-three .case-common-text h3 {
     line-height: 59.96527px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -8089,35 +8113,35 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #case-page .case-three .case-common-text span {
+  body #case-page .case-three .case-common-text span {
     font-size: 14px;
     display: inline-block;
     line-height: 23.98611px;
     color: #ffffff;
   }
-  #case-page .case-three .case-common-text .case-info-img {
+  body #case-page .case-three .case-common-text .case-info-img {
     margin-top: 70px;
     margin-bottom: 30px;
     text-align: center;
   }
-  #case-page .case-three .case-common-text .case-info-img img {
+  body #case-page .case-three .case-common-text .case-info-img img {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 15px;
   }
-  #case-page .case-three .case-common-text .case-info-img span {
+  body #case-page .case-three .case-common-text .case-info-img span {
     line-height: 17.98958px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 12px;
   }
-  #case-page .case-three .case-common-text p {
+  body #case-page .case-three .case-common-text p {
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 14px;
   }
-  #case-page .case-three .case-common-text .img-down {
+  body #case-page .case-three .case-common-text .img-down {
     display: inline-block;
     padding-right: 20px;
     margin-top: 60px;
@@ -8142,7 +8166,7 @@ body #case-page .case-five .case-common-text .img-down {
       margin-top: 100px;
     }
   }
-  #case-page .case-four .case-common-text:before {
+  body #case-page .case-four .case-common-text:before {
     content: '';
     position: absolute;
     top: 0;
@@ -8151,7 +8175,7 @@ body #case-page .case-five .case-common-text .img-down {
     left: 0;
     filter: blur(20px);
   }
-  #case-page .case-four .case-common-text {
+  body #case-page .case-four .case-common-text {
     position: relative;
     padding-top: 6%;
     padding-left: 30px;
@@ -8159,12 +8183,12 @@ body #case-page .case-five .case-common-text .img-down {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
   }
-  #case-page .case-four .case-common-text .img-add {
+  body #case-page .case-four .case-common-text .img-add {
     display: block;
     float: right;
     max-width: 48px;
   }
-  #case-page .case-four .case-common-text h5 {
+  body #case-page .case-four .case-common-text h5 {
     line-height: 29.99999px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -8172,7 +8196,7 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 75px;
     margin-bottom: 20px;
   }
-  #case-page .case-four .case-common-text h3 {
+  body #case-page .case-four .case-common-text h3 {
     line-height: 59.96527px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -8180,35 +8204,35 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #case-page .case-four .case-common-text span {
+  body #case-page .case-four .case-common-text span {
     font-size: 14px;
     display: inline-block;
     line-height: 23.98611px;
     color: #ffffff;
   }
-  #case-page .case-four .case-common-text .case-info-img {
+  body #case-page .case-four .case-common-text .case-info-img {
     margin-top: 70px;
     margin-bottom: 30px;
     text-align: center;
   }
-  #case-page .case-four .case-common-text .case-info-img img {
+  body #case-page .case-four .case-common-text .case-info-img img {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 15px;
   }
-  #case-page .case-four .case-common-text .case-info-img span {
+  body #case-page .case-four .case-common-text .case-info-img span {
     line-height: 17.98958px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 12px;
   }
-  #case-page .case-four .case-common-text p {
+  body #case-page .case-four .case-common-text p {
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 14px;
   }
-  #case-page .case-four .case-common-text .img-down {
+  body #case-page .case-four .case-common-text .img-down {
     display: inline-block;
     padding-right: 20px;
     margin-top: 60px;
@@ -8233,16 +8257,16 @@ body #case-page .case-five .case-common-text .img-down {
       margin-top: 100px;
     }
   }
-  #case-page .case-five .page-footer {
+  body #case-page .case-five .page-footer {
     position: absolute;
     bottom: 0px;
     opacity: 1;
     transition: all 1.5s;
   }
-  #case-page .case-five .page-footer .container {
+  body #case-page .case-five .page-footer .container {
     width: 750px;
   }
-  #case-page .case-five .case-common-text:before {
+  body #case-page .case-five .case-common-text:before {
     content: '';
     position: absolute;
     top: 0;
@@ -8251,7 +8275,7 @@ body #case-page .case-five .case-common-text .img-down {
     left: 0;
     filter: blur(20px);
   }
-  #case-page .case-five .case-common-text {
+  body #case-page .case-five .case-common-text {
     position: relative;
     padding-top: 6%;
     padding-left: 30px;
@@ -8259,12 +8283,12 @@ body #case-page .case-five .case-common-text .img-down {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
   }
-  #case-page .case-five .case-common-text .img-add {
+  body #case-page .case-five .case-common-text .img-add {
     display: block;
     float: right;
     max-width: 48px;
   }
-  #case-page .case-five .case-common-text h5 {
+  body #case-page .case-five .case-common-text h5 {
     line-height: 29.99999px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -8272,12 +8296,12 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 75px;
     margin-bottom: 20px;
   }
-  #case-page .case-five .case-common-text h4 {
+  body #case-page .case-five .case-common-text h4 {
     letter-spacing: 10.8px;
     color: #ffffff;
     font-size: 18px;
   }
-  #case-page .case-five .case-common-text h3 {
+  body #case-page .case-five .case-common-text h3 {
     line-height: 59.96527px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -8285,35 +8309,35 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 20px;
     font-weight: 700;
   }
-  #case-page .case-five .case-common-text span {
+  body #case-page .case-five .case-common-text span {
     font-size: 14px;
     display: inline-block;
     line-height: 23.98611px;
     color: #ffffff;
   }
-  #case-page .case-five .case-common-text .case-info-img {
+  body #case-page .case-five .case-common-text .case-info-img {
     margin-top: 70px;
     margin-bottom: 30px;
     text-align: center;
   }
-  #case-page .case-five .case-common-text .case-info-img img {
+  body #case-page .case-five .case-common-text .case-info-img img {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 15px;
   }
-  #case-page .case-five .case-common-text .case-info-img span {
+  body #case-page .case-five .case-common-text .case-info-img span {
     line-height: 17.98958px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 12px;
   }
-  #case-page .case-five .case-common-text p {
+  body #case-page .case-five .case-common-text p {
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 14px;
   }
-  #case-page .case-five .case-common-text .img-down {
+  body #case-page .case-five .case-common-text .img-down {
     display: inline-block;
     padding-right: 20px;
     margin-top: 60px;
@@ -8338,9 +8362,13 @@ body #case-page .case-five .case-common-text .img-down {
       margin-top: 100px;
     }
   }
+  body #join-us .width-responsive2 {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 800px) and (min-width: 768px) {
-  #index-page #video_controls {
+  body #index-page #video_controls {
     display: none;
   }
 }
