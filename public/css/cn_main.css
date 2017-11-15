@@ -6532,7 +6532,8 @@ body #join-us .content-welfare span {
 body #join-us .content-welfare {
   padding: 50px 0;
   width: 100%;
-  background-image: linear-gradient(48deg, #23cebc 0%, #4ecd96 100%);
+  background: linear-gradient(48deg, #23cebc 0%, #4ecd96 100%);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4ecd96), to(#23cebc));
   text-align: center;
 }
 body #join-us .content-welfare .welfare-import {
@@ -6903,6 +6904,26 @@ body #about-page .about-develop .develop-content .develop7 .develop-event {
   display: block;
   font-size: 16px;
   line-height: 24px;
+}
+body #about-page .about-develop .develop-content2 {
+  display: none;
+  width: 95%;
+  padding-top: 20px;
+}
+body #about-page .about-develop .develop-content2 .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: solid #2dbec3 2px;
+}
+body #about-page .about-develop .develop-content2 .develop-text {
+  width: 100%;
+  border-left: 2px solid #25b2c5;
+  margin-left: 7px;
+  padding-left: 10px;
+}
+body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+  display: block;
 }
 body #about-page .about-join {
   width: 100%;
@@ -7499,21 +7520,44 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 1300px) {
-  #index-page .first .first_center {
+  body #index-page .first .first_center {
     margin-left: 0%!important;
   }
-  #index-page .second .second_text {
+  body #index-page .second .second_text {
     width: 600px;
     float: left;
     margin-left: 10%;
   }
-  #index-page .second .second_img {
+  body #index-page .second .second_img {
     display: none;
   }
-  #index-page .three #three .three_text {
+  body #index-page .three #three .three_text {
     width: 600px;
     float: left;
     margin-left: 10%;
+  }
+  body #about-page .about-develop .develop-content {
+    display: none;
+  }
+  body #about-page .about-develop .develop-content2 {
+    display: block;
+    width: 95%;
+    padding-top: 20px;
+  }
+  body #about-page .about-develop .develop-content2 .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: solid #2dbec3 2px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text {
+    width: 100%;
+    border-left: 2px solid #25b2c5;
+    margin-left: 7px;
+    padding-left: 10px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+    display: block;
   }
 }
 @media screen and (max-width: 800px) {
@@ -8362,9 +8406,482 @@ body #case-page .case-five .case-common-text .img-down {
       margin-top: 100px;
     }
   }
+  body #join-us {
+    /*通用css*/
+    /*网站banner-中文*/
+    /*后面修改*/
+    /*网站banner-end*/
+    /*网站主体内容-中文*/
+    /*who are we*/
+    /*who are we-end*/
+    /*who we do*/
+    /*who we do-end*/
+    /*who are want*/
+    /*who are want-end*/
+    /*what you will get*/
+    /*what you will get-end*/
+    /*来到瑞云这些全都有*/
+    /*来到瑞云这些全都有-end*/
+    /*加入瑞云“伐木累”*/
+  }
+  body #join-us .title-h2 {
+    /*width: 250px;*/
+    height: 24px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #1a323e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  body #join-us .title-p {
+    /*width: 218px;*/
+    height: 30px;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -0.1px;
+    color: #02a6bc;
+    margin-top: 20px;
+  }
+  body #join-us .intro-text-p {
+    font-size: 11px;
+    line-height: 20px;
+    color: #666666;
+  }
+  body #join-us .width-responsive {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+  }
+  body #join-us .main-banner {
+    position: relative;
+  }
+  body #join-us .skill-content {
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+  body #join-us .banner-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 29, 29, 0.5);
+    text-align: center;
+  }
+  body #join-us .content-div {
+    position: absolute;
+    top: 35%;
+    width: 50%;
+    text-align: left;
+    left: 50%;
+  }
+  body #join-us .company-btn {
+    width: 200px;
+    height: 36px;
+    background-color: #2bbfa5;
+    border-radius: 18px 18px 18px 18px;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  body #join-us .content-div p {
+    margin-bottom: 0px;
+  }
+  body #join-us .company-recruit {
+    /*width: 556px;*/
+    height: 57px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    /*line-height: 83px;*/
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+  body #join-us .company-recruit-span {
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #0aa890;
+  }
+  body #join-us .company-recruit-en {
+    /*width: 474px;*/
+    /*height: 34px;*/
+    font-size: 20px;
+    font-stretch: normal;
+    /*line-height: 83.33331px;*/
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    margin-top: -5px;
+  }
+  body #join-us .company-recruit-des {
+    width: 352px;
+    height: 43px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+  body #join-us .recruit-img {
+    width: 100%;
+  }
+  body #join-us .go-to-see {
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  body #join-us .content-intro {
+    padding: 0px 0;
+  }
+  body #join-us .intro-text {
+    margin-left: 10%;
+    width: 90%;
+    min-height: 200px;
+    line-height: 1.3;
+  }
+  body #join-us .intro-image {
+    width: 100%;
+    height: 100%;
+  }
+  body #join-us .content-work {
+    background-color: #F1F1F1;
+    height: 350px;
+    overflow: hidden;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  body #join-us .content-work-left,
+  body #join-us .content-work-right {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*overflow: hidden;*/
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  body #join-us .work-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body #join-us .content-recruit {
+    margin-bottom: 20px;
+  }
+  body #join-us .skill {
+    font-size: 22px;
+    line-height: 48px;
+    color: #333333;
+    padding: 0 25px;
+    font-weight: 600;
+  }
+  body #join-us .skill-des {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    padding: 0 25px;
+    display: inline-block;
+  }
+  body #join-us .triangle-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    border-top: 386px solid #F1F1F1;
+    border-left: 80px solid transparent;
+  }
+  body #join-us .work-text {
+    position: absolute;
+    top: 80px;
+    left: 40%;
+    margin-top: -100px;
+    height: 200px;
+    line-height: 1.3;
+  }
+  body #join-us .content-want {
+    padding: 0px 0;
+    margin-top: 0px;
+    padding-bottom: 90px;
+  }
+  body #join-us .want-text {
+    margin-left: 8%;
+    width: 92%;
+    min-height: 200px;
+    line-height: 1.3;
+  }
+  body #join-us .more-important {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  body #join-us .want-image {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 225px;
+    height: 225px;
+  }
+  body #join-us .attention-ray {
+    width: 100%;
+    text-align: center;
+  }
+  body #join-us .content-get {
+    padding: 50px 0;
+    background-color: #F7F7F7;
+  }
   body #join-us .width-responsive2 {
+    width: 768px;
+    margin: 0 auto;
+  }
+  body #join-us .get-image {
+    position: relative;
+    padding: 1px;
+  }
+  body #join-us .display-ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 25px;
+    font-size: 16px;
+    color: #fff;
+  }
+  body #join-us .cozy-environment {
+    margin-top: 30%;
+  }
+  body #join-us .ul-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  body #join-us .content-welfare h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 0px;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  body #join-us .content-welfare span {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    display: block;
+  }
+  body #join-us .content-welfare {
+    padding: 50px 0;
+    width: 100%;
+    background-image: linear-gradient(48deg, #23cebc 0%, #4ecd96 100%);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4ecd96), to(#23cebc));
+    text-align: center;
+  }
+  body #join-us .content-welfare .welfare-import {
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  body #join-us .see-position {
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 18px 18px 18px 18px;
+    font-size: 16px;
+    color: #1a323e;
+    line-height: 36px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  body #join-us .send-resume {
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    background-color: #ffcb05;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 36px;
+    cursor: pointer;
+  }
+  body #join-us .onlineput {
+    line-height: 12.8px;
+    letter-spacing: 1.4px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 700;
+  }
+  body #join-us .welfare-btn {
+    margin-top: 51px;
+  }
+  body #join-us .col-left,
+  body #join-us .col-right {
+    padding: 0;
+  }
+  body #join-us .welware-free {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat 0 0;
+  }
+  body #join-us .welware-environment {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -120px 0;
+  }
+  body #join-us .welware-team {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -240px 0;
+  }
+  body #join-us .welware-money {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -360px 0;
+  }
+  body #join-us .welware-study {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -480px 0;
+  }
+  body #join-us .welware-more {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -600px 0;
+  }
+  body #join-us .welware-text {
+    width: 100%;
+    text-align: center;
+  }
+  body #join-us .content-family {
+    position: relative;
     width: 100%;
     margin: 0 auto;
+    background-image: url("../image/join-us/show_bg.png");
+    padding-top: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+  }
+  body #join-us .join-rayvision {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 600px;
+    height: auto;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body #join-us .join-rayvision-h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  body #join-us .join-rayvision-p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  body #join-us .join-method {
+    position: absolute;
+    bottom: 261px;
+    right: 18.5%;
+    width: 600px;
+  }
+  body #join-us .submit-resume-li {
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    margin: 0 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    background-color: #2BBFA5;
+  }
+  body #join-us .resume-href {
+    color: #fff;
+  }
+  body #join-us .join-text {
+    width: 100%;
+    height: auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body #join-us .join-text-p {
+    margin-bottom: 0;
+  }
+  body #join-us .h-family-rightimg.col-md-7 {
+    padding-left: 30px;
+  }
+  body #join-us .h-family {
+    margin: 0 auto;
+  }
+  body #join-us .h-flow {
+    margin-top: 60px;
+  }
+  body #join-us .h-flow-p {
+    width: 206px;
+    height: 25px;
+    font-size: 24px;
+    color: #f6db59;
+    margin-bottom: 42px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  body #join-us .h-flow img {
+    width: 100%;
+    height: auto;
+  }
+  body #join-us .content-family img {
+    width: 100%;
+    height: auto;
+  }
+  body #about-page .about-develop .develop-content {
+    display: none;
+  }
+  body #about-page .about-develop .develop-content2 {
+    display: block;
+    width: 95%;
+    padding-top: 20px;
+  }
+  body #about-page .about-develop .develop-content2 .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: solid #2dbec3 2px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text {
+    width: 100%;
+    border-left: 2px solid #25b2c5;
+    margin-left: 7px;
+    padding-left: 10px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+    display: block;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 768px) {
@@ -8373,6 +8890,9 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 768px) {
+  body .container {
+    width: 100% !important;
+  }
   body .page-footer {
     position: absolute;
     bottom: 0px;
@@ -9265,6 +9785,29 @@ body #case-page .case-five .case-common-text .img-down {
     animation: none;
     -webkit-animation: none;
   }
+  body #about-page .about-develop .develop-content {
+    display: none;
+  }
+  body #about-page .about-develop .develop-content2 {
+    display: block;
+    width: 95%;
+    padding-top: 20px;
+  }
+  body #about-page .about-develop .develop-content2 .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: solid #2dbec3 2px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text {
+    width: 100%;
+    border-left: 2px solid #25b2c5;
+    margin-left: 7px;
+    padding-left: 10px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+    display: block;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 768px) {
   body #index-page #video_controls {
@@ -9272,6 +9815,9 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 600px) {
+  body .container {
+    width: 100%;
+  }
   body .page-footer {
     position: absolute;
     bottom: 0px;
@@ -9736,6 +10282,515 @@ body #case-page .case-five .case-common-text .img-down {
   body #index-page .four #four-text .four_text a:hover {
     background-color: #2dbec3;
     border: solid 1px #2dbec3;
+  }
+  body #join-us {
+    /*通用css*/
+    /*网站banner-中文*/
+    /*后面修改*/
+    /*网站banner-end*/
+    /*网站主体内容-中文*/
+    /*who are we*/
+    /*who are we-end*/
+    /*who we do*/
+    /*who we do-end*/
+    /*who are want*/
+    /*who are want-end*/
+    /*what you will get*/
+    /*what you will get-end*/
+    /*来到瑞云这些全都有*/
+    /*来到瑞云这些全都有-end*/
+    /*加入瑞云“伐木累”*/
+  }
+  body #join-us .img-responsive.banner-bg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+  body #join-us .title-h2 {
+    /*width: 250px;*/
+    height: 24px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #1a323e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  body #join-us .title-p {
+    /*width: 218px;*/
+    height: 30px;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -0.1px;
+    color: #02a6bc;
+    margin-top: 20px;
+  }
+  body #join-us .intro-text-p {
+    font-size: 11px;
+    line-height: 20px;
+    color: #666666;
+  }
+  body #join-us .width-responsive {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+  }
+  body #join-us .main-banner {
+    position: relative;
+  }
+  body #join-us .skill-content {
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+  body #join-us .banner-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 29, 29, 0.5);
+    text-align: center;
+  }
+  body #join-us .content-div {
+    position: absolute;
+    top: 1%;
+    width: 90%;
+    text-align: left;
+    left: 10%;
+  }
+  body #join-us .company-btn {
+    width: 200px;
+    height: 36px;
+    background-color: #2bbfa5;
+    border-radius: 18px 18px 18px 18px;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  body #join-us .content-div p {
+    margin-bottom: 0px;
+  }
+  body #join-us .company-recruit {
+    /*width: 556px;*/
+    height: 57px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    /*line-height: 83px;*/
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+  body #join-us .company-recruit-span {
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #0aa890;
+  }
+  body #join-us .company-recruit-en {
+    /*width: 474px;*/
+    /*height: 34px;*/
+    font-size: 20px;
+    font-stretch: normal;
+    /*line-height: 83.33331px;*/
+    letter-spacing: -0.2px;
+    color: #ffffff;
+    margin-top: -5px;
+  }
+  body #join-us .company-recruit-des {
+    width: 352px;
+    height: 43px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+  body #join-us .recruit-img {
+    width: 100%;
+  }
+  body #join-us .go-to-see {
+    margin-top: 100px;
+    cursor: pointer;
+  }
+  body #join-us .content-intro {
+    padding: 0px 0;
+  }
+  body #join-us .intro-text {
+    margin-left: 10%;
+    width: 90%;
+    min-height: 200px;
+    line-height: 1.3;
+  }
+  body #join-us .intro-image {
+    width: 100%;
+    height: 100%;
+  }
+  body #join-us .content-work {
+    background-color: #F1F1F1;
+    height: 350px;
+    overflow: hidden;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  body #join-us .content-work-left,
+  body #join-us .content-work-right {
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*overflow: hidden;*/
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  body #join-us .work-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body #join-us .content-recruit {
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  body #join-us .skill {
+    font-size: 22px;
+    line-height: 48px;
+    color: #333333;
+    padding: 0 25px;
+    font-weight: 600;
+  }
+  body #join-us .skill-des {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    padding: 0 25px;
+    display: inline-block;
+  }
+  body #join-us .triangle-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    border-top: 386px solid #F1F1F1;
+    border-left: 80px solid transparent;
+  }
+  body #join-us .work-text {
+    position: absolute;
+    top: 80px;
+    left: 40%;
+    margin-top: -100px;
+    height: 200px;
+    line-height: 1.3;
+  }
+  body #join-us .content-want {
+    padding: 0px 0;
+    margin-top: 0px;
+    padding-bottom: 90px;
+  }
+  body #join-us .want-text {
+    margin-left: 8%;
+    width: 92%;
+    min-height: 200px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+  body #join-us .more-important {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  body #join-us .want-image {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 225px;
+    height: 225px;
+  }
+  body #join-us .attention-ray {
+    width: 100%;
+    text-align: center;
+  }
+  body #join-us .content-get {
+    padding: 50px 0;
+    background-color: #F7F7F7;
+  }
+  body #join-us .width-responsive2 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 170px;
+  }
+  body #join-us .get-image {
+    position: relative;
+    padding: 1px;
+  }
+  body #join-us .display-ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 25px;
+    font-size: 16px;
+    color: #fff;
+  }
+  body #join-us .cozy-environment {
+    margin-top: 30%;
+  }
+  body #join-us .ul-title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  body #join-us .content-welfare h3 {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  body #join-us .content-welfare span {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    display: block;
+  }
+  body #join-us .content-welfare {
+    padding: 10px 0;
+    width: 100%;
+    background: linear-gradient(48deg, #23cebc 0%, #4ecd96 100%);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4ecd96), to(#23cebc));
+    text-align: center;
+  }
+  body #join-us .content-welfare .welfare-import {
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  body #join-us .see-position {
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 18px 18px 18px 18px;
+    font-size: 16px;
+    color: #1a323e;
+    line-height: 36px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  body #join-us .send-resume {
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    background-color: #ffcb05;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 36px;
+    cursor: pointer;
+  }
+  body #join-us .onlineput {
+    line-height: 12.8px;
+    letter-spacing: 1.4px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 700;
+  }
+  body #join-us .welfare-btn {
+    margin-top: 51px;
+  }
+  body #join-us .col-left,
+  body #join-us .col-right {
+    padding: 0;
+  }
+  body #join-us .welware-free {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat 0 0;
+  }
+  body #join-us .welware-environment {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -120px 0;
+  }
+  body #join-us .welware-team {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -240px 0;
+  }
+  body #join-us .welware-money {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -360px 0;
+  }
+  body #join-us .welware-study {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -480px 0;
+  }
+  body #join-us .welware-more {
+    margin: 50px auto 30px auto;
+    width: 120px;
+    height: 120px;
+    background: url(../image/join-us/icon.png) no-repeat -600px 0;
+  }
+  body #join-us .welware-text {
+    width: 100%;
+    text-align: center;
+  }
+  body #join-us .content-family {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../image/join-us/show_bg.png");
+    padding-top: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+  }
+  body #join-us .join-rayvision {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 600px;
+    height: auto;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body #join-us .join-rayvision-h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+  }
+  body #join-us .join-rayvision-p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+  }
+  body #join-us .join-method {
+    position: absolute;
+    bottom: 261px;
+    right: 18.5%;
+    width: 600px;
+  }
+  body #join-us .submit-resume-li {
+    margin-bottom: 20px;
+  }
+  body #join-us .h2-exp.title-h2 {
+    padding-left: 20px;
+  }
+  body #join-us .resume-href {
+    color: #fff;
+  }
+  body #join-us .join-text {
+    width: 100%;
+    height: auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.7;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  body #join-us .join-text-p {
+    margin-bottom: 0;
+  }
+  body #join-us .h-family-rightimg.col-md-7 {
+    padding-left: 30px;
+  }
+  body #join-us .h-family {
+    margin: 0 auto;
+  }
+  body #join-us .h-flow {
+    margin-top: 60px;
+  }
+  body #join-us .h-flow-p {
+    width: 206px;
+    height: 25px;
+    font-size: 24px;
+    color: #f6db59;
+    margin-bottom: 42px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  body #join-us .h-flow img {
+    width: 100%;
+    height: auto;
+  }
+  body #join-us .content-family img {
+    width: 100%;
+    height: auto;
+  }
+  body #about-page .about-develop .develop-content {
+    display: none;
+  }
+  body #about-page .about-develop .develop-content2 {
+    display: block;
+    width: 95%;
+    padding-top: 20px;
+  }
+  body #about-page .about-develop .develop-content2 .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: solid #2dbec3 2px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text {
+    width: 100%;
+    border-left: 2px solid #25b2c5;
+    margin-left: 7px;
+    padding-left: 10px;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+    display: block;
+  }
+  body #about-page .ab-banner img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+  body #about-page .about-intro .container h3 {
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  body #about-page .about-ability .row .abilitycontent img {
+    margin-bottom: 38px;
+    width: 100%;
+  }
+  body #about-page .about-ability .row .abilitycontent h3 {
+    margin-bottom: 22px;
+    line-height: 23.91654px;
+    font-size: 20px;
+    color: #333333;
+  }
+  body #about-page .about-join .container .row span {
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    color: #ffffff;
+    display: none;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 768px) {

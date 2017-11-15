@@ -989,9 +989,8 @@ body {
   .content-welfare{
     padding: 50px 0;
     width: 100%;
-    background-image: linear-gradient(48deg,
-    rgba(35, 206, 188, 1) 0%,
-    rgba(78, 205, 150, 1) 100%);
+    background: linear-gradient(48deg, rgba(35, 206, 188, 1) 0%, rgba(78, 205, 150, 1) 100%);
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from( rgba(78, 205, 150, 1)), to(rgba(35, 206, 188, 1)));
     text-align: center;
   }
   .content-welfare .welfare-import{
@@ -1385,6 +1384,27 @@ body {
         }
       }
     }
+    .develop-content2{
+      display: none;
+      width: 95%;
+      padding-top: 20px;
+      .circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        border: solid #2dbec3 2px;
+      }
+      .develop-text{
+       width: 100%;
+        border-left: 2px solid #25b2c5;
+        margin-left: 7px;
+        padding-left: 10px;
+        .develop-event{
+          display: block;
+        }
+      }
+    }
+
   }
   .about-join{
     width: 100%;
@@ -1983,6 +2003,7 @@ body {
   }
 }
 @media screen and (max-width: 1300px){
+  body{
 #index-page{
   .first{
     .first_center{
@@ -2012,6 +2033,35 @@ body {
 
 
 }
+
+  #about-page {
+    .about-develop {
+      .develop-content{
+        display: none;
+      }
+      .develop-content2 {
+        display: block;
+        width: 95%;
+        padding-top: 20px;
+        .circle {
+          width: 15px;
+          height: 15px;
+          border-radius: 15px;
+          border: solid #2dbec3 2px;
+        }
+        .develop-text {
+          width: 100%;
+          border-left: 2px solid #25b2c5;
+          margin-left: 7px;
+          padding-left: 10px;
+          .develop-event {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  }
 }
 @media screen and (max-width: 800px){
   body {
@@ -2914,22 +2964,534 @@ body {
 
     }
 
-    #join-us {
-      .width-responsive2 {
+    #join-us{
+      /*通用css*/
+      .title-h2{
+        /*width: 250px;*/
+        height: 24px;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        color: #1a323e;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .title-p{
+        /*width: 218px;*/
+        height:30px;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: -0.1px;
+        color: #02a6bc;
+        margin-top: 20px;
+      }
+      .intro-text-p{
+        font-size: 11px;
+        line-height: 20px;
+        color: #666666;
+      }
+      .width-responsive {
         width: 100%;
+        height:350px;
         margin: 0 auto;
       }
-      footer{
+      /*网站banner-中文*/
+      .main-banner{
+        position: relative;
+      }
+      .skill-content{
+        background-color: #ffffff;
+        padding-bottom: 15px;
+        padding-top: 10px;
+      }
+      .banner-content{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(27, 29, 29, .5);
+        text-align: center;
+      }
+      /*后面修改*/
+      .content-div{
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        text-align: left;
+        left: 50%;
+      }
+      .company-btn{
+        width: 200px;
+        height: 36px;
+        background-color: rgba(43, 191, 165, 1);
+        border-radius: 18px 18px 18px 18px;
+        display: block;
+        line-height: 36px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .content-div p{
+        margin-bottom: 0px;
+      }
+      .company-recruit{
+        /*width: 556px;*/
+        height: 57px;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        /*line-height: 83px;*/
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+      .company-recruit-span{
+        font-size: 35px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #0aa890;
+      }
+      .company-recruit-en{
+        /*width: 474px;*/
+        /*height: 34px;*/
+        font-size: 20px;
+        font-stretch: normal;
+        /*line-height: 83.33331px;*/
+        letter-spacing: -0.2px;
+        color: #ffffff;
+        margin-top: -5px;
+      }
+      .company-recruit-des{
+        width: 352px;
+        height: 43px;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
 
+      .recruit-img{
+        width: 100%;
+      }
+      .go-to-see{
+        margin-top: 100px;
+        cursor: pointer;
+      }
+      /*网站banner-end*/
+
+      /*网站主体内容-中文*/
+      /*who are we*/
+      .content-intro{
+        padding: 0px 0;
+      }
+
+      .intro-text{
+        margin-left: 10%;
+        width: 90%;
+        min-height: 200px;
+        line-height: 1.3;
+      }
+
+      .intro-image{
+        width: 100%;
+        height: 100%;
+      }
+      /*who are we-end*/
+
+      /*who we do*/
+      .content-work{
+        background-color: #F1F1F1;
+        height: 350px;
+        overflow: hidden;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+      .content-work-left,
+      .content-work-right{
+        float: left;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        /*overflow: hidden;*/
+        text-align: left;
+        padding-bottom: 10px;
+      }
+
+      .work-image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .content-recruit{
+        margin-bottom: 20px;
+      }
+      .skill{
+        font-size: 22px;
+        line-height: 48px;
+        color: #333333;
+        padding: 0 25px;
+        font-weight: 600;
+      }
+      .skill-des{
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        padding: 0 25px;
+        display: inline-block;
+      }
+      .triangle-div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        border-top: 386px solid #F1F1F1;
+        border-left: 80px solid transparent;
+      }
+      .work-text{
+        position: absolute;
+        top: 80px;
+        left: 40%;
+        margin-top: -100px;
+        height: 200px;
+        line-height: 1.3;
+      }
+
+      /*who we do-end*/
+
+      /*who are want*/
+      .content-want{
+        padding: 0px 0;
+        margin-top: 0px;
+        padding-bottom: 90px;
+      }
+
+      .want-text{
+        margin-left: 8%;
+        width: 92%;
+        min-height: 200px;
+        line-height: 1.3;
+      }
+
+      .more-important{
+        margin-top: 20px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .want-image{
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 225px;
+        height: 225px;
+      }
+
+      .attention-ray{
+        width: 100%;
+        text-align: center;
+      }
+      /*who are want-end*/
+
+      /*what you will get*/
+      .content-get{
+        padding: 50px 0;
+        background-color: #F7F7F7;
+      }
+      .width-responsive2{
+        width: 768px;
+        margin: 0 auto;
+      }
+      .get-image{
+        position: relative;
+        padding: 1px;
+      }
+
+      .display-ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 25px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .cozy-environment {
+        margin-top: 30%;
+      }
+
+      .ul-title{
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .content-welfare h3{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 0px;
+        letter-spacing: 0.4px;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      .content-welfare span{
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+        display: block;
+      }
+      /*what you will get-end*/
+
+      /*来到瑞云这些全都有*/
+      .content-welfare{
+        padding: 50px 0;
+        width: 100%;
+        background-image: linear-gradient(48deg,
+        rgba(35, 206, 188, 1) 0%,
+        rgba(78, 205, 150, 1) 100%);
+        background:-webkit-gradient(linear, 0 0, 0 bottom, from( rgba(78, 205, 150, 1)), to(rgba(35, 206, 188, 1)));
+        text-align: center;
+      }
+      .content-welfare .welfare-import{
+        font-size: 24px;
+        line-height: 48px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      .see-position{
+        display: inline-block;
+        width: 160px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 18px 18px 18px 18px;
+        font-size: 16px;
+        color: #1a323e;
+        line-height: 36px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .send-resume{
+        display: inline-block;
+        width: 160px;
+        height: 36px;
+        background-color: rgba(255, 203, 5, 1);
+        border-radius: 5px;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 36px;
+        cursor: pointer;
+      }
+      .onlineput{
+        line-height: 12.8px;
+        letter-spacing: 1.4px;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 45px;
+        font-weight: 700;
+      }
+      .welfare-btn{
+        margin-top: 51px;
+      }
+      .col-left,
+      .col-right{
+        padding: 0;
+      }
+
+      .welware-free{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat 0 0;
+      }
+
+      .welware-environment{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -120px 0;
+      }
+
+      .welware-team{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -240px 0;
+      }
+
+      .welware-money{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -360px 0;
+      }
+
+      .welware-study{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -480px 0;
+      }
+
+      .welware-more{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -600px 0;
+      }
+
+      .welware-text{
+        width: 100%;
+        text-align: center;
+      }
+      /*来到瑞云这些全都有-end*/
+
+      /*加入瑞云“伐木累”*/
+      .content-family{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        background-image: url("../image/join-us/show_bg.png");
+        padding-top: 5%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 5%;
+      }
+
+      .join-rayvision{
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 600px;
+        height: auto;
+        padding: 10px 30px;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      .join-rayvision-h2{
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .join-rayvision-p{
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .join-method {
+        position: absolute;
+        bottom: 261px;
+        right: 18.5%;
+        width: 600px;
+      }
+
+      .submit-resume-li{
+        display: inline-block;
+        width: 130px;
+        height: 36px;
+        margin: 0 5px;
+        border-radius: 3px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        line-height: 36px;
+        background-color: #2BBFA5;
+      }
+
+      .resume-href {
+        color: #fff;
+      }
+
+      .join-text{
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.7;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      .join-text-p{
+        margin-bottom: 0;
+      }
+
+      .h-family-rightimg.col-md-7{
+        padding-left: 30px;
+      }
+      .h-family{
+        margin: 0 auto;
+      }
+      .h-flow{
+        margin-top: 60px;
+      }
+      .h-flow-p{
+        width: 206px;
+        height: 25px;
+        font-size: 24px;
+        color: #f6db59;
+        margin-bottom: 42px;
+        margin-top: 30px;
+        font-weight: 600;
+      }
+      .h-flow img{
+        width: 100%;
+        height: auto;
+      }
+      .content-family img{
+        width: 100%;
+        height: auto;
       }
     }
-
+    #about-page {
+      .about-develop {
+        .develop-content{
+          display: none;
+        }
+        .develop-content2 {
+          display: block;
+          width: 95%;
+          padding-top: 20px;
+          .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            border: solid #2dbec3 2px;
+          }
+          .develop-text {
+            width: 100%;
+            border-left: 2px solid #25b2c5;
+            margin-left: 7px;
+            padding-left: 10px;
+            .develop-event {
+              display: block;
+            }
+          }
+        }
+      }
+    }
 
   }
 
 }
 @media screen and (max-width: 768px){
   body {
+    .container {
+      width: 100% !important;
+    }
     .page-footer{
       position: absolute;
       bottom: 0px;
@@ -3838,12 +4400,41 @@ body {
     }
 
   }
-
+    #about-page {
+      .about-develop {
+        .develop-content{
+          display: none;
+        }
+        .develop-content2 {
+          display: block;
+          width: 95%;
+          padding-top: 20px;
+          .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            border: solid #2dbec3 2px;
+          }
+          .develop-text {
+            width: 100%;
+            border-left: 2px solid #25b2c5;
+            margin-left: 7px;
+            padding-left: 10px;
+            .develop-event {
+              display: block;
+            }
+          }
+        }
+      }
+    }
 }
 
 }
 @media screen and (max-width: 600px){
   body {
+    .container {
+      width: 100%;
+    }
     .page-footer{
       position: absolute;
       bottom: 0px;
@@ -4313,7 +4904,553 @@ body {
 
 
     }
+    #join-us{
+      /*通用css*/
+      .img-responsive.banner-bg{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 60px;
+      }
+      .title-h2{
+        /*width: 250px;*/
+        height: 24px;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        color: #1a323e;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .title-p{
+        /*width: 218px;*/
+        height:30px;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: -0.1px;
+        color: #02a6bc;
+        margin-top: 20px;
+      }
+      .intro-text-p{
+        font-size: 11px;
+        line-height: 20px;
+        color: #666666;
+      }
+      .width-responsive {
+        width: 100%;
+        height:200px;
+        margin: 0 auto;
+      }
+      /*网站banner-中文*/
+      .main-banner{
+        position: relative;
+      }
+      .skill-content{
+        background-color: #ffffff;
+        padding-bottom: 15px;
+        padding-top: 10px;
+      }
+      .banner-content{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(27, 29, 29, .5);
+        text-align: center;
+      }
+      /*后面修改*/
+      .content-div{
+        position: absolute;
+        top: 1%;
+        width: 90%;
+        text-align: left;
+        left: 10%;
+      }
+      .company-btn{
+        width: 200px;
+        height: 36px;
+        background-color: rgba(43, 191, 165, 1);
+        border-radius: 18px 18px 18px 18px;
+        display: block;
+        line-height: 36px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 30px;
+        cursor: pointer;
+        display: none;
+      }
+      .content-div p{
+        margin-bottom: 0px;
+      }
+      .company-recruit{
+        /*width: 556px;*/
+        height: 57px;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        /*line-height: 83px;*/
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+      .company-recruit-span{
+        font-size: 35px;
+        font-weight: normal;
+        letter-spacing: 0px;
+        color: #0aa890;
+      }
+      .company-recruit-en{
+        /*width: 474px;*/
+        /*height: 34px;*/
+        font-size: 20px;
+        font-stretch: normal;
+        /*line-height: 83.33331px;*/
+        letter-spacing: -0.2px;
+        color: #ffffff;
+        margin-top: -5px;
+      }
+      .company-recruit-des{
+        width: 352px;
+        height: 43px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
 
+      .recruit-img{
+        width: 100%;
+      }
+      .go-to-see{
+        margin-top: 100px;
+        cursor: pointer;
+      }
+      /*网站banner-end*/
 
+      /*网站主体内容-中文*/
+      /*who are we*/
+      .content-intro{
+        padding: 0px 0;
+      }
+
+      .intro-text{
+        margin-left: 10%;
+        width: 90%;
+        min-height: 200px;
+        line-height: 1.3;
+      }
+
+      .intro-image{
+        width: 100%;
+        height: 100%;
+      }
+      /*who are we-end*/
+
+      /*who we do*/
+      .content-work{
+        background-color: #F1F1F1;
+        height: 350px;
+        overflow: hidden;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+      .content-work-left,
+      .content-work-right{
+        float: left;
+        position: relative;
+        width: 50%;
+        height: 100%;
+        /*overflow: hidden;*/
+        text-align: left;
+        padding-bottom: 10px;
+      }
+
+      .work-image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .content-recruit{
+        margin-bottom: 20px;
+        margin-top: 30px;
+      }
+      .skill{
+        font-size: 22px;
+        line-height: 48px;
+        color: #333333;
+        padding: 0 25px;
+        font-weight: 600;
+      }
+      .skill-des{
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        padding: 0 25px;
+        display: inline-block;
+      }
+      .triangle-div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        border-top: 386px solid #F1F1F1;
+        border-left: 80px solid transparent;
+      }
+      .work-text{
+        position: absolute;
+        top: 80px;
+        left: 40%;
+        margin-top: -100px;
+        height: 200px;
+        line-height: 1.3;
+      }
+
+      /*who we do-end*/
+
+      /*who are want*/
+      .content-want{
+        padding: 0px 0;
+        margin-top: 0px;
+        padding-bottom: 90px;
+      }
+
+      .want-text{
+        margin-left: 8%;
+        width: 92%;
+        min-height: 200px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+      }
+
+      .more-important{
+        margin-top: 20px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .want-image{
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 225px;
+        height: 225px;
+      }
+
+      .attention-ray{
+        width: 100%;
+        text-align: center;
+      }
+      /*who are want-end*/
+
+      /*what you will get*/
+      .content-get{
+        padding: 50px 0;
+        background-color: #F7F7F7;
+      }
+      .width-responsive2{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 170px;
+      }
+      .get-image{
+        position: relative;
+        padding: 1px;
+      }
+
+      .display-ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px 25px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .cozy-environment {
+        margin-top: 30%;
+      }
+
+      .ul-title{
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .content-welfare h3{
+        font-size: 20px;
+        line-height: 35px;
+        margin-bottom: 30px;
+      }
+      .content-welfare span{
+        font-size: 14px;
+        line-height: 21px;
+        color: #ffffff;
+        display: block;
+      }
+      /*what you will get-end*/
+
+      /*来到瑞云这些全都有*/
+      .content-welfare{
+        padding: 10px 0;
+        width: 100%;
+        background: linear-gradient(48deg, rgba(35, 206, 188, 1) 0%, rgba(78, 205, 150, 1) 100%);
+        background:-webkit-gradient(linear, 0 0, 0 bottom, from( rgba(78, 205, 150, 1)), to(rgba(35, 206, 188, 1)));
+        text-align: center;
+      }
+      .content-welfare .welfare-import{
+        font-size: 24px;
+        line-height: 38px;
+        font-weight: 600;
+        margin-bottom: 0px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      .see-position{
+        display: inline-block;
+        width: 160px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 18px 18px 18px 18px;
+        font-size: 16px;
+        color: #1a323e;
+        line-height: 36px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .send-resume{
+        display: inline-block;
+        width: 160px;
+        height: 36px;
+        background-color: rgba(255, 203, 5, 1);
+        border-radius: 5px;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 36px;
+        cursor: pointer;
+      }
+      .onlineput{
+        line-height: 12.8px;
+        letter-spacing: 1.4px;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 45px;
+        font-weight: 700;
+      }
+      .welfare-btn{
+        margin-top: 51px;
+      }
+      .col-left,
+      .col-right{
+        padding: 0;
+      }
+
+      .welware-free{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat 0 0;
+      }
+
+      .welware-environment{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -120px 0;
+      }
+
+      .welware-team{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -240px 0;
+      }
+
+      .welware-money{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -360px 0;
+      }
+
+      .welware-study{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -480px 0;
+      }
+
+      .welware-more{
+        margin: 50px auto 30px auto;
+        width: 120px;
+        height: 120px;
+        background: url(../image/join-us/icon.png) no-repeat -600px 0;
+      }
+
+      .welware-text{
+        width: 100%;
+        text-align: center;
+      }
+      /*来到瑞云这些全都有-end*/
+
+      /*加入瑞云“伐木累”*/
+      .content-family{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        background-image: url("../image/join-us/show_bg.png");
+        padding-top: 5%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 5%;
+      }
+
+      .join-rayvision{
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 600px;
+        height: auto;
+        padding: 10px 30px;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      .join-rayvision-h2{
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      .join-rayvision-p{
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .join-method {
+        position: absolute;
+        bottom: 261px;
+        right: 18.5%;
+        width: 600px;
+      }
+
+      .submit-resume-li{
+   margin-bottom: 20px;
+      }
+      .h2-exp.title-h2{
+        padding-left: 20px;
+      }
+      .resume-href {
+        color: #fff;
+      }
+
+      .join-text{
+        width: 100%;
+        height: auto;
+        padding: 10px 30px;
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.7;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      .join-text-p{
+        margin-bottom: 0;
+      }
+
+      .h-family-rightimg.col-md-7{
+        padding-left: 30px;
+      }
+      .h-family{
+        margin: 0 auto;
+      }
+      .h-flow{
+        margin-top: 60px;
+      }
+      .h-flow-p{
+        width: 206px;
+        height: 25px;
+        font-size: 24px;
+        color: #f6db59;
+        margin-bottom: 42px;
+        margin-top: 30px;
+        font-weight: 600;
+      }
+      .h-flow img{
+        width: 100%;
+        height: auto;
+      }
+      .content-family img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    #about-page {
+      .about-develop {
+        .develop-content{
+          display: none;
+        }
+        .develop-content2 {
+          display: block;
+          width: 95%;
+          padding-top: 20px;
+          .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            border: solid #2dbec3 2px;
+          }
+          .develop-text {
+            width: 100%;
+            border-left: 2px solid #25b2c5;
+            margin-left: 7px;
+            padding-left: 10px;
+            .develop-event {
+              display: block;
+            }
+          }
+        }
+      }
+      .ab-banner img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 60px;
+      }
+      .about-intro .container h3 {
+        font-size: 30px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 35px;
+        margin-bottom: 35px;
+      }
+      .about-ability .row .abilitycontent img {
+        margin-bottom: 38px;
+        width: 100%;
+      }
+      .about-ability .row .abilitycontent h3 {
+        margin-bottom: 22px;
+        line-height: 23.91654px;
+        font-size: 20px;
+        color: #333333;
+      }
+      .about-join .container .row span {
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+        color: #ffffff;
+        display: none;
+      }
+    }
   }
 }
