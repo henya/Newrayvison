@@ -3,6 +3,12 @@ body {
     margin: 0px;
     padding: 0px;
   }
+  .more-text{
+    display: inline-block;
+  }
+  .hide-english{
+    display: none;
+  }
   .scrolledDown{
     background-color: rgba(0, 0, 0, 0.6)!important;
     transition: background-color .5s;
@@ -167,9 +173,11 @@ body {
   }
 }
   footer {
-   width: 100%;
+    width: 100%;
     background-color: rgba(27, 27, 37, 1);
     padding-top: 70px;
+    margin: 0 auto;
+    margin-top: 100px;
     .foot{
       position: relative;
       .font-talk{
@@ -242,10 +250,14 @@ body {
     }
   }
   .page-footer{
-    position: absolute;
-    bottom: -150px;
+    width: 1200px;
     opacity: 0;
-    transition: all 1.5s;
+    transition:  all 1.5s;
+    -moz-transition:  all 1.5s; /* Firefox 4 */
+    -webkit-transition:  all 1.5s; /* Safari 和 Chrome */
+    -o-transition:  all 1.5s; /* Opera */
+    margin: 0 auto;
+    margin-bottom: -150px;
     footer {
       width: 100%;
       background-color: rgba(27, 27, 37, 0);
@@ -390,6 +402,39 @@ body {
     75%  {bottom: 40px}
     100% {bottom: 45px}
   }
+  @-webkit-keyframes page_arr
+  {
+    0%   {bottom: 45px}
+    25%  {bottom: 50px}
+    50%  {bottom: 45px}
+    75%  {bottom: 40px}
+    100% {bottom: 45px}
+  }
+
+  @-webkit-keyframes spin {
+    0%   {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0%   {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
   .first{
     position: absolute;
     top: 17.6%;
@@ -406,6 +451,16 @@ body {
       z-index: 9999;
       text-align: center;
       margin: 0 auto;
+      -webkit-animation: spin 10s linear infinite;
+      animation: spin 10s linear infinite;
+    }
+    .first_center_text{
+      width: 522px;
+      height: 523px;
+      z-index: 9999;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: -423px;
       p{
         font-size: 18px;
         line-height: 30px;
@@ -433,7 +488,10 @@ body {
     #second{
       margin-top: 300px;
       opacity: 0;
-      transition: all 1.5s;
+      transition:  all 1.5s;
+      -moz-transition:  all 1.5s; /* Firefox 4 */
+      -webkit-transition:  all 1.5s; /* Safari 和 Chrome */
+      -o-transition:  all 1.5s; /* Opera */
     }
     .second_text{
       width: 600px;
@@ -606,7 +664,10 @@ body {
     #three {
       margin-top: 300px;
       opacity: 0;
-      transition: all 1.5s;
+      transition:  all 1.5s;
+      -moz-transition:  all 1.5s; /* Firefox 4 */
+      -webkit-transition:  all 1.5s; /* Safari 和 Chrome */
+      -o-transition:  all 1.5s; /* Opera */
       .three_text {
         width: 600px;
         float: left;
@@ -650,7 +711,10 @@ body {
     #four-text {
       margin-top: 300px;
       opacity: 0;
-      transition: all 1.5s;
+      transition:  all 1.5s;
+      -moz-transition:  all 1.5s; /* Firefox 4 */
+      -webkit-transition:  all 1.5s; /* Safari 和 Chrome */
+      -o-transition:  all 1.5s; /* Opera */
       .four_text {
         text-align: center;
         img {
@@ -1198,8 +1262,9 @@ body {
   }
   .about-intro{
     background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-bottom: 40px;
-   .container{
        h3{
        font-size: 36px;
        line-height: 30px;
@@ -1215,7 +1280,7 @@ body {
        margin-bottom: 25px;
        color: #666666;
      }
-   }
+
   }
   .about-aptitude{
     width: 100%;
@@ -1450,6 +1515,8 @@ body {
   }
   .about-ability{
     padding-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin-bottom: 65px;
     h2{
       text-align: center;
@@ -1910,6 +1977,7 @@ body {
         bottom: 0px;
         opacity: 1;
         transition: all 1.5s;
+        margin-bottom: 0px;
       }
       .case-common-text:before{
         content: '';
@@ -2004,10 +2072,101 @@ body {
 }
 @media screen and (max-width: 1300px){
   body{
-#index-page{
+    .page-footer{
+      position: absolute;
+      bottom: 0px;
+      opacity: 1;
+      width: 100%;
+      transition: all 1.5s;
+      footer {
+        width: 100%;
+        background-color: rgba(27, 27, 37, 0);
+        padding-top: 70px;
+        .foot{
+          position: relative;
+          .font-talk{
+            padding: 0px !important;
+            .wechatq{
+              position: absolute;
+              top: -175%;
+              left: -22%;
+              display: none;
+            }
+          }
+          .wechat {
+            background-image: url("../img/common/wechat.png");
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-bottom: 30px;
+          }
+          .weibo{
+            background-image: url("../img/common/weibo.png");
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-bottom: 30px;
+          }
+          .facebook{
+            background-image: url("../img/common/facebook.png");
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-bottom: 30px;
+          }
+          .linkedin{
+            background-image: url("../img/common/linkedin.png");
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-bottom: 30px;
+          }
+          .bottom-link{
+            margin-bottom: 25px;
+            ul{
+              width: 100%;
+              li{
+                float: left;
+                list-style: none;
+                line-height: 30px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                font-size: 16px;
+                width: 20%;
+                text-align: center;
+                .link-line{
+                  display: inline-block;
+                  width: 1px;
+                  height: 17px;
+                  background-color: #ffffff;
+                  float: right;
+                  margin-top: 8px;
+                }
+              }
+            }
+          }
+          .recording{
+            letter-spacing: 0px;
+            color: #999999;
+            font-size: 12px;
+            text-align: center;
+            margin-bottom:20px;
+          }
+        }
+      }
+    }
+    .more-text{
+      display: none;
+    }
+    .hide-english{
+      display: none;
+    }
+    #dituContent{
+      width: 450px !important;
+    }
+   #index-page{
   .first{
     .first_center{
-      margin-left: 0%!important;
     }
   }
   .second{
@@ -2033,7 +2192,6 @@ body {
 
 
 }
-
   #about-page {
     .about-develop {
       .develop-content{
@@ -2065,8 +2223,22 @@ body {
 }
 @media screen and (max-width: 800px){
   body {
+    //修修补补的
+    #dituContent{
+      width: 450px !important;
+    }
     .container{
       width: 768px;
+    }
+    .more-text{
+      display: none;
+    }
+    .hide-english{
+      display: block;
+    }
+    .header .head #about-navbar {
+      margin-left: 22%;
+      display: none;
     }
     #index-page {
       #container {
@@ -2181,6 +2353,8 @@ body {
           z-index: 9999;
           margin-left: 25%;
           text-align: center;
+        }
+        .first_center_text {
           p {
             font-size: 18px;
             line-height: 30px;
@@ -3489,6 +3663,18 @@ body {
 }
 @media screen and (max-width: 768px){
   body {
+    .more-text{
+      display: none;
+    }
+    .hide-english{
+      display: block;
+    }
+    footer {
+      width: 100%;
+    }
+    #dituContent{
+      width: 450px !important;
+    }
     .container {
       width: 100% !important;
     }
@@ -3496,6 +3682,7 @@ body {
       position: absolute;
       bottom: 0px;
       opacity: 1;
+      width: 100%;
       transition: all 1.5s;
       footer {
         width: 100%;
@@ -3668,7 +3855,8 @@ body {
         background-image: url("../img/index/line.png");
         background-size: cover;
         z-index: 9999;
-        margin-left: 25%;
+        margin-left: 0%;
+        margin:  0 auto !important;
         text-align: center;
         p{
           font-size: 18px;
@@ -4401,6 +4589,9 @@ body {
 
   }
     #about-page {
+      .container{
+        width: 100%!important;
+      }
       .about-develop {
         .develop-content{
           display: none;
@@ -4432,6 +4623,15 @@ body {
 }
 @media screen and (max-width: 600px){
   body {
+    .more-text{
+      display: none;
+    }
+    .hide-english{
+      display: block;
+    }
+    #dituContent{
+      width: 300px !important;
+    }
     .container {
       width: 100%;
     }
@@ -4530,6 +4730,10 @@ body {
       .En_btn{
         display: none;
       }
+      .nav_li .btn_nav{
+        width: 110px;
+        left: 20%;
+      }
     }
     #index-page{
       #container {
@@ -4613,6 +4817,16 @@ body {
           z-index: 9999;
           text-align: center;
           padding-top: 70px;
+          -webkit-animation: none;
+          animation:none;
+        }
+        .first_center_text{
+          width: auto;
+          height: 523px;
+          z-index: 9999;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: -440px;
           p{
             font-size: 10px;
             line-height: 14px;
@@ -5140,9 +5354,9 @@ body {
 
       .want-image{
         margin: 0 auto;
-        margin-top: 80px;
-        width: 225px;
-        height: 225px;
+        margin-top: 0px;
+        width: 175px;
+        height: 175px;
       }
 
       .attention-ray{
@@ -5425,7 +5639,11 @@ body {
         height: auto;
         margin-top: 60px;
       }
-      .about-intro .container h3 {
+      .about-intro{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .about-intro  h3 {
         font-size: 30px;
         line-height: 20px;
         text-align: center;
@@ -5450,6 +5668,24 @@ body {
         margin-top: 25px;
         color: #ffffff;
         display: none;
+      }
+      .about-join .container .row h3 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+      .about-join .container .row .more-btn {
+        display: block;
+        width: 100px;
+        height: 30px;
+        border-radius: 16px 20px 20px 20px;
+        border: solid 1px #ffffff;
+        text-align: center;
+        font-size: 15px;
+        line-height: 28px;
+        color: #ffffff;
+        margin-top: 20px;
       }
     }
   }

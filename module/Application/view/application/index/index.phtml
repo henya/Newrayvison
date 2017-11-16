@@ -10,7 +10,8 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
             <article class="slide" id="rayvision">
                 <div class="container" style="width: 1200px;  height: 100%; margin: 0 auto;">
                 <div class="first">
-                        <div class="first_center" data-scroll-reveal>
+                        <div class="first_center" data-scroll-reveal> </div>
+                    <div class="first_center_text" data-scroll-reveal>
                             <p>
                                 THE MOST USER-FRIENDLY VISUAL<br/>
                                 CLOUD COMPUTING PLATFORM
@@ -52,12 +53,12 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                     <li class="second_one">
                         <a class="second_img1"></a>
                         <div class="second_img1_info">
-                            <p>荣获第86届奥斯卡最佳动画短片</p>
+                            <p>创下近十亿的国产动画票房神话</p>
                         </div>
                     </li>
                     <li class="second_two"><a class="second_img2"></a>
                         <div class="second_img2_info">
-                            <p>荣获第86届奥斯卡最佳动画短片</p>
+                            <p>刷新中国电影票房新纪录</p>
                         </div>
                     </li>
                     <li class="second_three"><a class="second_img3"></a>
@@ -99,9 +100,9 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                       <div class="col-md-3 col-sm-12 col-xs-12">&nbsp;</div>
                   </div>
 
-                  <div class="page-footer" style="line-height: 0px">
+                  <div class="page-footer" style="line-height: 0px;margin: 0 auto">
                       <footer>
-                          <div class="container foot">
+                          <div class="foot">
                               <div class="row">
                                   <div class="col-md-3 col-sm-3 col-xs-12"></div>
                                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -161,20 +162,15 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
     });
     window.scrollReveal = new scrollReveal();
 
-//    自动载入动画出现事件
-//    var selectedParent2 = $("#selected2").parent();
-//    if(selectedParent2.hasClass("selected")){
-//        $("#second").css({"margin-top":"0px","opacity":"1"})
-//    }
-
 
 //    鼠标滚动动画出现事件
-$("#dowebok").mousewheel(function () {
-    var selectedParent1 = $("#selected1").parent();
-    var selectedParent2 = $("#selected2").parent();
-    var selectedParent3 = $("#selected3").parent();
-    var selectedParent4 = $("#selected4").parent();
-    if(selectedParent1.hasClass("selected")){
+    $('#dowebok').mousewheel(function(event, delta) {
+        var selectedParent1 = $("#selected1").parent();
+        var selectedParent2 = $("#selected2").parent();
+        var selectedParent3 = $("#selected3").parent();
+        var selectedParent4 = $("#selected4").parent();
+       if(delta === -1){
+           if(selectedParent1.hasClass("selected")){
      $("#second").css({"margin-top":"0px","opacity":"1"})
     }
     if(selectedParent2.hasClass("selected")){
@@ -184,24 +180,48 @@ $("#dowebok").mousewheel(function () {
         $("#four-text").css({"margin-top":"0px","opacity":"1"})
         $(".page-footer").css({"bottom":"0px","opacity":"1"})
     }
-})
+       }
+       if(delta === 1){
+           if(selectedParent3.hasClass("selected")){
+               $("#second").css({"margin-top":"0px","opacity":"1"})
+           }
+           if(selectedParent4.hasClass("selected")){
+               $("#three").css({"margin-top":"0px","opacity":"1"})
+           }
+       }
 
+
+    });
 // 键盘上下事件
-    $(document).on('keyup',function () {
+    $(document).on('keyup',function (e) {
+      var keyCode = e.keyCode;
+      console.log(keyCode);
         var selectedParent1 = $("#selected1").parent();
         var selectedParent2 = $("#selected2").parent();
         var selectedParent3 = $("#selected3").parent();
         var selectedParent4 = $("#selected4").parent();
-        if(selectedParent1.hasClass("selected")){
-            $("#second").css({"margin-top":"0px","opacity":"1"})
-        }
-        if(selectedParent2.hasClass("selected")){
-            $("#three").css({"margin-top":"0px","opacity":"1"})
-        }
-        if(selectedParent3.hasClass("selected")){
-            $("#four-text").css({"margin-top":"0px","opacity":"1"})
-            $(".page-footer").css({"bottom":"0px","opacity":"1"})
-        }
+      if(keyCode === 40) {
+          if (selectedParent1.hasClass("selected")) {
+              $("#second").css({"margin-top": "0px", "opacity": "1"})
+          }
+          if (selectedParent2.hasClass("selected")) {
+              $("#three").css({"margin-top": "0px", "opacity": "1"})
+          }
+          if (selectedParent3.hasClass("selected")) {
+              $("#four-text").css({"margin-top": "0px", "opacity": "1"})
+              $(".page-footer").css({"margin-bottom": "0px", "opacity": "1"})
+          }
+      }
+      if(keyCode === 38) {
+          if (selectedParent3.hasClass("selected")) {
+              $("#second").css({"margin-top": "0px", "opacity": "1"})
+          }
+          if (selectedParent4.hasClass("selected")) {
+              $("#three").css({"margin-top": "0px", "opacity": "1"})
+          }
+      }
+
+
     });
 
 

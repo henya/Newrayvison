@@ -5573,6 +5573,12 @@ body * {
   margin: 0px;
   padding: 0px;
 }
+body .more-text {
+  display: inline-block;
+}
+body .hide-english {
+  display: none;
+}
 body .scrolledDown {
   background-color: rgba(0, 0, 0, 0.6) !important;
   transition: background-color 0.5s;
@@ -5732,6 +5738,8 @@ body footer {
   width: 100%;
   background-color: #1b1b25;
   padding-top: 70px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 body footer .foot {
   position: relative;
@@ -5802,10 +5810,17 @@ body footer .foot .recording {
   margin-bottom: 30px;
 }
 body .page-footer {
-  position: absolute;
-  bottom: -150px;
+  width: 1200px;
   opacity: 0;
   transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 1.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 1.5s;
+  /* Opera */
+  margin: 0 auto;
+  margin-bottom: -150px;
 }
 body .page-footer footer {
   width: 100%;
@@ -5954,6 +5969,47 @@ body #index-page .ic_pagearr {
     bottom: 45px;
   }
 }
+@-webkit-keyframes page_arr {
+  0% {
+    bottom: 45px;
+  }
+  25% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 45px;
+  }
+  75% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 45px;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 body #index-page .first {
   position: absolute;
   top: 17.6%;
@@ -5971,24 +6027,34 @@ body #index-page .first .first_center {
   z-index: 9999;
   text-align: center;
   margin: 0 auto;
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
 }
-body #index-page .first .first_center p {
+body #index-page .first .first_center_text {
+  width: 522px;
+  height: 523px;
+  z-index: 9999;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -423px;
+}
+body #index-page .first .first_center_text p {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0px;
   color: #ffffff;
   margin-bottom: 10px;
 }
-body #index-page .first .first_center h3 {
+body #index-page .first .first_center_text h3 {
   font-size: 58px;
   font-weight: 800;
 }
-body #index-page .first .first_center h3 span {
+body #index-page .first .first_center_text h3 span {
   font-size: 60px;
   font-weight: 800;
   color: #2bbfa5;
 }
-body #index-page .first .first_center .first_text {
+body #index-page .first .first_center_text .first_text {
   margin-top: 35px;
   display: block;
 }
@@ -5999,6 +6065,12 @@ body #index-page .second #second {
   margin-top: 300px;
   opacity: 0;
   transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 1.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 1.5s;
+  /* Opera */
 }
 body #index-page .second .second_text {
   width: 600px;
@@ -6174,6 +6246,12 @@ body #index-page .three #three {
   margin-top: 300px;
   opacity: 0;
   transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 1.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 1.5s;
+  /* Opera */
 }
 body #index-page .three #three .three_text {
   width: 600px;
@@ -6217,6 +6295,12 @@ body #index-page .four #four-text {
   margin-top: 300px;
   opacity: 0;
   transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  /* Firefox 4 */
+  -webkit-transition: all 1.5s;
+  /* Safari 和 Chrome */
+  -o-transition: all 1.5s;
+  /* Opera */
 }
 body #index-page .four #four-text .four_text {
   text-align: center;
@@ -6720,9 +6804,11 @@ body #about-page .ab-banner img {
 }
 body #about-page .about-intro {
   background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
-body #about-page .about-intro .container h3 {
+body #about-page .about-intro h3 {
   font-size: 36px;
   line-height: 30px;
   text-align: center;
@@ -6730,7 +6816,7 @@ body #about-page .about-intro .container h3 {
   margin-top: 60px;
   margin-bottom: 35px;
 }
-body #about-page .about-intro .container span {
+body #about-page .about-intro span {
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
@@ -6966,6 +7052,8 @@ body #about-page .about-join .container .row .more-btn {
 }
 body #about-page .about-ability {
   padding-top: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 65px;
 }
 body #about-page .about-ability h2 {
@@ -7422,6 +7510,7 @@ body #case-page .case-five .page-footer {
   bottom: 0px;
   opacity: 1;
   transition: all 1.5s;
+  margin-bottom: 0px;
 }
 body #case-page .case-five .case-common-text:before {
   content: '';
@@ -7520,8 +7609,97 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 1300px) {
-  body #index-page .first .first_center {
-    margin-left: 0%!important;
+  body .page-footer {
+    position: absolute;
+    bottom: 0px;
+    opacity: 1;
+    width: 100%;
+    transition: all 1.5s;
+  }
+  body .page-footer footer {
+    width: 100%;
+    background-color: rgba(27, 27, 37, 0);
+    padding-top: 70px;
+  }
+  body .page-footer footer .foot {
+    position: relative;
+  }
+  body .page-footer footer .foot .font-talk {
+    padding: 0px !important;
+  }
+  body .page-footer footer .foot .font-talk .wechatq {
+    position: absolute;
+    top: -175%;
+    left: -22%;
+    display: none;
+  }
+  body .page-footer footer .foot .wechat {
+    background-image: url("../img/common/wechat.png");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  body .page-footer footer .foot .weibo {
+    background-image: url("../img/common/weibo.png");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  body .page-footer footer .foot .facebook {
+    background-image: url("../img/common/facebook.png");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  body .page-footer footer .foot .linkedin {
+    background-image: url("../img/common/linkedin.png");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  body .page-footer footer .foot .bottom-link {
+    margin-bottom: 25px;
+  }
+  body .page-footer footer .foot .bottom-link ul {
+    width: 100%;
+  }
+  body .page-footer footer .foot .bottom-link ul li {
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 16px;
+    width: 20%;
+    text-align: center;
+  }
+  body .page-footer footer .foot .bottom-link ul li .link-line {
+    display: inline-block;
+    width: 1px;
+    height: 17px;
+    background-color: #ffffff;
+    float: right;
+    margin-top: 8px;
+  }
+  body .page-footer footer .foot .recording {
+    letter-spacing: 0px;
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  body .more-text {
+    display: none;
+  }
+  body .hide-english {
+    display: none;
+  }
+  body #dituContent {
+    width: 450px !important;
   }
   body #index-page .second .second_text {
     width: 600px;
@@ -7561,8 +7739,21 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 800px) {
+  body #dituContent {
+    width: 450px !important;
+  }
   body .container {
     width: 768px;
+  }
+  body .more-text {
+    display: none;
+  }
+  body .hide-english {
+    display: block;
+  }
+  body .header .head #about-navbar {
+    margin-left: 22%;
+    display: none;
   }
   body #index-page #container {
     overflow: hidden;
@@ -7665,23 +7856,23 @@ body #case-page .case-five .case-common-text .img-down {
     margin-left: 25%;
     text-align: center;
   }
-  body #index-page .first .first_center p {
+  body #index-page .first .first_center_text p {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0px;
     color: #ffffff;
     margin-bottom: 10px;
   }
-  body #index-page .first .first_center h3 {
+  body #index-page .first .first_center_text h3 {
     font-size: 60px;
     font-weight: 800;
   }
-  body #index-page .first .first_center h3 span {
+  body #index-page .first .first_center_text h3 span {
     font-size: 60px;
     font-weight: 800;
     color: #2bbfa5;
   }
-  body #index-page .first .first_center .first_text {
+  body #index-page .first .first_center_text .first_text {
     margin-top: 35px;
     display: block;
   }
@@ -8890,6 +9081,18 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 768px) {
+  body .more-text {
+    display: none;
+  }
+  body .hide-english {
+    display: block;
+  }
+  body footer {
+    width: 100%;
+  }
+  body #dituContent {
+    width: 450px !important;
+  }
   body .container {
     width: 100% !important;
   }
@@ -8897,6 +9100,7 @@ body #case-page .case-five .case-common-text .img-down {
     position: absolute;
     bottom: 0px;
     opacity: 1;
+    width: 100%;
     transition: all 1.5s;
   }
   body .page-footer footer {
@@ -9072,7 +9276,8 @@ body #case-page .case-five .case-common-text .img-down {
     background-image: url("../img/index/line.png");
     background-size: cover;
     z-index: 9999;
-    margin-left: 25%;
+    margin-left: 0%;
+    margin: 0 auto !important;
     text-align: center;
   }
   body #index-page .first .first_center p {
@@ -9785,6 +9990,9 @@ body #case-page .case-five .case-common-text .img-down {
     animation: none;
     -webkit-animation: none;
   }
+  body #about-page .container {
+    width: 100%!important;
+  }
   body #about-page .about-develop .develop-content {
     display: none;
   }
@@ -9815,6 +10023,15 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 600px) {
+  body .more-text {
+    display: none;
+  }
+  body .hide-english {
+    display: block;
+  }
+  body #dituContent {
+    width: 300px !important;
+  }
   body .container {
     width: 100%;
   }
@@ -9913,6 +10130,10 @@ body #case-page .case-five .case-common-text .img-down {
   body .header .head .nav_list .En_btn {
     display: none;
   }
+  body .header .head .nav_list .nav_li .btn_nav {
+    width: 110px;
+    left: 20%;
+  }
   body #index-page #container {
     overflow: hidden;
     position: absolute;
@@ -9998,24 +10219,34 @@ body #case-page .case-five .case-common-text .img-down {
     z-index: 9999;
     text-align: center;
     padding-top: 70px;
+    -webkit-animation: none;
+    animation: none;
   }
-  body #index-page .first .first_center p {
+  body #index-page .first .first_center_text {
+    width: auto;
+    height: 523px;
+    z-index: 9999;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -440px;
+  }
+  body #index-page .first .first_center_text p {
     font-size: 10px;
     line-height: 14px;
     letter-spacing: 0px;
     color: #ffffff;
     margin-bottom: 10px;
   }
-  body #index-page .first .first_center h3 {
+  body #index-page .first .first_center_text h3 {
     font-size: 30px;
     font-weight: 800;
   }
-  body #index-page .first .first_center h3 span {
+  body #index-page .first .first_center_text h3 span {
     font-size: 40px;
     font-weight: 800;
     color: #2bbfa5;
   }
-  body #index-page .first .first_center .first_text {
+  body #index-page .first .first_center_text .first_text {
     margin-top: 20px;
     display: block;
   }
@@ -10514,9 +10745,9 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #join-us .want-image {
     margin: 0 auto;
-    margin-top: 80px;
-    width: 225px;
-    height: 225px;
+    margin-top: 0px;
+    width: 175px;
+    height: 175px;
   }
   body #join-us .attention-ray {
     width: 100%;
@@ -10766,7 +10997,11 @@ body #case-page .case-five .case-common-text .img-down {
     height: auto;
     margin-top: 60px;
   }
-  body #about-page .about-intro .container h3 {
+  body #about-page .about-intro {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  body #about-page .about-intro h3 {
     font-size: 30px;
     line-height: 20px;
     text-align: center;
@@ -10791,6 +11026,24 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 25px;
     color: #ffffff;
     display: none;
+  }
+  body #about-page .about-join .container .row h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  body #about-page .about-join .container .row .more-btn {
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 16px 20px 20px 20px;
+    border: solid 1px #ffffff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 768px) {

@@ -229,7 +229,18 @@ var ddfullscreenslider = (function($){
 				var $navli = $('<li><a href="' + anchorval +'"  id='+"selected" +(i + 1) +'   title="' + title +'">' +"0"+ (i + 1) + ' </a></li>').appendTo($nav)
 				var $navlink = $navli.find('a:eq(0)')
 				$navli.on('click touchstart', function(e){
-					thisslider.slideTo(i)
+					thisslider.slideTo(i);
+					//下面为点击按钮的点击事件
+					if(i === 1){
+                        $("#second").css({"margin-top":"0px","opacity":"1"});
+					}
+                    if(i === 2){
+                        $("#three").css({"margin-top":"0px","opacity":"1"});
+                    }
+                    if(i === 3){
+                        $("#four-text").css({"margin-top":"0px","opacity":"1"})
+                        $(".page-footer").css({"margin-bottom":"0px","opacity":"1"})
+                    }
 				})
 			})
 			$nav.on('click touchstart touchend', function(e){
