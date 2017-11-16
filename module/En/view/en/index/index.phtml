@@ -1,0 +1,239 @@
+<?php
+$this->headScript()->prependFile($this->basePath('js/pages/index/scrollReveal.min.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/jquery.mousewheel.min.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/jquery.slimscroll.min.js'));
+$this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreenslider.js'));
+?>
+<div class="main-container" id="index-page" >
+    <section id="dowebok" class="dd_fullscreenslider">
+        <div class="slidewrapper">
+            <article class="slide" id="rayvision">
+                <div class="container" style="width: 1200px;  height: 100%; margin: 0 auto;">
+                <div class="first">
+                        <div class="first_center" data-scroll-reveal> </div>
+                    <div class="first_center_text" data-scroll-reveal>
+                            <p>THE MOST USER-FRIENDLY</p>
+                            <h3>VISUAL CLOUD</h3>
+                           <p>COMPUTING PLATFORM</p>
+                            <span class="first_text">options For More than 85% CG studios </span>
+                        </div>
+                </div>
+                </div>
+                    <div id="container">
+                        <video id="background_video" loop muted></video>
+                        <div id="video_cover"></div>
+                        <div id="overlay"></div>
+                        <div id="video_controls">
+                                      <span id="play">
+                <!--                        <img src="play.png">-->
+                                      </span>
+                            <span id="pause">
+                <!--                        <img src="pause.png">-->
+                                      </span>
+                        </div>
+
+                    </div>
+                <a href="javascript:;" class="ic_pagearr"></a>
+            </article>
+
+            <article class="slide second" id="rayvision2">
+          <div class="container" id="second">
+                  <div class="second_text" >
+                      <img src="<?php echo $this->basePath('img/index/Renderfarm.png')?>">
+             <h3>YOUR POWERFUL RENDER FARM</h3>
+              <p>24 Hours Support  |  OSCAR Service Team  |  Massive Render Nodes  |  Hollywood Security</p>
+              <a>More</a>
+              </div>
+            <div class="second_img">
+                <ul>
+                    <li class="second_one">
+                        <a class="second_img1"></a>
+                        <div class="second_img1_info">
+                            <p>Passing the one-billion-dollar <br>
+                                mark in Chinese box office
+                            </p>
+                        </div>
+                    </li>
+                    <li class="second_two"><a class="second_img2"></a>
+                        <div class="second_img2_info">
+                            <p>Breaks the new record of <br>
+                                Chinese box office
+                            </p>
+                        </div>
+                    </li>
+                    <li class="second_three"><a class="second_img3"></a>
+                        <div class="second_img3_info">
+                            <p>86th Oscars Best Animated <br>
+                                Short Films
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+          </div>
+            </article>
+
+            <article class="slide three"id="rayvision3">
+                <div class="container" id="three">
+                    <div class="three_text">
+                        <img src="<?php echo $this->basePath('img/index/raysync.png')?>">
+                            <h3> ENTERPRISE LARGE FILE TRANSFER</h3>
+                        <p>Perfect solution for cross-border transmission, long-distance transmission,
+                            transmission of large files and more</p>
+                        <a>More</a>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="slide four" id="rayvision4">
+              <div class="container" >
+                  <div class="row">
+                      <div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                      <div class="col-md-10 col-sm-12 col-xs-12" style="padding: 0px" id="four-text">
+                          <div class="four_text">
+                              <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
+                              <h3>Better efficient review platform for
+                                  video content collaboration!</h3>
+                              <p>Solve your video content uploading, reviewing and team<br>
+                                  collaboration issues at anytime and anywhere!</p>
+                              <a>More</a>
+                          </div>
+                      </div>
+                      <div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
+                  </div>
+
+                  <div class="page-footer" style="line-height: 0px;margin: 0 auto">
+                      <footer>
+                          <div class="foot">
+                              <div class="row">
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <div class="row font-talk" style="padding: 0 50px">
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <div class="wechatq">
+                                                  <img src="<?php echo $this->basePath('img/common/wechat_q.png')?>">
+                                              </div>
+                                              <a href="" class="wechat"></a>
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <a href="" class="weibo"></a>
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <a href="" class="facebook"></a>
+                                          </div>
+                                          <div class="col-md-3 col-sm-3 col-xs-3">
+                                              <a href="" class="linkedin"></a>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                              </div>
+                              <div class="row bottom-link">
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                                  <div class="col-md-6 col-sm-6 col-xs-12">
+                                      <ul>
+                                          <li><a href="">关于瑞云</a> <span class="link-line"></span></li>
+                                          <li><a href="">新闻中心</a><span class="link-line"></span></li>
+                                          <li><a href="">成功案例</a><span class="link-line"></span></li>
+                                          <li><a href="">联系我们</a><span class="link-line"></span></li>
+                                          <li><a href="">加入瑞云</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 col-xs-12"></div>
+                              </div>
+                              <p class="recording">
+                                  © 2017 深圳市瑞云科技有限公司 粤ICP备12028569号-2
+                              </p>
+                          </div>
+                      </footer>
+
+                  </div>
+              </div>
+            </article>
+        </div>
+    </section>
+</div>
+
+<script>
+    var fss;
+    $(function() {
+        fss = new ddfullscreenslider({
+            sliderid: 'dowebok',
+            addHash: false
+        });
+    });
+    window.scrollReveal = new scrollReveal();
+
+
+//    鼠标滚动动画出现事件
+    $('#dowebok').mousewheel(function(event, delta) {
+        var selectedParent1 = $("#selected1").parent();
+        var selectedParent2 = $("#selected2").parent();
+        var selectedParent3 = $("#selected3").parent();
+        var selectedParent4 = $("#selected4").parent();
+       if(delta === -1){
+           if(selectedParent1.hasClass("selected")){
+     $("#second").css({"margin-top":"0px","opacity":"1"})
+    }
+    if(selectedParent2.hasClass("selected")){
+        $("#three").css({"margin-top":"0px","opacity":"1"})
+    }
+    if(selectedParent3.hasClass("selected")){
+        $("#four-text").css({"margin-top":"0px","opacity":"1"})
+        $(".page-footer").css({"bottom":"0px","opacity":"1"})
+    }
+       }
+       if(delta === 1){
+           if(selectedParent3.hasClass("selected")){
+               $("#second").css({"margin-top":"0px","opacity":"1"})
+           }
+           if(selectedParent4.hasClass("selected")){
+               $("#three").css({"margin-top":"0px","opacity":"1"})
+           }
+       }
+
+
+    });
+// 键盘上下事件
+    $(document).on('keyup',function (e) {
+      var keyCode = e.keyCode;
+      console.log(keyCode);
+        var selectedParent1 = $("#selected1").parent();
+        var selectedParent2 = $("#selected2").parent();
+        var selectedParent3 = $("#selected3").parent();
+        var selectedParent4 = $("#selected4").parent();
+      if(keyCode === 40) {
+          if (selectedParent1.hasClass("selected")) {
+              $("#second").css({"margin-top": "0px", "opacity": "1"})
+          }
+          if (selectedParent2.hasClass("selected")) {
+              $("#three").css({"margin-top": "0px", "opacity": "1"})
+          }
+          if (selectedParent3.hasClass("selected")) {
+              $("#four-text").css({"margin-top": "0px", "opacity": "1"})
+              $(".page-footer").css({"margin-bottom": "0px", "opacity": "1"})
+          }
+      }
+      if(keyCode === 38) {
+          if (selectedParent3.hasClass("selected")) {
+              $("#second").css({"margin-top": "0px", "opacity": "1"})
+          }
+          if (selectedParent4.hasClass("selected")) {
+              $("#three").css({"margin-top": "0px", "opacity": "1"})
+          }
+      }
+
+
+    });
+
+
+</script>
+<?php
+$this->inlineScript()->appendFile($this->basePath('js/pages/index/bideo.js'));
+$this->inlineScript()->appendFile($this->basePath('js/pages/index/main.js'));
+?>
+
+

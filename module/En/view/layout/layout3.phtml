@@ -12,7 +12,7 @@
 
 <!--         Le styles-->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/logo.ico'))
-                        ->prependStylesheet($this->basePath('css/cn_main.css'));?>
+                        ->prependStylesheet($this->basePath('css/en_main.css'));?>
 
 <!--         Scripts-->
         <?php echo $this->headScript()
@@ -42,21 +42,25 @@
                     <i class="ic_bdot" id="h_bdot"></i>
                     <ul id="h_nav">
                         <li>
-                            <a target="_blank" href="" class="btn_snav">首页</a>
+                            <a target="_blank" href="<?php echo $this->url('en'); ?>" class="btn_snav">首页</a>
                         </li>
                         <li>
-                            <a target="_blank" href="" class="btn_snav">产品服务</a>
+                            <a target="_blank" href="<?php echo $this->url('en-case'); ?>" class="btn_snav">客户案例</a>
                         </li>
                         <li>
-                            <a target="_blank" href="" class="btn_snav">客户案例</a>
+                            <a target="_blank" href="<?php echo $this->url('en-join-us'); ?>" class="btn_snav">加入瑞云</a>
                         </li>
                         <li>
-                            <a target="_blank" href="" class="btn_snav">关于瑞云</a>
+                            <a target="_blank" href="<?php echo $this->url('en-about'); ?>" class="btn_snav">关于瑞云</a>
                         </li>
                         <li>
-                            <a target="_blank" href="" class="btn_snav hide-english">English</a>
+                            <a target="_blank" href="" class="btn_snav hide-english">中文</a>
                         </li>
                     </ul>
+                </div>
+            </li>
+            <li class="En_btn"><span class="nav_line"></span> <a href="#" class="btn_nav">中文</a></li>
+        </ul>
                 </div>
             </li>
             <li class="En_btn"><span class="nav_line"></span> <a href="#" class="btn_nav">English</a></li>

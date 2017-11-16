@@ -26,7 +26,40 @@ return array(
                     ),
                 ),
             ),
+            'en-join-us' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/en/join-us.html',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'En\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'joinUs',
+                    ),
+                ),
+            ),
 
+            'en-about' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/en/about.html',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'En\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'About',
+                    ),
+                ),
+            ),
+            'en-case' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/en/case.html',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'En\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'Case',
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(
@@ -60,7 +93,9 @@ return array(
         'not_found_template'       => 'error/404',
         'exception_template'       => 'error/index',
         'template_map' => array(
-            'layout/en'           => __DIR__ . '/../view/layout/en-layout.phtml',
+            'layout/en'           => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/en2'           => __DIR__ . '/../view/layout/layout2.phtml',
+            'layout/en3'           => __DIR__ . '/../view/layout/layout3.phtml',
             'En/index/index' => __DIR__ . '/../view/En/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',
