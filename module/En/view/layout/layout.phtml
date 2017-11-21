@@ -34,7 +34,7 @@
         <h1 class="logo"><a href="./" title="Ravision"><img src="<?php echo $this->basePath('img/common/logo_white.png')?>"  class="png" alt="Rayvision"></a></h1>
         <ul class="nav_list">
             <li class="nav_li">
-                <a href="#" class="btn_nav" id="nav_more"><span class="ic_more more_img"></span><span class="more-text">更多</span></a>
+                <a href="#" class="btn_nav" id="nav_more"><span class="ic_more more_img"></span><span class="more-text">More</span></a>
                 <div class="more_nav" id="more_nav">
                     <!--[if lt IE 9]>
                     <span class="opc_bg"></span>
@@ -42,24 +42,21 @@
                     <i class="ic_bdot" id="h_bdot"></i>
                     <ul id="h_nav">
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en'); ?>" class="btn_snav">首页</a>
+                            <a target="_blank" href="<?php echo $this->url('en'); ?>" class="btn_snav">Home</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en-case'); ?>" class="btn_snav">客户案例</a>
+                            <a target="_blank" href="<?php echo $this->url('en-case'); ?>" class="btn_snav">Projects</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en-join-us'); ?>" class="btn_snav">加入瑞云</a>
+                            <a target="_blank" href="<?php echo $this->url('en-about'); ?>" class="btn_snav">About</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en-about'); ?>" class="btn_snav">关于瑞云</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="" class="btn_snav hide-english">中文</a>
+                            <a target="_blank" href="<?php echo $this->url('home'); ?>" class="btn_snav hide-english">中文</a>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li class="En_btn"><span class="nav_line"></span> <a href="#" class="btn_nav">中文</a></li>
+            <li class="En_btn"><span class="nav_line"></span> <a href="<?php echo $this->url('home'); ?>" class="btn_nav">中文</a></li>
         </ul>
     </div>
 </div>

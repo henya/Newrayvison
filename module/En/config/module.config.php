@@ -26,18 +26,6 @@ return array(
                     ),
                 ),
             ),
-            'en-join-us' => array(
-                'type'    => 'Literal',
-                'options' => array(
-                    'route'    => '/en/join-us.html',
-                    'defaults' => array(
-                        '__NAMESPACE__' => 'En\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'joinUs',
-                    ),
-                ),
-            ),
-
             'en-about' => array(
                 'type'    => 'Literal',
                 'options' => array(
@@ -95,7 +83,6 @@ return array(
         'template_map' => array(
             'layout/en'           => __DIR__ . '/../view/layout/layout.phtml',
             'layout/en2'           => __DIR__ . '/../view/layout/layout2.phtml',
-            'layout/en3'           => __DIR__ . '/../view/layout/layout3.phtml',
             'En/index/index' => __DIR__ . '/../view/En/index/index.phtml',
             'error/404'               => __DIR__ . '/../view/error/404.phtml',
             'error/index'             => __DIR__ . '/../view/error/index.phtml',

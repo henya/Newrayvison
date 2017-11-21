@@ -67,3 +67,16 @@ $(".linkedin").mouseover(function () {
 $(".linkedin").mouseout(function () {
     $(this).css({'background-image':'url(../img/common/linkedin.png)'});
 });
+//英文的
+$(".twitter").mouseover(function () {
+    $(this).css({'background-image':'url(../img/common/twitter_hover.png)'});
+});
+$(".twitter").mouseout(function () {
+    $(this).css({'background-image':'url(../img/common/twitter.png)'});
+});
+$(".youtube").mouseover(function () {
+    $(this).css({'background-image':'url(../img/common/youtube_hover.png)'});
+});
+$(".youtube").mouseout(function () {
+    $(this).css({'background-image':'url(../img/common/youtube.png)'});
+});
