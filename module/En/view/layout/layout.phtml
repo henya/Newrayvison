@@ -12,7 +12,7 @@
 
 <!--         Le styles-->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/logo.ico'))
-                        ->prependStylesheet($this->basePath('css/en_main.css'));?>
+                        ->prependStylesheet($this->basePath('css/en_main.css?20171124'));?>
 
 <!--         Scripts-->
         <?php echo $this->headScript()
@@ -31,10 +31,11 @@
 <!--        </nav>-->
 <div class="header">
     <div class="head">
-        <h1 class="logo"><a href="./" title="Ravision"><img src="<?php echo $this->basePath('img/common/logo_white.png')?>"  class="png" alt="Rayvision"></a></h1>
+        <h1 class="logo"><a href="<?php echo $this->url('en'); ?>" title="Ravision"><img src="<?php echo $this->basePath('img/common/logo_white.png')?>"  class="png" alt="Rayvision"></a></h1>
         <ul class="nav_list">
             <li class="nav_li">
-                <a href="#" class="btn_nav" id="nav_more"><span class="ic_more more_img"></span><span class="more-text">More</span></a>
+                <a href="javascript:void('0')
+" class="btn_nav" id="nav_more"><span class="ic_more more_img"></span><span class="more-text">More</span></a>
                 <div class="more_nav" id="more_nav">
                     <!--[if lt IE 9]>
                     <span class="opc_bg"></span>
@@ -42,16 +43,16 @@
                     <i class="ic_bdot" id="h_bdot"></i>
                     <ul id="h_nav">
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en'); ?>" class="btn_snav">Home</a>
+                            <a  href="<?php echo $this->url('en'); ?>" class="btn_snav">Home</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en-case'); ?>" class="btn_snav">Projects</a>
+                            <a  href="<?php echo $this->url('en-case'); ?>" class="btn_snav">Projects</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('en-about'); ?>" class="btn_snav">About</a>
+                            <a  href="<?php echo $this->url('en-about'); ?>" class="btn_snav">About</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('home'); ?>" class="btn_snav hide-english">中文</a>
+                            <a  href="<?php echo $this->url('home'); ?>" class="btn_snav hide-english">中文</a>
                         </li>
                     </ul>
                 </div>

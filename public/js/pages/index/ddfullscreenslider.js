@@ -239,7 +239,7 @@ var ddfullscreenslider = (function($){
                     }
                     if(i === 3){
                         $("#four-text").css({"margin-top":"0px","opacity":"1"})
-                        $(".page-footer").css({"margin-bottom":"0px","opacity":"1"})
+                        $(".page-footer").css({"bottom":"0px","opacity":"1"})
                     }
 				})
 			})

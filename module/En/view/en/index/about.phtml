@@ -1,55 +1,66 @@
+<?php
+$this->headTitle($this->headTitle);
+$this->headMeta()
+    ->appendName('description', $this->description)
+    ->appendName('keywords', $this->keywords);
+?>
 <div class="main-container" id="about-page">
     <div class="ab-banner">
-        <img src="<?php echo $this->basePath('img/about/aboutbanner.jpg')?>" class="" alt="rayvision" />
+        <img src="<?php echo $this->basePath('img/about/about_first.jpg')?>" class="" alt="rayvision" />
+        <div class="container ab-banner-info">
+            <div class="row">
+                <h3>THE MOST USER-FRIENDLY VISUALCLOUD COMPUTING PLATFORM</h3>
+                <h2>最贴近用户的视觉云计算服务平台</h2>
+            </div>
+        </div>
     </div>
     <div class="about-intro" id="about-intro">
 
       <h3>PIONEERING SELF-SERVICE CLOUD RENDER FARM</h3>
-<span>Shenzhen Rayvision Technology Co., Ltd. (Rayvision or Rayvision Technology) is a global technology company specialized in cloud computing services for rendering in the entertainment industry. Pioneering the world's premier self-service cloud render farm, Renderbus (a Rayvision domestic cloud render farm service) and Fox Renderfarm (a Rayvision overseas cloud render farm service) are the leading commercial render farms in the world with hundreds of thousands of users worldwide.</span>
-   <span>Started since 2007, Rayvision and its cloud render farm service Renderbus and Fox Renderfarm have won unanimous praise from the entertainment industry. Rayvision has an outstanding team with over 20 years of CG experience. Team members are from Disney, Lucasfilm, DreamWorks Animation, Sony Pictures, etc. With professional services and industry-leading innovations, they serve leading special effects companies and animation studios from over 50 countries, including two Oscar winners. In 2015, Rayvision formed a global strategic partnership with Aliyun (Alibaba Cloud Computing) to provide global visual cloud computing services.</span>
-    </div>
+<span>Shenzhen Rayvision Technology Co., Ltd. is the largest cloud render farm in Asia dedicated to researching cluster renderings and providing cloud rendering computing services for computer animation, film special effects, television animation, architectural design performance, urban planning, game title animation and commercial advertising industry around the world. Known as China’s "Self-Service Cloud Render Farm" pioneer and Asia's largest cloud render farm, a global strategic partner of Alibaba Cloud. It includes three major brands which are RenderBus & Fox Renderfarm—Asia's largest cloud render farm, VIVUE.io—Better efficient review platform for video content collaboration and RaySync—The leading data transmission core technology provider. Rayvision could help improve the work efficiency and inspire the unlimited imagination & creativity for production teams!</span>
+ <span>Most of the Rayvision Technology technical team members come from the world's leading film and television production company. Since its launch, it has been well received by the industry with its patented cloud rendering system and professional TD service team. With more than 60,000 users worldwide, RenderBus & Fox Renderfarm serves customers in over 50 countries, including Oscar winners, world-class movie & animation studios, special effects studios worldwide and most of the mainstream domestic animation companies in China.</span>
+  <span>With a team of more than 20 years of CG experience, Rayvision Technology brings together elites from the United States, Singapore, India, Taiwan and Hong Kong, and have experience in the world's leading film and animation production companies including Disney, Lucasfilm, DreamWorks Animation and Sony Pictures. In CG rendering optimization & high-performance computing, Rayvision Technology has invested a lot of research resources dedicated to providing CG studios around the world efficient and convenient cloud rendering services.</span>
+  <span>In 2014, Rayvision Technology launched a new global unified brand "Rayvision" based on the domestic brand RenderBus and its overseas sister brand Fox Renderfarm in order to provide consistent service to domestic and overseas CG studios. In 2017, Rayvision Technology has added two major products VIVUE.io—Better efficient review platform for video content collaboration & RaySync—The leading data transmission core technology provider in order to provide the global visual cloud computing industry with more high-quality, comprehensive, stable, efficient and convenient integrated services.</span>
+   </div>
     <div class="about-aptitude" id="about-aptitude">
         <div class="container">
-            <h3>Rayvision Qualifications</h3>
+            <h3>RAYVISION QUALIFICATIONS</h3>
             <div class="row" style="margin-top: 70px">
              <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px">
                 <img src="<?php echo $this->basePath('img/about/aptitude01.png')?>">
                  <div class="aptitude-font">
-                     Intellectual Property Management<br>System Certification
+                     Intellectual Property Management System Certification
                  </div>
              </div>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px">
                     <img src="<?php echo $this->basePath('img/about/aptitude02.png')?>">
                     <div class="aptitude-font">
-                        National High-tech<br>
-                        Enterprise Certification
+                        National High-tech Enterprise Certification
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px">
                     <img src="<?php echo $this->basePath('img/about/aptitude03.png')?>">
                     <div class="aptitude-font">
-                        China Cloud Rendering Platform<br>
-                        Leading Enterprise Award
+                        China Cloud Rendering Platform Leading Enterprise Award
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px">
                     <img src="<?php echo $this->basePath('img/about/aptitude04.png')?>">
                     <div class="aptitude-font">
-                        CSEEA Software<br>
-                        Enterprise Certificate
+                        CSEEA Software Enterprise Certificate
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px">
                     <img src="<?php echo $this->basePath('img/about/aptitude05.png')?>">
                     <div class="aptitude-font">
-                        International Market<br>
-                        Development Award
+                        International Market Development Award
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px">
                     <img src="<?php echo $this->basePath('img/about/aptitude06.png')?>">
                     <div class="aptitude-font">
-                        Oscar Winning Entries Service Team
+                        Oscar Winning Entries
+                        <br> Service Team
                     </div>
                 </div>
             </div>
@@ -57,7 +68,7 @@
     </div>
     <div class="about-develop" id="about-develop">
         <div class="container">
-            <h3>Company Milestones</h3>
+            <h3>COMPANY MILESTONES</h3>
             <div class="develop-content">
                 <div class="develop1">
                     <span class="develop-year">2010</span><br>
@@ -180,7 +191,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12 about-left"></div>
                 <div class="col-md-8 col-sm-8 col-xs-12 about-middle">
-                    <h3>Join Us</h3>
+                    <h3>JOIN US</h3>
                   <span>We build an open and unobstructed working environment for everyone. We focus on the quality of life and work-life balance. It is filled with challenge and passion. We endeavor to create a free working atmosphere, allowing everyone to give full rein to their advantages and abilities. We always do our best.</span>
                  <span>In Rayvision, we are not only colleagues but also family members. There are regular indoor and outdoor activities, such as tea party on Wednesdays, basketball game on Thursdays, swimming club, barbecue and occasional travel. Come and join us!</span>
 
@@ -190,7 +201,7 @@
     </div>
 
     <div class="about-ability" id="about-ability">
-            <h2>Technology Capabilities</h2>
+            <h2>TECHNOLOGY CAPABILITIES</h2>
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12 abilitycontent">
                 <img src="<?php echo $this->basePath('img/about/about_11.png')?>" class="" alt="rayvision" />
@@ -242,7 +253,7 @@
                  </div>
                  <div class="col-xs-12 col-sm-4 col-md-4">
                      <p>VIVUE.io</p>
-                     <p>Tel：13723402520/13510709299 (ike)</p>
+                     <p>Tel：13723402520/13510709299 (Mike)</p>
                      <p><a href="mailto:vivue@rayvision.com">Mail：vivue@rayvision.com</a></p>
                  </div>
                  <div class="col-xs-12 col-sm-4 col-md-4">

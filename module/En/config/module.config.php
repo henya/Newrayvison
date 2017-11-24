@@ -48,6 +48,31 @@ return array(
                     ),
                 ),
             ),
+
+
+//       301跳转 fox
+            'en-jump1' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/en/main.html',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'En\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'FoxJump',
+                    ),
+                ),
+            ),
+            'en-jump2' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/en/',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'En\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'FoxJump',
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(

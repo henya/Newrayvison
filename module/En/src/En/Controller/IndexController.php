@@ -18,9 +18,9 @@ class IndexController extends AbstractActionController
     {
         $this->layout("layout/en");
         return new ViewModel(array(
-            "headTitle" => "Render Farm Price | Fox Render Farm",
-            "description" => "Fox Renderfarm is the most cost effective render farm price ever, you can even free try our service before you make any purchase.",
-            "keywords" => "render farm price, CPU render farm price, GPU render farm price, render farm rates",
+            "headTitle" => "Rayvision, the most user-friendly cloud render farm platform",
+            "description" => "Rayvision is focusing on the study of cluster rendering for the visual cloud computing industry, we also have the products of RaySync (High Speed Transfer Engine), VIVUE.io (Online Video Review & Collaboration Platform)",
+            "keywords" => "Rayvision, Rayvision Cloud Render Farm, Rayvision Render Farm",
         ));
     }
 
@@ -29,9 +29,9 @@ class IndexController extends AbstractActionController
     {
         $this->layout("layout/en");
         return new ViewModel(array(
-            "headTitle" => "Render Farm Price | Fox Render Farm",
-            "description" => "Fox Renderfarm is the most cost effective render farm price ever, you can even free try our service before you make any purchase.",
-            "keywords" => "render farm price, CPU render farm price, GPU render farm price, render farm rates",
+            "headTitle" => "The Projects Finished by Rayvision",
+            "description" => "Here are the well know customers and their projects finished by Rayvision.",
+            "keywords" => "Rayvision Projects, Rayvision Customers",
         ));
     }
 
@@ -40,9 +40,19 @@ class IndexController extends AbstractActionController
     {
         $this->layout("layout/en2");
         return new ViewModel(array(
-            "headTitle" => "Render Farm Price | Fox Render Farm",
-            "description" => "Fox Renderfarm is the most cost effective render farm price ever, you can even free try our service before you make any purchase.",
-            "keywords" => "render farm price, CPU render farm price, GPU render farm price, render farm rates",
+            "headTitle" => "The Introduction for Rayvision",
+            "description" => "Here are the company introduction and qualifications of Rayvision.",
+            "keywords" => "About Rayvision",
         ));
     }
+//    301跳转 fox
+    public function FoxJumpAction()
+    {
+        $response = $this->getResponse();
+        $response->getHeaders()->addHeaderLine('Location', 'http://www.rayvision.com/en');
+        $response->setStatusCode(301);
+    }
+
+
+
 }

@@ -111,7 +111,7 @@ body {
           right: -380px;
           width: 240px;
           height: 9999px;
-          padding-top: 130px;
+          padding-top: 110px;
           background: rgba(0,0,0,.8);
           transition: right .3s;
           -webkit-transition: right .3s;
@@ -177,7 +177,7 @@ body {
     background-color: rgba(27, 27, 37, 1);
     padding-top: 70px;
     margin: 0 auto;
-    margin-top: 100px;
+    //margin-top: 100px;
     .foot{
       position: relative;
       .font-talk{
@@ -257,7 +257,8 @@ body {
     -webkit-transition:  all 1.5s; /* Safari 和 Chrome */
     -o-transition:  all 1.5s; /* Opera */
     margin: 0 auto;
-    margin-bottom: -150px;
+    bottom: -150px;
+    position: absolute;
     footer {
       width: 100%;
       background-color: rgba(27, 27, 37, 0);
@@ -484,7 +485,7 @@ body {
     }
 }
   .second{
-    padding-top: 16.66%;
+    padding-top: 13%;
     #second{
       margin-top: 300px;
       opacity: 0;
@@ -496,6 +497,7 @@ body {
     .second_text{
       width: 600px;
       float: left;
+      margin-bottom: 50px;
       img{
         display: block;
         margin-bottom: 40px;
@@ -550,12 +552,12 @@ body {
               background: url('../img/index/mkb.jpg') no-repeat;
             }
             .second_img1_info {
-              padding-left: 13px;
               background-color: rgba(35, 51, 67, 1);
               opacity: 0.88;
               height: 75px;
               margin-top: -87px;
               visibility: hidden;
+              text-align: center;
               p {
                 font-size: 14px;
                 color: #d6d6d6;
@@ -588,12 +590,12 @@ body {
             background: url('../img/index/zl.jpg') no-repeat;
           }
           .second_img2_info {
-            padding-left: 13px;
             background-color: rgba(35, 51, 67, 1);
             opacity: 0.88;
             height: 75px;
             margin-top: -87px;
             visibility: hidden;
+            text-align: center;
             p {
               font-size: 14px;
               color: #d6d6d6;
@@ -626,11 +628,11 @@ body {
             background: url('../img/index/hublot.jpg') no-repeat;
           }
           .second_img3_info {
-            padding-left: 13px;
             background-color: rgba(35, 51, 67, 1);
             opacity: 0.88;
             height: 75px;
             margin-top: -87px;
+            text-align: center;
             visibility: hidden;
             p {
               font-size: 14px;
@@ -660,7 +662,7 @@ body {
     }
   }
   .three{
-    padding-top: 16.66%;
+    padding-top: 14%;
     #three {
       margin-top: 300px;
       opacity: 0;
@@ -707,8 +709,9 @@ body {
     }
   }
   .four{
-    padding-top: 16.66%;
+    padding-top: 12%;
     #four-text {
+      margin-bottom: 85px;
       margin-top: 300px;
       opacity: 0;
       transition:  all 1.5s;
@@ -818,8 +821,8 @@ body {
     position: absolute;
     top: 35%;
     width: 50%;
-    text-align: left;
-    left: 35%;
+    left: 25%;
+    text-align: center;
   }
   .company-btn{
     width: 200px;
@@ -864,7 +867,7 @@ body {
     margin-top: -5px;
   }
   .company-recruit-des{
-    width: 352px;
+    width: 100%;
     height: 43px;
     font-size: 18px;
     font-weight: normal;
@@ -873,6 +876,7 @@ body {
     line-height: 36px;
     letter-spacing: 0px;
     color: #ffffff;
+    text-align: center;
   }
 
   .recruit-img{
@@ -1255,10 +1259,27 @@ body {
 #about-page{
   .ab-banner{
     width: 100%;
+    position: relative;
     img{
       max-width: 100%;
       height: auto;
     }
+    .ab-banner-info{
+      position: absolute;
+      top:35%;
+      left: 30%;
+      color: #ffffff;
+      h3{
+        font-size: 23px;
+        margin-bottom: 10px;
+      }
+      h2{
+         font-size: 48px;
+        font-weight: 700;
+      }
+    }
+
+
   }
   .about-intro{
     background-color: #ffffff;
@@ -2082,7 +2103,7 @@ body {
 
   }
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1450px){
   body{
     footer {
       width: 100%;
@@ -2244,8 +2265,162 @@ body {
         }
       }
     }
+    .header{
+      position: fixed;
+      _position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      height:60px;
+
+      li{
+        text-decoration: none;
+        list-style: none;
+      }
+      .head{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        //layout2的样式
+        .nav-tabs {
+          border-bottom: 0px solid #ddd;
+        }
+        .nav-tabs > li > a:hover {
+          border-color:rgba(0, 0, 0, 0.8);
+        }
+        .nav-tabs > li > a {
+          margin-right: 2px;
+          line-height: 1.42857143;
+          border: 0px solid transparent;
+          border-radius: 0px 0px 0 0;
+        }
+        .nav > li > a:hover, .nav > li > a:focus {
+          text-decoration: none;
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        #about-navbar{
+          margin-left: 22%;
+          li{
+            margin-right: 2.5%;
+            a{
+              font-size: 16px;
+              line-height: 40px;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+          }
+        }
+        .logo{
+          text-indent: -9999em;
+          font-size: 0;
+          line-height: 0;
+          float: left;
+          margin: 14px 0 0 30px;
+          max-width: 240px;
+          //max-height: 25px;
+          .png{
+            max-width: 240px;
+            //height: 25px;
+          }
+        }
+        .nav_list {
+          position: absolute;
+          top: 13px;
+          right: 0;
+          width: 200px;
+          .nav_li {
+            float: left;
+            width: 100px;
+            position: relative;
+            height: 36px;
+            //border-right: 1px solid #fff;
+            //margin-top: 23px;
+            padding: 0px!important;
+            .btn_nav {
+              display: block;
+              width: 110px;
+              height: 36px;
+              text-align: center;
+              line-height: 36px;
+              position: absolute;
+              /* left: 20%; */
+              font-size: 16px;
+              color: #fff;
+              z-index: 6;
+              top: 0px;
+
+            }
+            .more_nav {
+              position: absolute;
+              top: 0;
+              right: -380px;
+              width: 240px;
+              height: 9999px;
+              padding-top: 110px;
+              background: rgba(0,0,0,.8);
+              transition: right .3s;
+              -webkit-transition: right .3s;
+              margin-top: -20px;
+              padding-left: 25px;
+              li {
+                padding-bottom: 45px;
+                position: relative;
+                list-style: none;
+                text-decoration: none;
+
+                .btn_snav {
+                  font-size: 16px;
+                  line-height: 17px;
+                  height: 17px;
+                  color: #edf3ff;
+                }
+              }
+            }
+          }
+          .more_img{
+            width: 18px;
+            height: 14px;
+            background-image: url(../img/common/more.png);
+            margin-right: 10px;
+            display: inline-block;
+            background-size: cover;
+          }
+          .En_btn{
+            float: left;
+            width: 100px;
+            position: relative;
+            margin-top: 0px;
+            height: 36px;
+            .nav_line{
+              display: inline-block;
+              height: 14px;
+              width: 1px;
+              background-color: #fff;
+              float: left;
+              position: absolute;
+              top: 35%;
+            }
+            .btn_nav {
+              display: block;
+              width: 110px;
+              height: 36px;
+              text-align: center;
+              line-height: 36px;
+              position: absolute;
+              top: 0%;
+              font-size: 16px;
+              color: #fff;
+              z-index: 6;
+
+            }
+          }
+        }
+      }
+    }
+
     .more-text{
-      display: none;
+      //display: none;
     }
     .hide-english{
       display: none;
@@ -2838,12 +3013,20 @@ body {
        margin-top: 10%;
      }
      .company-recruit-des {
-       width: 370px;
+       width: 100%;
        height: 43px;
        font-size: 18px;
        margin-top: 10px;
        display: block;
        line-height: 30px;
+       text-align: center;
+     }
+     .content-div {
+       position: absolute;
+       top: 35%;
+       width: 50%;
+       text-align: center;
+       left: 25%;
      }
    }
   }

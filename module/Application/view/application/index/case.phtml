@@ -1,4 +1,10 @@
 <?php
+$this->headTitle($this->headTitle);
+$this->headMeta()
+    ->appendName('description', $this->description)
+    ->appendName('keywords', $this->keywords);
+?>
+<?php
 $this->headScript()->prependFile($this->basePath('js/pages/scrolloverflow.min.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/jquery.fullPage.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
@@ -83,7 +89,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                         <div class="first-text">
                             <h3>瑞云客户如繁星般璀璨</h3>
                             <span>
-                               瑞云的客户包括世界顶级动画电影制作工作室、特效工作室以及国内大部分主流动画制作公司，来自世界40个国家和地区，其中还包括两位奥斯卡奖得主。
+                               瑞云的客户包括世界顶级动画电影制作工作室、特效工作室以及国内大部分主流动画制作公司，来自世界50个国家和地区，其中还包括奥斯卡奖得主。
                            </span>
                         </div>
 
@@ -274,13 +280,13 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                                             <a href="" class="wechat"></a>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="weibo"></a>
+                                            <a href="http://www.weibo.com/renderbus" class="weibo" target="_blank"></a>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="facebook"></a>
+                                            <a href="https://www.facebook.com/rayvision.inc" class="facebook" target="_blank"></a>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="linkedin"></a>
+                                            <a href="http://www.linkedin.com/company/rayvision" class="linkedin" target="_blank"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -291,9 +297,9 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <ul>
                                         <li><a href="<?php echo $this->url('about'); ?>">关于瑞云</a> <span class="link-line"></span></li>
-                                        <li><a href="">新闻中心</a><span class="link-line"></span></li>
+                                        <li><a href="http://www.renderbus.com/news/main" target="_blank">新闻中心</a><span class="link-line"></span></li>
                                         <li><a href="<?php echo $this->url('case'); ?>">成功案例</a><span class="link-line"></span></li>
-                                        <li><a href="<?php echo $this->url('about'); ?>">联系我们</a><span class="link-line"></span></li>
+                                        <li><a href="http://www.rayvision.com/en/about.html#about-bottom"">联系我们</a><span class="link-line"></span></li>
                                         <li><a href="<?php echo $this->url('join-us'); ?>">加入瑞云</a></li>
                                     </ul>
                                 </div>

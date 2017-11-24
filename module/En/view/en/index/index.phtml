@@ -1,4 +1,10 @@
 <?php
+$this->headTitle($this->headTitle);
+$this->headMeta()
+    ->appendName('description', $this->description)
+    ->appendName('keywords', $this->keywords);
+?>
+<?php
 $this->headScript()->prependFile($this->basePath('js/pages/index/scrollReveal.min.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/index/jquery.mousewheel.min.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/index/jquery.slimscroll.min.js'));
@@ -15,7 +21,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                             <p>THE MOST USER-FRIENDLY</p>
                             <h3>VISUAL CLOUD</h3>
                            <p>COMPUTING PLATFORM</p>
-                            <span class="first_text">options For More than 85% CG studios </span>
+                            <span class="first_text">Options for more than 85% CG studios </span>
                         </div>
                 </div>
                 </div>
@@ -42,7 +48,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                       <img src="<?php echo $this->basePath('img/index/Renderfarm.png')?>">
              <h3>YOUR POWERFUL RENDER FARM</h3>
               <p>24 Hours Support  |  OSCAR Service Team  |  Massive Render Nodes  |  Hollywood Security</p>
-              <a>More</a>
+              <a href="http://www.foxrenderfarm.com/" target="_blank">More</a>
               </div>
             <div class="second_img">
                 <ul>
@@ -82,7 +88,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                             <h3> ENTERPRISE LARGE FILE TRANSFER</h3>
                         <p>Perfect solution for cross-border transmission,long-distance transmission,<br>
                             transmission of large files and more</p>
-                        <a>More</a>
+                        <a href="https://www.raysync.io/" target="_blank">More</a>
                     </div>
                 </div>
 
@@ -95,11 +101,10 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                       <div class="col-md-10 col-sm-12 col-xs-12" style="padding: 0px" id="four-text">
                           <div class="four_text">
                               <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
-                              <h3>Better efficient review platform for
-                                  video content collaboration!</h3>
+                              <h3>BETTER EFFICIENT REVIEW PLATFORM FOR VIDEO CONTENT COLLABORATION!</h3>
                               <p>Solve your video content uploading, reviewing and team<br>
                                   collaboration issues at anytime and anywhere!</p>
-                              <a>More</a>
+                              <a href="https://www.vivue.io/" target="_blank">More</a>
                           </div>
                       </div>
                       <div class="col-md-1 col-sm-12 col-xs-12">&nbsp;</div>
@@ -113,16 +118,16 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                                   <div class="col-md-6 col-sm-6 col-xs-8">
                                       <div class="row font-talk" style="padding: 0 50px">
                                           <div class="col-md-3 col-sm-3 col-xs-3">
-                                              <a href="" class="twitter"></a>
+                                              <a href="https://twitter.com/foxrenderfarm" class="twitter" target="_blank"></a>
                                           </div>
                                           <div class="col-md-3 col-sm-3 col-xs-3">
-                                              <a href="" class="youtube"></a>
+                                              <a href="https://www.youtube.com/channel/UC97Sc2y7pncPmSZHRaGa3IA" class="youtube" target="_blank"></a>
                                           </div>
                                           <div class="col-md-3 col-sm-3 col-xs-3">
-                                              <a href="" class="facebook"></a>
+                                              <a href="https://www.facebook.com/rayvision.inc" class="facebook" target="_blank"></a>
                                           </div>
                                           <div class="col-md-3 col-sm-3 col-xs-3">
-                                              <a href="" class="linkedin"></a>
+                                              <a href="http://www.linkedin.com/company/rayvision" class="linkedin" target="_blank"></a>
                                           </div>
                                       </div>
                                   </div>
@@ -132,9 +137,9 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                                   <div class="col-md-6 col-sm-6 col-xs-12">
                                       <ul>
                                           <li><a href="<?php echo $this->url('en-about'); ?>">About</a> <span class="link-line"></span></li>
-                                          <li><a href="">News</a><span class="link-line"></span></li>
-                                          <li><a href="<?php echo $this->url('en-case'); ?>">Projects</a><span class="link-line"></span></li>
-                                          <li><a href="<?php echo $this->url('en-about'); ?>">Contact</a></li>
+                                          <li><a href="http://www.foxrenderfarm.com/news/main" target="_blank">News</a><span class="link-line"></span></li>
+                                          <li><a href="<?php echo $this->url('en-case'); ?>" >Projects</a><span class="link-line"></span></li>
+                                          <li><a href="http://www.rayvision.com/en/about.html#about-bottom" >Contact</a></li>
                                       </ul>
                                   </div>
                                   <div class="col-md-3 col-sm-3 col-xs-12"></div>

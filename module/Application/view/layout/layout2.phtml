@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="X9D1pPcZDx" />
     <?php echo $this->headTitle()->setSeparator(' - ')->setAutoEscape(false) ?>
 
     <?php echo $this->headMeta()
@@ -34,7 +35,7 @@
         <h1 class="logo"><a href="./" title="Ravision"><img src="<?php echo $this->basePath('img/common/logo_white.png')?>"  class="png" alt="Rayvision"></a></h1>
        <ul id="about-navbar"  class="nav nav-tabs" role="tablist">
            <li><a href="#about-intro">关于瑞云</a></li>
-           <li><a href="#about-aptitude">瑞云荣誉</a></li>
+           <li><a href="#about-aptitude">瑞云资质</a></li>
            <li><a href="#about-develop">发展历程</a></li>
            <li><a href="#about-join">加入瑞云</a></li>
            <li><a href="#about-ability">技术能力</a></li>
@@ -42,7 +43,7 @@
        </ul>
         <ul class="nav_list">
             <li class="nav_li">
-                <a href="#" class="btn_nav" id="nav_more"><span class="ic_more more_img"></span><span class="more-text">更多</span></a>
+                <a href="javascript:void('0')" class="btn_nav" id="nav_more"><span class="ic_more more_img"></span><span class="more-text">更多</span></a>
                 <div class="more_nav" id="more_nav">
                     <!--[if lt IE 9]>
                     <span class="opc_bg"></span>
@@ -50,24 +51,24 @@
                     <i class="ic_bdot" id="h_bdot"></i>
                     <ul id="h_nav">
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('home'); ?>" class="btn_snav">首页</a>
+                            <a href="<?php echo $this->url('home'); ?>" class="btn_snav">首页</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('case'); ?>" class="btn_snav">客户案例</a>
+                            <a  href="<?php echo $this->url('case'); ?>" class="btn_snav">客户案例</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('join-us'); ?>" class="btn_snav">加入瑞云</a>
+                            <a  href="<?php echo $this->url('join-us'); ?>" class="btn_snav">加入瑞云</a>
                         </li>
                         <li>
-                            <a target="_blank" href="<?php echo $this->url('about'); ?>" class="btn_snav">关于瑞云</a>
+                            <a  href="<?php echo $this->url('about'); ?>" class="btn_snav">关于瑞云</a>
                         </li>
                         <li>
-                            <a target="_blank" href="" class="btn_snav hide-english">English</a>
+                            <a  href="<?php echo $this->url('en'); ?>" class="btn_snav hide-english">English</a>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li class="En_btn"><span class="nav_line"></span> <a href="#" class="btn_nav">English</a></li>
+            <li class="En_btn"><span class="nav_line"></span> <a href="<?php echo $this->url('en'); ?>" class="btn_nav">English</a></li>
         </ul>
     </div>
 </div>
@@ -87,13 +88,13 @@
                         <a href="" class="wechat"></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <a href="" class="weibo"></a>
+                        <a href="http://www.weibo.com/renderbus" class="weibo" target="_blank"></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <a href="" class="facebook"></a>
+                        <a href="https://www.facebook.com/rayvision.inc" class="facebook" target="_blank"></a>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-3">
-                        <a href="" class="linkedin"></a>
+                        <a href="http://www.linkedin.com/company/rayvision" class="linkedin" target="_blank"></a>
                     </div>
                 </div>
             </div>
@@ -104,9 +105,9 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <ul>
                     <li><a href="<?php echo $this->url('about'); ?>">关于瑞云</a> <span class="link-line"></span></li>
-                    <li><a href="">新闻中心</a><span class="link-line"></span></li>
+                    <li><a href="http://www.renderbus.com/news/main" target="_blank">新闻中心</a><span class="link-line"></span></li>
                     <li><a href="<?php echo $this->url('case'); ?>">成功案例</a><span class="link-line"></span></li>
-                    <li><a href="<?php echo $this->url('about'); ?>">联系我们</a><span class="link-line"></span></li>
+                    <li><a href="http://www.rayvision.com/about.html#about-bottom">联系我们</a><span class="link-line"></span></li>
                     <li><a href="<?php echo $this->url('join-us'); ?>">加入瑞云</a></li>
                 </ul>
             </div>

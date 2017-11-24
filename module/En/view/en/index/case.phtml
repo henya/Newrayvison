@@ -1,4 +1,10 @@
 <?php
+$this->headTitle($this->headTitle);
+$this->headMeta()
+    ->appendName('description', $this->description)
+    ->appendName('keywords', $this->keywords);
+?>
+<?php
 $this->headScript()->prependFile($this->basePath('js/pages/scrolloverflow.min.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/jquery.fullPage.js'));
 $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
@@ -84,7 +90,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                             <h3>RAYVISION CUSTOMERS AS
                                 BRIGHT AS THE STARS</h3>
                             <span>
-                                Rayvision customers are from the world's top animated film production studios, special effects studios and most of the mainstream animation company from 40 countries and regions, including two Oscar winners.
+                                Rayvision customers are from the world's top animated film production studios, special effects studios and most of the mainstream animation company from 50 countries and regions, including Oscar winners.
                           </span>
                         </div>
 
@@ -130,7 +136,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                                         <img src="<?php echo $this->basePath('img/case/case_01.png')?>">
                                         <span>3D Animated</span>
                                     </div>
-                                    <div class="col-md-4 col-sm-5 col-xs-4">
+                                    <div class="col-md-5 col-sm-5 col-xs-4">
                                         <img src="<?php echo $this->basePath('img/case/case_03.png')?>">
                                         <span> 86th Oscars Best<br>
                                      Animated Short Films</span>
@@ -161,13 +167,11 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                         <div class="row case-info-img">
                             <div class="col-md-5 col-sm-5 col-xs-6" style="padding-left: 0px;padding-right: 0px">
                                 <img src="<?php echo $this->basePath('img/case/case_03.png')?>">
-                                <span>The 30th Golden Rooster<br>
-                                      Awards Best Art Film Award</span>
+                                <span>The 30th Golden Rooster Awards Best Art Film Award</span>
                             </div>
                             <div class="col-md-7 col-sm-7 col-xs-6" style="padding-left: 0px;padding-right: 0px">
                                 <img src="<?php echo $this->basePath('img/case/case_04.png')?>">
-                                <span>The 16th China Huabiao Film Awards<br>
-                                 Outstanding Feature Film Award</span>
+                                <span>The 16th China Huabiao Film Awards Outstanding Feature Film Award</span>
                             </div>
                         </div>
                         <p>
@@ -192,18 +196,15 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                         <div class="row case-info-img">
                             <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px;">
                                 <img src="<?php echo $this->basePath('img/case/case_06.png')?>">
-                                <span>China Film Week CJIFF<br>
-                                      Best Movie Award </span>
+                                <span>China Film Week CJIFF Best Movie Award </span>
                             </div>
                             <div class="col-md-4  col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px;">
                                 <img src="<?php echo $this->basePath('img/case/case_07.png')?>">
-                                <span>The Best Works Award<br>
-                                 for Excellent Work</span>
+                                <span>The Best Works Award for Excellent Work</span>
                             </div>
                             <div class="col-md-4  col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px;">
                                 <img src="<?php echo $this->basePath('img/case/case_08.png')?>">
-                                <span>Chinese American Film<br>
-                                 Festival Best Movie Award</span>
+                                <span>Chinese American Film Festival Best Movie Award</span>
                             </div>
                         </div>
                         <p>
@@ -234,7 +235,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                                         &nbsp;&nbsp;
                                     </span>
                             </div>
-                            <div class="col-md-4  col-sm-4 col-xs-4" style="padding-left: 0px;padding-right: 0px;">
+                            <div class="col-md-4  col-sm-5 col-xs-4" style="padding-left: 0px;padding-right: 0px;">
                                 <img src="<?php echo $this->basePath('img/case/case_010.png')?>">
                                 <span>
                                    Reviewing & Collaboration at anytime and anywhere
@@ -260,16 +261,16 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div class="row font-talk" style="padding: 0 50px">
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="twitter"></a>
+                                            <a href="https://twitter.com/foxrenderfarm" class="twitter" target="_blank"></a>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="youtube"></a>
+                                            <a href="https://www.youtube.com/channel/UC97Sc2y7pncPmSZHRaGa3IA" class="youtube" target="_blank"></a>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="facebook"></a>
+                                            <a href="https://www.facebook.com/rayvision.inc" class="facebook" target="_blank"></a>
                                         </div>
                                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                            <a href="" class="linkedin"></a>
+                                            <a href="http://www.linkedin.com/company/rayvision" class="linkedin" target="_blank"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -280,9 +281,9 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/wow.min.js'));
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <ul>
                                         <li><a href="<?php echo $this->url('en-about'); ?>">About</a> <span class="link-line"></span></li>
-                                        <li><a href="">News</a><span class="link-line"></span></li>
+                                        <li><a href="http://www.foxrenderfarm.com/news/main" target="_blank">News</a><span class="link-line"></span></li>
                                         <li><a href="<?php echo $this->url('en-case'); ?>">Projects</a><span class="link-line"></span></li>
-                                        <li><a href="<?php echo $this->url('en-about'); ?>">Contact</a></li>
+                                        <li><a href="http://www.rayvision.com/en/about.html#about-bottom"">Contact</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 col-sm-3 col-xs-12"></div>
