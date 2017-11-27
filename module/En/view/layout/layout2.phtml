@@ -59,12 +59,12 @@
                             <a  href="<?php echo $this->url('en-about'); ?>" class="btn_snav">About</a>
                         </li>
                         <li>
-                            <a  href="<?php echo $this->url('home'); ?>" class="btn_snav hide-english">中文</a>
+                            <a  href="<?php if($_SERVER['REQUEST_URI'] ==="/en"){echo $this->url('home');}else{    echo "/".substr($_SERVER['REQUEST_URI'],4);};?>" class="btn_snav hide-english">中文</a>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li class="En_btn"><span class="nav_line"></span> <a href="<?php echo $this->url('home'); ?>" class="btn_nav">中文</a></li>
+            <li class="En_btn"><span class="nav_line"></span> <a href="<?php if($_SERVER['REQUEST_URI'] ==="/en"){echo $this->url('home');}else{    echo "/".substr($_SERVER['REQUEST_URI'],4);};?>" class="btn_nav">中文</a></li>
         </ul>
     </div>
 </div>
