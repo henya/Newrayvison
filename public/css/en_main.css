@@ -6349,17 +6349,15 @@ body #about-page .ab-banner img {
 }
 body #about-page .ab-banner .ab-banner-info {
   position: absolute;
-  top: 35%;
-  left: 30%;
+  top: 30%;
+  left: 25%;
   color: #ffffff;
-}
-body #about-page .ab-banner .ab-banner-info h3 {
-  font-size: 23px;
-  margin-bottom: 10px;
 }
 body #about-page .ab-banner .ab-banner-info h2 {
   font-size: 48px;
   font-weight: 700;
+  text-align: center;
+  line-height: 70px;
 }
 body #about-page .about-intro {
   background-color: #ffffff;
@@ -7404,7 +7402,6 @@ body #case-page .case-five .case-common-text .img-down {
     position: absolute;
     bottom: 0px;
     opacity: 1;
-    width: 100%;
     transition: all 1.5s;
   }
   body .page-footer footer {
@@ -7527,6 +7524,18 @@ body #case-page .case-five .case-common-text .img-down {
     color: #ffffff;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+  body #about-page .ab-banner .ab-banner-info {
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    color: #ffffff;
+  }
+  body #about-page .ab-banner .ab-banner-info h2 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
   }
   body #about-page .about-develop .develop-content {
     display: block;
@@ -10314,7 +10323,7 @@ body #case-page .case-five .case-common-text .img-down {
     font-weight: 700;
   }
   body #case-page .case-five .case-common-text h4 {
-    letter-spacing: 10.8px;
+    letter-spacing: 0px;
     color: #ffffff;
     font-size: 12px;
   }
@@ -10415,6 +10424,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body .page-footer footer .foot .font-talk {
     padding: 0px !important;
+    margin-left: -20%;
   }
   body .page-footer footer .foot .font-talk .wechatq {
     position: absolute;
@@ -10480,6 +10490,7 @@ body #case-page .case-five .case-common-text .img-down {
     font-size: 12px;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 20px;
   }
   body .header .head {
     background-color: #000000;
@@ -10613,16 +10624,18 @@ body #case-page .case-five .case-common-text .img-down {
   body #index-page .first .first_center_text .first_text {
     margin-top: 20px;
     display: block;
+    font-size: 14px;
   }
   body #index-page .second {
     padding-top: 16.6%;
   }
   body #index-page .second #second {
+    padding-top: 20%;
     margin-top: 0px;
     opacity: 1;
   }
   body #index-page .second .second_text {
-    width: 600px;
+    width: auto;
     float: left;
   }
   body #index-page .second .second_text img {
@@ -10632,7 +10645,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #index-page .second .second_text h3 {
     font-size: 28px;
-    line-height: 22.9264px;
+    line-height: 40px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
@@ -10658,139 +10671,10 @@ body #case-page .case-five .case-common-text .img-down {
     border: solid 1px #2dbec3;
   }
   body #index-page .second .second_img {
-    float: right;
-    width: 680px;
-    margin-top: -130px;
-  }
-  body #index-page .second .second_img ul {
-    width: 100%;
-  }
-  body #index-page .second .second_img ul li {
-    float: left;
-    width: 33.33333%;
-    list-style: none;
-    height: 329px;
-    text-decoration: none;
-  }
-  body #index-page .second .second_img ul .second_one .second_img1 {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/index/mkb.jpg') no-repeat;
-  }
-  body #index-page .second .second_img ul .second_one .second_img1_info {
-    padding-left: 13px;
-    background-color: #233343;
-    opacity: 0.88;
-    height: 75px;
-    margin-top: -87px;
-    visibility: hidden;
-  }
-  body #index-page .second .second_img ul .second_one .second_img1_info p {
-    font-size: 14px;
-    color: #d6d6d6;
-    line-height: 75px;
-  }
-  body #index-page .second .second_img ul .second_one:hover .second_img1_info {
-    visibility: visible;
-    margin-top: -13px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_one:hover .second_img1 {
-    background: url('../img/index/mkb_hover.jpg') no-repeat;
-    margin-top: -75px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_two .second_img2 {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/index/zl.jpg') no-repeat;
-  }
-  body #index-page .second .second_img ul .second_two .second_img2_info {
-    padding-left: 13px;
-    background-color: #233343;
-    opacity: 0.88;
-    height: 75px;
-    margin-top: -87px;
-    visibility: hidden;
-  }
-  body #index-page .second .second_img ul .second_two .second_img2_info p {
-    font-size: 14px;
-    color: #d6d6d6;
-    line-height: 75px;
-  }
-  body #index-page .second .second_img ul .second_two:hover .second_img2_info {
-    visibility: visible;
-    margin-top: -13px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_two:hover .second_img2 {
-    background: url('../img/index/zl_hover.jpg') no-repeat;
-    margin-top: -75px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_three .second_img3 {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/index/hublot.jpg') no-repeat;
-  }
-  body #index-page .second .second_img ul .second_three .second_img3_info {
-    padding-left: 13px;
-    background-color: #233343;
-    opacity: 0.88;
-    height: 75px;
-    margin-top: -87px;
-    visibility: hidden;
-  }
-  body #index-page .second .second_img ul .second_three .second_img3_info p {
-    font-size: 14px;
-    color: #d6d6d6;
-    line-height: 75px;
-  }
-  body #index-page .second .second_img ul .second_three:hover .second_img3_info {
-    visibility: visible;
-    margin-top: -13px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_three:hover .second_img3 {
-    background: url('../img/index/hublot_hover.jpg') no-repeat;
-    margin-top: -75px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
+    display: none;
   }
   body #index-page .three {
-    padding-top: 200px;
+    padding-top: 100px;
   }
   body #index-page .three #three {
     margin-top: 0px;
@@ -10798,7 +10682,7 @@ body #case-page .case-five .case-common-text .img-down {
     transition: all 1.5s;
   }
   body #index-page .three #three .three_text {
-    width: 600px;
+    width: auto;
     float: left;
   }
   body #index-page .three #three .three_text img {
@@ -10807,7 +10691,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #index-page .three #three .three_text h3 {
     font-size: 28px;
-    line-height: 22.9264px;
+    line-height: 40px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
@@ -10834,7 +10718,7 @@ body #case-page .case-five .case-common-text .img-down {
     border: solid 1px #2dbec3;
   }
   body #index-page .four {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   body #index-page .four #four-text {
     margin-top: 0px;
@@ -11333,6 +11217,9 @@ body #case-page .case-five .case-common-text .img-down {
     width: 100%;
     height: auto;
   }
+  body #about-page .ab-banner .ab-banner-info {
+    display: none;
+  }
   body #about-page .about-develop .develop-content {
     display: none;
   }
@@ -11366,7 +11253,7 @@ body #case-page .case-five .case-common-text .img-down {
     padding-right: 10px;
   }
   body #about-page .about-intro h3 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
     font-weight: 700;
@@ -11383,6 +11270,9 @@ body #case-page .case-five .case-common-text .img-down {
     font-size: 20px;
     color: #333333;
   }
+  body #about-page .about-join {
+    display: none;
+  }
   body #about-page .about-join .container .row span {
     font-size: 14px;
     line-height: 30px;
@@ -11392,7 +11282,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body #about-page .about-join .container .row h3 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 600;
     color: #ffffff;

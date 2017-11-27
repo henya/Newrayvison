@@ -7716,7 +7716,6 @@ body #case-page .case-five .case-common-text .img-down {
     position: absolute;
     bottom: 0px;
     opacity: 1;
-    width: 100%;
     transition: all 1.5s;
   }
   body .page-footer footer {
@@ -7970,6 +7969,12 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #index-page .four {
     padding-top: 5%;
+  }
+  body #about-page .ab-banner .ab-banner-info {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    color: #ffffff;
   }
   body #about-page .about-develop .develop-content {
     display: block;
@@ -11141,136 +11146,7 @@ body #case-page .case-five .case-common-text .img-down {
     border: solid 1px #2dbec3;
   }
   body #index-page .second .second_img {
-    float: right;
-    width: 680px;
-    margin-top: -130px;
-  }
-  body #index-page .second .second_img ul {
-    width: 100%;
-  }
-  body #index-page .second .second_img ul li {
-    float: left;
-    width: 33.33333%;
-    list-style: none;
-    height: 329px;
-    text-decoration: none;
-  }
-  body #index-page .second .second_img ul .second_one .second_img1 {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/index/mkb.jpg') no-repeat;
-  }
-  body #index-page .second .second_img ul .second_one .second_img1_info {
-    padding-left: 13px;
-    background-color: #233343;
-    opacity: 0.88;
-    height: 75px;
-    margin-top: -87px;
-    visibility: hidden;
-  }
-  body #index-page .second .second_img ul .second_one .second_img1_info p {
-    font-size: 14px;
-    color: #d6d6d6;
-    line-height: 75px;
-  }
-  body #index-page .second .second_img ul .second_one:hover .second_img1_info {
-    visibility: visible;
-    margin-top: -13px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_one:hover .second_img1 {
-    background: url('../img/index/mkb_hover.jpg') no-repeat;
-    margin-top: -75px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_two .second_img2 {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/index/zl.jpg') no-repeat;
-  }
-  body #index-page .second .second_img ul .second_two .second_img2_info {
-    padding-left: 13px;
-    background-color: #233343;
-    opacity: 0.88;
-    height: 75px;
-    margin-top: -87px;
-    visibility: hidden;
-  }
-  body #index-page .second .second_img ul .second_two .second_img2_info p {
-    font-size: 14px;
-    color: #d6d6d6;
-    line-height: 75px;
-  }
-  body #index-page .second .second_img ul .second_two:hover .second_img2_info {
-    visibility: visible;
-    margin-top: -13px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_two:hover .second_img2 {
-    background: url('../img/index/zl_hover.jpg') no-repeat;
-    margin-top: -75px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_three .second_img3 {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: url('../img/index/hublot.jpg') no-repeat;
-  }
-  body #index-page .second .second_img ul .second_three .second_img3_info {
-    padding-left: 13px;
-    background-color: #233343;
-    opacity: 0.88;
-    height: 75px;
-    margin-top: -87px;
-    visibility: hidden;
-  }
-  body #index-page .second .second_img ul .second_three .second_img3_info p {
-    font-size: 14px;
-    color: #d6d6d6;
-    line-height: 75px;
-  }
-  body #index-page .second .second_img ul .second_three:hover .second_img3_info {
-    visibility: visible;
-    margin-top: -13px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
-  }
-  body #index-page .second .second_img ul .second_three:hover .second_img3 {
-    background: url('../img/index/hublot_hover.jpg') no-repeat;
-    margin-top: -75px;
-    transition: margin-top 0.3s;
-    -moz-transition: margin-top 0.3s;
-    /* Firefox 4 */
-    -webkit-transition: margin-top 0.3s;
-    /* Safari 和 Chrome */
-    -o-transition: margin-top 0.3s;
+    display: none;
   }
   body #index-page .three {
     padding-top: 200px;
@@ -11848,6 +11724,9 @@ body #case-page .case-five .case-common-text .img-down {
     padding-left: 10px;
     padding-right: 10px;
   }
+  body #about-page .ab-banner .ab-banner-info {
+    display: none;
+  }
   body #about-page .about-intro h3 {
     font-size: 30px;
     line-height: 20px;
@@ -11875,8 +11754,8 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body #about-page .about-join .container .row h3 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 600;
     color: #ffffff;
   }
@@ -11891,6 +11770,10 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 28px;
     color: #ffffff;
     margin-top: 20px;
+  }
+  body #about-page .about-join .container .row .about-middle {
+    padding-left: 10%;
+    padding-right: 4%;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 768px) {

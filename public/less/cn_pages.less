@@ -2186,7 +2186,7 @@ body {
       position: absolute;
       bottom: 0px;
       opacity: 1;
-      width: 100%;
+      //width: 100%;
       transition: all 1.5s;
       footer {
         width: 100%;
@@ -2463,6 +2463,12 @@ body {
 
 }
   #about-page {
+    .ab-banner .ab-banner-info {
+      position: absolute;
+      top: 35%;
+      left:25%;
+      color: #ffffff;
+    }
     .about-develop {
       .develop-content{
         display: block;
@@ -5711,133 +5717,7 @@ body {
 
         }
         .second_img{
-          float: right;
-          width: 680px;
-          margin-top: -130px;
-          ul{
-            width: 100%;
-            li{
-              float: left;
-              width: 33.33333%;
-              list-style: none;
-              height: 329px;
-              text-decoration: none;
-            }
-            .second_one {
-              .second_img1 {
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                background: url('../img/index/mkb.jpg') no-repeat;
-              }
-              .second_img1_info {
-                padding-left: 13px;
-                background-color: rgba(35, 51, 67, 1);
-                opacity: 0.88;
-                height: 75px;
-                margin-top: -87px;
-                visibility: hidden;
-                p {
-                  font-size: 14px;
-                  color: #d6d6d6;
-                  line-height: 75px;
-                }
-              }
-              &:hover .second_img1_info {
-                visibility: visible;
-                margin-top: -13px;
-                transition: margin-top 0.3s;
-                -moz-transition: margin-top 0.3s;	/* Firefox 4 */
-                -webkit-transition: margin-top 0.3s;	/* Safari 和 Chrome */
-                -o-transition: margin-top 0.3s;
-              }
-              &:hover .second_img1 {
-                background: url('../img/index/mkb_hover.jpg') no-repeat;
-                margin-top: -75px;
-                transition: margin-top 0.3s;
-                -moz-transition: margin-top 0.3s;	/* Firefox 4 */
-                -webkit-transition: margin-top 0.3s;	/* Safari 和 Chrome */
-                -o-transition: margin-top 0.3s;
-              }
-
-            }
-            .second_two {
-              .second_img2 {
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                background: url('../img/index/zl.jpg') no-repeat;
-              }
-              .second_img2_info {
-                padding-left: 13px;
-                background-color: rgba(35, 51, 67, 1);
-                opacity: 0.88;
-                height: 75px;
-                margin-top: -87px;
-                visibility: hidden;
-                p {
-                  font-size: 14px;
-                  color: #d6d6d6;
-                  line-height: 75px;
-                }
-              }
-              &:hover .second_img2_info {
-                visibility: visible;
-                margin-top: -13px;
-                transition: margin-top 0.3s;
-                -moz-transition: margin-top 0.3s;	/* Firefox 4 */
-                -webkit-transition: margin-top 0.3s;	/* Safari 和 Chrome */
-                -o-transition: margin-top 0.3s;
-              }
-              &:hover .second_img2 {
-                background: url('../img/index/zl_hover.jpg') no-repeat;
-                margin-top: -75px;
-                transition: margin-top 0.3s;
-                -moz-transition: margin-top 0.3s;	/* Firefox 4 */
-                -webkit-transition: margin-top 0.3s;	/* Safari 和 Chrome */
-                -o-transition: margin-top 0.3s;
-              }
-
-            }
-            .second_three {
-              .second_img3 {
-                display: inline-block;
-                width: 100%;
-                height: 100%;
-                background: url('../img/index/hublot.jpg') no-repeat;
-              }
-              .second_img3_info {
-                padding-left: 13px;
-                background-color: rgba(35, 51, 67, 1);
-                opacity: 0.88;
-                height: 75px;
-                margin-top: -87px;
-                visibility: hidden;
-                p {
-                  font-size: 14px;
-                  color: #d6d6d6;
-                  line-height: 75px;
-                }
-              }
-              &:hover .second_img3_info {
-                visibility: visible;
-                margin-top: -13px;
-                transition: margin-top 0.3s;
-                -moz-transition: margin-top 0.3s;	/* Firefox 4 */
-                -webkit-transition: margin-top 0.3s;	/* Safari 和 Chrome */
-                -o-transition: margin-top 0.3s;
-              }
-              &:hover .second_img3{
-                background: url('../img/index/hublot_hover.jpg') no-repeat;
-                margin-top: -75px;
-                transition: margin-top 0.3s;
-                -moz-transition: margin-top 0.3s;	/* Firefox 4 */
-                -webkit-transition: margin-top 0.3s;	/* Safari 和 Chrome */
-                -o-transition: margin-top 0.3s;
-              }
-
-            }
-          }
+     display: none;
         }
       }
       .three{
@@ -6457,9 +6337,12 @@ body {
         height: auto;
         margin-top: 60px;
       }
-      .about-intro{
+     .about-intro{
         padding-left: 10px;
         padding-right: 10px;
+      }
+     .ab-banner .ab-banner-info {
+ display: none;
       }
       .about-intro  h3 {
         font-size: 30px;
@@ -6479,6 +6362,10 @@ body {
         font-size: 20px;
         color: #333333;
       }
+      .about-join{
+        //display: none;
+      }
+
       .about-join .container .row span {
         font-size: 14px;
         line-height: 30px;
@@ -6488,8 +6375,8 @@ body {
         display: none;
       }
       .about-join .container .row h3 {
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 20px;
         font-weight: 600;
         color: #ffffff;
       }
@@ -6504,6 +6391,10 @@ body {
         line-height: 28px;
         color: #ffffff;
         margin-top: 20px;
+      }
+      .about-join .container .row .about-middle {
+        padding-left: 10%;
+        padding-right: 4%;
       }
     }
   }
