@@ -13,7 +13,7 @@
 
 <!--         Le styles-->
         <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/logo.ico'))
-                        ->prependStylesheet($this->basePath('css/cn_main.css?20171112'));?>
+                        ->prependStylesheet($this->basePath('css/cn_main.css?20171219'));?>
 
 <!--         Scripts-->
         <?php echo $this->headScript()
@@ -48,9 +48,9 @@
                         <li>
                             <a  href="<?php echo $this->url('case'); ?>" class="btn_snav">客户案例</a>
                         </li>
-                        <li>
-                            <a  href="<?php echo $this->url('join-us'); ?>" class="btn_snav">加入瑞云</a>
-                        </li>
+<!--                        <li>-->
+<!--                            <a  href="--><?php //echo $this->url('join-us'); ?><!--" class="btn_snav">加入瑞云</a>-->
+<!--                        </li>-->
                         <li>
                             <a  href="<?php echo $this->url('about'); ?>" class="btn_snav">关于瑞云</a>
                         </li>
@@ -67,6 +67,19 @@
         <div class="content">
             <?php echo $this->content; ?>
         </div> <!-- /container -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?47a168644f86443bdb5c1ceca44e1e61";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
 <?php
 $this->inlineScript()->appendFile($this->basePath('js/pages/layout.js'));
 ?>

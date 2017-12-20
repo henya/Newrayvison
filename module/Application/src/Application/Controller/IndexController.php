@@ -51,7 +51,7 @@ class IndexController extends AbstractActionController
 
     public function AboutAction()
     {
-        $this->layout("layout/layout2");
+        $this->layout("layout/layout3");
         return new ViewModel(array(
             "headTitle" => "深圳市瑞云科技有限公司|瑞云渲染 -中国首个自助式云渲染农场",
             "description" => "瑞云渲染-深圳市瑞云科技有限公司是一家专注于集群渲染、云计算与移动互联网方向,为动漫影视、CG效果图等提供云渲染服务的新型互联网科技公司,是中国 “自助式云渲染”的开创者。",

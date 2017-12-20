@@ -373,6 +373,17 @@ return array(
                     ),
                 ),
             ),
+            're-indexW' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => 'http://rayvision.com/',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller'    => 'Index',
+                        'action'        => 'RenderA',
+                    ),
+                ),
+            ),
 
         ),
     ),

@@ -13,7 +13,7 @@ var ddfullscreenslider = (function($){
 		sliderstate: 'open', // reserved for future use
 		keycodeNavigation: [40, 38], // keyCode codes for down and up naivagion, respectively
 		transitionDuration: '1s',
-		swipeconfig: {peekamount: 100, mousedrag: true},
+		swipeconfig: {peekamount: 0, mousedrag: true},
 		onslide: function($slide, index){}
 	}
 
@@ -239,7 +239,7 @@ var ddfullscreenslider = (function($){
                     }
                     if(i === 3){
                         $("#four-text").css({"margin-top":"0px","opacity":"1"})
-                        $(".page-footer").css({"bottom":"0px","opacity":"1"})
+                        $(".page-footer").css({"bottom":"0px","opacity":"1","margin-top":"-30px"});
                     }
 				})
 			})
