@@ -6845,7 +6845,7 @@ body #about-page .about-intro {
   background-color: #ffffff;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 body #about-page .about-intro h3 {
   font-size: 36px;
@@ -8820,7 +8820,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body .hide-english {
-    display: block;
+    display: block!important;
   }
   body .header .head #about-navbar {
     margin-left: 22%;
@@ -10156,7 +10156,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body .hide-english {
-    display: block;
+    display: block!important;
   }
   body footer {
     width: 100%;
@@ -10715,6 +10715,87 @@ body #case-page .case-five .case-common-text .img-down {
     width: 100%;
     margin-bottom: 10px;
   }
+  body #case-page .case-six .case-common-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+  }
+  body #case-page .case-six .case-common-text {
+    padding-top: 5%;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 80%;
+    float: right;
+  }
+  body #case-page .case-six .case-common-text .second-top .img-content {
+    width: 100%;
+    height: 30px;
+  }
+  body #case-page .case-six .case-common-text .second-top .img-content .img-add {
+    display: block;
+    float: right;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  body #case-page .case-six .case-common-text .second-top h5 {
+    line-height: 29.99999px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 16px!important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body #case-page .case-six .case-common-text .second-top h3 {
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  body #case-page .case-six .case-common-text .second-top span {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 23.98611px;
+    color: #ffffff;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .case-info-img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .case-info-img img {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .case-info-img span {
+    line-height: 17.98958px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  body #case-page .case-six .case-common-text .second-bottom p {
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .img-down {
+    display: none;
+    padding-right: 20px;
+    margin-top: 10px;
+    float: right;
+    animation: none;
+    -webkit-animation: none;
+  }
   body #case-page .case-second .case-common-text:before {
     content: '';
     position: absolute;
@@ -11106,7 +11187,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body .hide-english {
-    display: block;
+    display: block!important;
   }
   body #dituContent {
     width: 300px !important;
@@ -11117,6 +11198,7 @@ body #case-page .case-five .case-common-text .img-down {
   body .page-footer {
     position: absolute;
     bottom: 0px;
+    left: 0px;
     opacity: 1;
     transition: all 1.5s;
   }
@@ -11166,7 +11248,7 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 30px;
   }
   body .page-footer footer .foot .bottom-link {
-    margin-bottom: 25px;
+    margin-bottom: 25px!important;
   }
   body .page-footer footer .foot .bottom-link ul {
     width: 100%;
@@ -11212,6 +11294,9 @@ body #case-page .case-five .case-common-text .img-down {
   body .header .head .nav_list .nav_li .btn_nav {
     width: 110px;
     left: 20%;
+  }
+  body ul.fssnav {
+    left: 5px!important;
   }
   body #index-page #container {
     overflow: hidden;
@@ -11337,7 +11422,8 @@ body #case-page .case-five .case-common-text .img-down {
     opacity: 1;
   }
   body #index-page .second .second_text {
-    width: 600px;
+    width: auto;
+    margin-top: 130px;
     float: left;
   }
   body #index-page .second .second_text img {
@@ -11384,7 +11470,7 @@ body #case-page .case-five .case-common-text .img-down {
     transition: all 1.5s;
   }
   body #index-page .three #three .three_text {
-    width: 600px;
+    width: auto;
     float: left;
   }
   body #index-page .three #three .three_text img {
@@ -11421,6 +11507,9 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #index-page .four {
     padding-top: 100px;
+  }
+  body #index-page .four .row {
+    margin: 0px;
   }
   body #index-page .four #four-text {
     margin-top: 0px;
@@ -11619,10 +11708,13 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #join-us .content-work {
     background-color: #F1F1F1;
-    height: 350px;
+    height: 130px;
     overflow: hidden;
     margin-right: 0px;
     margin-left: 0px;
+  }
+  body #join-us .img-content {
+    display: none!important;
   }
   body #join-us .content-work-left,
   body #join-us .content-work-right {
@@ -11971,6 +12063,9 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 23.91654px;
     font-size: 20px;
     color: #333333;
+  }
+  body #about-page .about-ability .row .abilitycontent {
+    width: 100%;
   }
   body #about-page .about-join .container .row span {
     font-size: 14px;

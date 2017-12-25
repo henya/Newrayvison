@@ -5570,12 +5570,13 @@ section.dd_fullscreenslider div.closex::after {
 body * {
   margin: 0px;
   padding: 0px;
+  font-family: arial, "Microsoft Yahei", "Hiragino Sans GB", "Bank Gothic Medium BT", sans-serif !important;
 }
 body .more-text {
   display: inline-block;
 }
 body .hide-english {
-  display: none;
+  display: none!important;
 }
 body .scrolledDown {
   background-color: rgba(0, 0, 0, 0.6) !important;
@@ -5677,24 +5678,29 @@ body .header .head .nav_list .nav_li .more_nav {
   right: -380px;
   width: 240px;
   height: 9999px;
-  padding-top: 100px;
+  padding-top: 110px;
   background: rgba(0, 0, 0, 0.8);
   transition: right .3s;
   -webkit-transition: right .3s;
   margin-top: -20px;
-  padding-left: 25px;
 }
 body .header .head .nav_list .nav_li .more_nav li {
-  padding-bottom: 45px;
+  padding-bottom: 10px;
   position: relative;
   list-style: none;
   text-decoration: none;
+  text-indent: 25px;
 }
 body .header .head .nav_list .nav_li .more_nav li .btn_snav {
   font-size: 16px;
-  line-height: 17px;
-  height: 17px;
+  line-height: 40px;
   color: #edf3ff;
+  height: 40px;
+  width: 100%;
+  display: block;
+}
+body .header .head .nav_list .nav_li .more_nav li .btn_snav:hover {
+  background: rgba(51, 51, 51, 0.8);
 }
 body .header .head .nav_list .more_img {
   width: 18px;
@@ -6046,13 +6052,14 @@ body #index-page .first .first_center_text p {
 }
 body #index-page .first .first_center_text h3 {
   font-size: 58px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 55px;
   margin-bottom: 20px;
 }
 body #index-page .first .first_center_text .first_text {
   margin-top: 35px;
   display: block;
+  font-size: 16px;
 }
 body #index-page .second {
   padding-top: 13%;
@@ -6124,6 +6131,12 @@ body #index-page .second .second_img ul .second_one .second_img1 {
   width: 100%;
   height: 100%;
   background: url('../img/index/mkb.jpg') no-repeat;
+  transition: margin-top 0.3s;
+  -moz-transition: margin-top 0.3s;
+  /* Firefox 4 */
+  -webkit-transition: margin-top 0.3s;
+  /* Safari 和 Chrome */
+  -o-transition: margin-top 0.3s;
 }
 body #index-page .second .second_img ul .second_one .second_img1_info {
   background-color: #233343;
@@ -6164,6 +6177,12 @@ body #index-page .second .second_img ul .second_two .second_img2 {
   width: 100%;
   height: 100%;
   background: url('../img/index/zl.jpg') no-repeat;
+  transition: margin-top 0.3s;
+  -moz-transition: margin-top 0.3s;
+  /* Firefox 4 */
+  -webkit-transition: margin-top 0.3s;
+  /* Safari 和 Chrome */
+  -o-transition: margin-top 0.3s;
 }
 body #index-page .second .second_img ul .second_two .second_img2_info {
   background-color: #233343;
@@ -6204,6 +6223,12 @@ body #index-page .second .second_img ul .second_three .second_img3 {
   width: 100%;
   height: 100%;
   background: url('../img/index/hublot.jpg') no-repeat;
+  transition: margin-top 0.3s;
+  -moz-transition: margin-top 0.3s;
+  /* Firefox 4 */
+  -webkit-transition: margin-top 0.3s;
+  /* Safari 和 Chrome */
+  -o-transition: margin-top 0.3s;
 }
 body #index-page .second .second_img ul .second_three .second_img3_info {
   background-color: #233343;
@@ -6350,7 +6375,7 @@ body #about-page .ab-banner img {
 body #about-page .ab-banner .ab-banner-info {
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 28%;
   color: #ffffff;
 }
 body #about-page .ab-banner .ab-banner-info h2 {
@@ -6363,7 +6388,7 @@ body #about-page .about-intro {
   background-color: #ffffff;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 body #about-page .about-intro h3 {
   font-size: 36px;
@@ -6409,13 +6434,13 @@ body #about-page .about-develop h3 {
   font-size: 36px;
   line-height: 30px;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 body #about-page .about-develop .develop-content {
-  background: url("../img/about/aboutline.png") no-repeat;
+  background: url("../img/about/text.png") no-repeat;
   background-size: contain;
-  height: 440px;
-  width: 95%;
+  height: 556px;
+  width: 100%;
   float: right;
   position: relative;
 }
@@ -6546,6 +6571,22 @@ body #about-page .about-develop .develop-content .develop7 .develop-event {
   display: block;
   font-size: 14px;
   line-height: 24px;
+}
+body #about-page .about-develop .develop-content .develop-data {
+  margin-left: -8%;
+  margin-top: 45px;
+}
+body #about-page .about-develop .develop-content .develop-data .data-row {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+body #about-page .about-develop .develop-content .develop-data .data-row h4 {
+  font-size: 30px;
+  color: #333333;
+}
+body #about-page .about-develop .develop-content .develop-data .data-row p {
+  font-size: 14px;
+  color: #333333;
 }
 body #about-page .about-develop .develop-content2 {
   display: none;
@@ -6787,6 +6828,104 @@ body #case-page .case-one .case-second-logo {
 }
 body #case-page .case-one .case-second-logo .logo-first img {
   max-width: 100%;
+}
+body #case-page .case-six .case-common-text:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(20px);
+}
+body #case-page .case-six .case-common-text {
+  padding-top: 5%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  float: right;
+}
+body #case-page .case-six .case-common-text .second-top .img-content {
+  width: 100%;
+  height: 48px;
+}
+body #case-page .case-six .case-common-text .second-top .img-content .img-add {
+  display: block;
+  float: right;
+  max-width: 48px;
+  max-height: 48px;
+}
+body #case-page .case-six .case-common-text .second-top h5 {
+  line-height: 29.99999px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+body #case-page .case-six .case-common-text .second-top h3 {
+  line-height: 59.96527px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+body #case-page .case-six .case-common-text .second-top span {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 23.98611px;
+  color: #ffffff;
+}
+body #case-page .case-six .case-common-text .second-bottom .case-info-img {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+body #case-page .case-six .case-common-text .second-bottom .case-info-img img {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+body #case-page .case-six .case-common-text .second-bottom .case-info-img span {
+  line-height: 17.98958px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 12px;
+  display: block;
+}
+body #case-page .case-six .case-common-text .second-bottom p {
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-size: 14px;
+}
+body #case-page .case-six .case-common-text .second-bottom .img-down {
+  display: inline-block;
+  padding-right: 20px;
+  margin-top: 60px;
+  float: right;
+  animation: case-down 2s both linear infinite;
+  -webkit-animation: case-down 2s both linear infinite;
+}
+@keyframes case-down {
+  0% {
+    margin-top: 100px;
+  }
+  25% {
+    margin-top: 110px;
+  }
+  50% {
+    margin-top: 120px;
+  }
+  75% {
+    margin-top: 110px;
+  }
+  100% {
+    margin-top: 100px;
+  }
 }
 body #case-page .case-second .case-common-text:before {
   content: '';
@@ -7240,7 +7379,7 @@ body #case-page .case-five .case-common-text .img-down {
     position: absolute;
     top: 13px;
     right: 0;
-    width: 170px;
+    width: 200px;
   }
   body .header .head .nav_list .nav_li {
     float: left;
@@ -7268,24 +7407,28 @@ body #case-page .case-five .case-common-text .img-down {
     right: -380px;
     width: 240px;
     height: 9999px;
-    padding-top: 100px;
+    padding-top: 110px;
     background: rgba(0, 0, 0, 0.8);
     transition: right .3s;
     -webkit-transition: right .3s;
     margin-top: -20px;
-    padding-left: 25px;
   }
   body .header .head .nav_list .nav_li .more_nav li {
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     position: relative;
     list-style: none;
     text-decoration: none;
   }
   body .header .head .nav_list .nav_li .more_nav li .btn_snav {
     font-size: 16px;
-    line-height: 17px;
-    height: 17px;
+    line-height: 40px;
     color: #edf3ff;
+    height: 40px;
+    width: 100%;
+    display: block;
+  }
+  body .header .head .nav_list .nav_li .more_nav li .btn_snav:hover {
+    background: rgba(51, 51, 51, 0.9);
   }
   body .header .head .nav_list .more_img {
     width: 18px;
@@ -7297,7 +7440,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body .header .head .nav_list .En_btn {
     float: left;
-    width: 70px;
+    width: 100px;
     position: relative;
     margin-top: 0px;
     height: 36px;
@@ -7313,7 +7456,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body .header .head .nav_list .En_btn .btn_nav {
     display: block;
-    width: 70px;
+    width: 110px;
     height: 36px;
     text-align: center;
     line-height: 36px;
@@ -7528,7 +7671,7 @@ body #case-page .case-five .case-common-text .img-down {
   body #about-page .ab-banner .ab-banner-info {
     position: absolute;
     top: 35%;
-    left: 22%;
+    left: 30%;
     color: #ffffff;
   }
   body #about-page .ab-banner .ab-banner-info h2 {
@@ -7644,6 +7787,73 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #case-page .case-one .case-second-logo .logo-first img {
     max-width: 100%;
+  }
+  body #case-page .case-six .case-common-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+  }
+  body #case-page .case-six .case-common-text {
+    position: relative;
+    padding-top: 1%;
+    padding-left: 30px;
+    padding-right: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 35%;
+    float: right;
+    margin-right: 10%;
+  }
+  body #case-page .case-six .case-common-text .img-add {
+    display: none;
+    float: right;
+    max-width: 48px;
+  }
+  body #case-page .case-six .case-common-text h5 {
+    line-height: 29.99999px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  body #case-page .case-six .case-common-text h3 {
+    line-height: 59.96527px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 40px!important;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  body #case-page .case-six .case-common-text span {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 23.98611px;
+    color: #ffffff;
+  }
+  body #case-page .case-six .case-common-text .case-info-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 0px!important;
+  }
+  body #case-page .case-six .case-common-text p {
+    line-height: 24px!important;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  body #case-page .case-six .case-common-text .img-down {
+    display: inline-block;
+    padding-right: 20px;
+    margin-top: 0px;
+    float: right;
+    animation: none!important;
+    -webkit-animation: none!important;
   }
   body #case-page .case-second .case-common-text:before {
     content: '';
@@ -8114,7 +8324,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body .hide-english {
-    display: block;
+    display: block!important;
   }
   body .header .head #about-navbar {
     margin-left: 22%;
@@ -8230,7 +8440,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #index-page .first .first_center_text h3 {
     font-size: 60px;
-    font-weight: 800;
+    font-weight: 600;
   }
   body #index-page .first .first_center_text h3 span {
     font-size: 60px;
@@ -9450,7 +9660,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body .hide-english {
-    display: block;
+    display: block!important;
   }
   body footer {
     width: 100%;
@@ -10009,6 +10219,87 @@ body #case-page .case-five .case-common-text .img-down {
     width: 100%;
     margin-bottom: 10px;
   }
+  body #case-page .case-six .case-common-text:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(20px);
+  }
+  body #case-page .case-six .case-common-text {
+    padding-top: 5%;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 80%;
+    float: right;
+  }
+  body #case-page .case-six .case-common-text .second-top .img-content {
+    width: 100%;
+    height: 30px;
+  }
+  body #case-page .case-six .case-common-text .second-top .img-content .img-add {
+    display: block;
+    float: right;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  body #case-page .case-six .case-common-text .second-top h5 {
+    line-height: 29.99999px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  body #case-page .case-six .case-common-text .second-top h3 {
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 30px!important;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  body #case-page .case-six .case-common-text .second-top span {
+    font-size: 14px;
+    display: inline-block;
+    line-height: 23.98611px;
+    color: #ffffff;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .case-info-img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .case-info-img img {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .case-info-img span {
+    line-height: 17.98958px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  body #case-page .case-six .case-common-text .second-bottom p {
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  body #case-page .case-six .case-common-text .second-bottom .img-down {
+    display: none;
+    padding-right: 20px;
+    margin-top: 10px;
+    float: right;
+    animation: none;
+    -webkit-animation: none;
+  }
   body #case-page .case-second .case-common-text:before {
     content: '';
     position: absolute;
@@ -10400,7 +10691,7 @@ body #case-page .case-five .case-common-text .img-down {
     display: none;
   }
   body .hide-english {
-    display: block;
+    display: block!important;
   }
   body #dituContent {
     width: 300px !important;
@@ -10461,7 +10752,7 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 30px;
   }
   body .page-footer footer .foot .bottom-link {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
   body .page-footer footer .foot .bottom-link ul {
     width: 100%;
@@ -10508,6 +10799,19 @@ body #case-page .case-five .case-common-text .img-down {
   body .header .head .nav_list .nav_li .btn_nav {
     width: 110px;
     left: 20%;
+  }
+  body footer .foot .bottom-link ul li {
+    float: left;
+    list-style: none;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 16px;
+    width: 23%;
+    text-align: center;
+  }
+  body ul.fssnav {
+    left: 5px!important;
   }
   body #index-page #container {
     overflow: hidden;
@@ -10624,7 +10928,7 @@ body #case-page .case-five .case-common-text .img-down {
   body #index-page .first .first_center_text .first_text {
     margin-top: 20px;
     display: block;
-    font-size: 14px;
+    font-size: 12px;
   }
   body #index-page .second {
     padding-top: 16.6%;
@@ -10743,8 +11047,8 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 20px;
   }
   body #index-page .four #four-text .four_text p {
-    font-size: 16px;
-    line-height: 12px;
+    font-size: 15px;
+    line-height: 20px;
     color: #ffffff;
   }
   body #index-page .four #four-text .four_text a {
@@ -11298,6 +11602,17 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 28px;
     color: #ffffff;
     margin-top: 20px;
+  }
+  body #about-page .about-ability .row .abilitycontent {
+    width: 100%;
+  }
+  body #case-page .case-five .case-common-text h3 {
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 768px) {
