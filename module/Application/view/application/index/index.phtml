@@ -51,7 +51,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
              <h3>全球领先的云渲染平台</h3>
               <p>7天24小时服务 · 奥斯卡专业服务团队 · 随时可用 · 好莱坞级安全</p>
               <p>影视 · 动画 · 效果图 · 一站渲染</p>
-              <a href="http://www.renderbus.com/" target="_blank">了解更多</a>
+              <a href="http://www.renderbus.com/" target="_blank">访问Renderbus官网</a>
               </div>
             <div class="second_img">
                 <ul>
@@ -84,7 +84,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                         <img src="<?php echo $this->basePath('img/index/raysync.png')?>">
                         <h3>镭速企业级大文件传输</h3>
                         <p>完美解决客户跨国传输、远距离传输、大文件传输等问题</p>
-                        <a href="https://www.raysync.io/" target="_blank">了解更多</a>
+                        <a href="https://www.raysync.io/" target="_blank">访问镭速官网</a>
                     </div>
                 </div>
 
@@ -99,7 +99,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                               <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
                               <h3>更高效的审片协作平台</h3>
                               <p>随时随地解决视频上传 评审 团队协作问题</p>
-                              <a href="https://www.vivue.io/" target="_blank">了解更多</a>
+                              <a href="https://www.vivue.io/" target="_blank">访问vivue官网</a>
                           </div>
                       </div>
                       <div class="col-md-3 col-sm-12 col-xs-12">&nbsp;</div>
@@ -158,6 +158,21 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
 </div>
 
 <script>
+    (function () {
+
+        if ( typeof window.CustomEvent === "function" ) return false;
+
+        function CustomEvent ( event, params ) {
+            params = params || { bubbles: false, cancelable: false, detail: undefined };
+            var evt = document.createEvent( 'CustomEvent' );
+            evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+            return evt;
+        }
+
+        CustomEvent.prototype = window.Event.prototype;
+
+        window.CustomEvent = CustomEvent;
+    })();
     var fss;
     $(function() {
         fss = new ddfullscreenslider({
@@ -169,35 +184,71 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
 
 
 //    鼠标滚动动画出现事件
-    $('#dowebok').mousewheel(function(event, delta) {
-        var selectedParent1 = $("#selected1").parent();
-        var selectedParent2 = $("#selected2").parent();
-        var selectedParent3 = $("#selected3").parent();
-        var selectedParent4 = $("#selected4").parent();
-       if(delta === -1){
-           if(selectedParent1.hasClass("selected")){
-     $("#second").css({"margin-top":"0px","opacity":"1"})
-    }
-    if(selectedParent2.hasClass("selected")){
-        $("#three").css({"margin-top":"0px","opacity":"1"})
-    }
-    if(selectedParent3.hasClass("selected")){
-        $("#four-text").css({"margin-top":"0px","opacity":"1"})
-        $(".page-footer").css({"bottom":"0px","opacity":"1"})
-    }
-       }
-       if(delta === 1){
-           if(selectedParent3.hasClass("selected")){
-               $("#second").css({"margin-top":"0px","opacity":"1"})
-           }
-           if(selectedParent4.hasClass("selected")){
-               $("#three").css({"margin-top":"0px","opacity":"1"})
-           }
-       }
-
-
-    });
-// 键盘上下事件
+    if(document.attachEvent){
+        document.attachEvent('custSlideTo', function (event) {
+            console.info('kitsch,event.detail.delta',event.detail.delta)
+            var delta = event.detail.delta
+            var selectedParent1 = $("#selected1").parent();
+            var selectedParent2 = $("#selected2").parent();
+            var selectedParent3 = $("#selected3").parent();
+            var selectedParent4 = $("#selected4").parent();
+            if(delta < 0){
+                if(selectedParent1.hasClass("selected")){
+//                console.info('kitsch:', '1')
+                    $("#second").css({"margin-top":"0px","opacity":"1"})
+                }
+                if(selectedParent2.hasClass("selected")){
+                    $("#three").css({"margin-top":"0px","opacity":"1"})
+//                console.info('kitsch:', '2')
+                }
+                if(selectedParent3.hasClass("selected")){
+                    $("#four-text").css({"margin-top":"0px","opacity":"1"})
+                    $(".page-footer").css({"bottom":"0px","opacity":"1"})
+//                console.info('kitsch:', '3')
+                }
+            }
+            if(delta > 0){
+                if(selectedParent3.hasClass("selected")){
+                    $("#second").css({"margin-top":"0px","opacity":"1"})
+                }
+                if(selectedParent4.hasClass("selected")){
+                    $("#three").css({"margin-top":"0px","opacity":"1"})
+                }
+            }
+        })
+    }else {
+        document.addEventListener('custSlideTo', function (event) {
+            console.info('kitsch,event.detail.delta', event.detail.delta)
+            var delta = event.detail.delta
+            var selectedParent1 = $("#selected1").parent();
+            var selectedParent2 = $("#selected2").parent();
+            var selectedParent3 = $("#selected3").parent();
+            var selectedParent4 = $("#selected4").parent();
+            if (delta < 0) {
+                if (selectedParent1.hasClass("selected")) {
+//                console.info('kitsch:', '1')
+                    $("#second").css({"margin-top": "0px", "opacity": "1"})
+                }
+                if (selectedParent2.hasClass("selected")) {
+                    $("#three").css({"margin-top": "0px", "opacity": "1"})
+//                console.info('kitsch:', '2')
+                }
+                if (selectedParent3.hasClass("selected")) {
+                    $("#four-text").css({"margin-top": "0px", "opacity": "1"})
+                    $(".page-footer").css({"bottom": "0px", "opacity": "1"})
+//                console.info('kitsch:', '3')
+                }
+            }
+            if (delta > 0) {
+                if (selectedParent3.hasClass("selected")) {
+                    $("#second").css({"margin-top": "0px", "opacity": "1"})
+                }
+                if (selectedParent4.hasClass("selected")) {
+                    $("#three").css({"margin-top": "0px", "opacity": "1"})
+                }
+            }
+        })}
+    //键盘事件
     $(document).on('keyup',function (e) {
       var keyCode = e.keyCode;
       console.log(keyCode);

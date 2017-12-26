@@ -106,6 +106,7 @@ var ddfullscreenslider = (function($){
 		/** Mousewheel and keyboard scroll related code. Requires jquery.mousewheel.min.js **/
 
 		function mouseslide(deltaY){
+            console.info('kitsch', 'handleWheel')
 			var targetindx = selectedindx
 			if (deltaY < 0) // mouse down
 				var targetindx = Math.min(slideslength-1, selectedindx+1)
@@ -114,17 +115,37 @@ var ddfullscreenslider = (function($){
 			if (targetindx != selectedindx)
 				thisslider.slideTo(targetindx)
 		}
+        var prevTime = new Date().getTime()
 
-		$slider.on('mousewheel', function(event){
-			clearTimeout(mouseslidetimer)
-			var deltaY = event.deltaY
-			mouseslidetimer = setTimeout(function(){
-				mouseslide(deltaY)
-			}, 100)
+        function handleWheel(event) {
+            var deltaY = event.deltaY
+            	// console.log(deltaY);
+            var curTime = new Date().getTime()
+            var timeDiff = curTime - prevTime
+            // console.log('timeDiff'+timeDiff )
+            prevTime = curTime
+            if (timeDiff > 200) {
+				$slider.off('mousewheel', handleWheel)
+                setTimeout(function() {
+                    $slider.on('mousewheel', handleWheel)
+                }, 1200)
+
+               mouseslide(deltaY)
+				console.info('kitsch', 'handleWheel')
+            }
+            return false
+        }
+        $slider.on('mousewheel', handleWheel)
+        // $slider.on('mousewheel', function(event){
+			// console.''
+			// clearTimeout(mouseslidetimer)
+			// var deltaY = event.deltaY
+			// mouseslidetimer = setTimeout(function(){
+			// 	mouseslide(deltaY)
+			// }, 100)
 			// console.log(deltaY);
-
-			return false
-		})
+			// return false
+        // })
 
 		$(document).on('keyup', function(e){
 			var targetindx = selectedindx
@@ -267,6 +288,13 @@ var ddfullscreenslider = (function($){
 		}
 
 		this.slideTo = function(indx, noanimation){
+			var delta = selectedindx - indx;
+            var event = new CustomEvent("custSlideTo", {
+                detail: {
+                    delta: delta
+                }
+            });
+            document.dispatchEvent(event);
 			var newy = $window.outerHeight() * indx
 			$nav.find('li').eq(selectedindx).removeClass('selected')
 			$nav.find('li').eq(indx).addClass('selected')
