@@ -183,37 +183,11 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
     window.scrollReveal = new scrollReveal();
     //    鼠标滚动动画出现事件
     if(document.attachEvent){
-        document.attachEvent('custSlideTo', function (event) {
-            console.info('kitsch,event.detail.delta',event.detail.delta)
-            var delta = event.detail.delta
-            var selectedParent1 = $("#selected1").parent();
-            var selectedParent2 = $("#selected2").parent();
-            var selectedParent3 = $("#selected3").parent();
-            var selectedParent4 = $("#selected4").parent();
-            if(delta < 0){
-                if(selectedParent1.hasClass("selected")){
-//                console.info('kitsch:', '1')
-                    $("#second").css({"margin-top":"0px","opacity":"1"})
-                }
-                if(selectedParent2.hasClass("selected")){
-                    $("#three").css({"margin-top":"0px","opacity":"1"})
-//                console.info('kitsch:', '2')
-                }
-                if(selectedParent3.hasClass("selected")){
-                    $("#four-text").css({"margin-top":"0px","opacity":"1"})
-                    $(".page-footer").css({"bottom":"0px","opacity":"1"})
-//                console.info('kitsch:', '3')
-                }
-            }
-            if(delta > 0){
-                if(selectedParent3.hasClass("selected")){
-                    $("#second").css({"margin-top":"0px","opacity":"1"})
-                }
-                if(selectedParent4.hasClass("selected")){
-                    $("#three").css({"margin-top":"0px","opacity":"1"})
-                }
-            }
-        })
+        $("#second").css({"margin-top":"0px","opacity":"1"})
+        $("#three").css({"margin-top":"0px","opacity":"1"})
+        $("#four-text").css({"margin-top":"0px","opacity":"1"})
+        $(".page-footer").css({"bottom":"0px","opacity":"1"})
+
     }else {
         document.addEventListener('custSlideTo', function (event) {
             console.info('kitsch,event.detail.delta', event.detail.delta)
