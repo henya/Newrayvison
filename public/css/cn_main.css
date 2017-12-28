@@ -5823,12 +5823,11 @@ body .page-footer {
   /* Opera */
   margin: 0 auto;
   bottom: -150px;
-  position: absolute;
 }
 body .page-footer footer {
   width: 100%;
   background-color: rgba(27, 27, 37, 0);
-  padding-top: 70px;
+  padding-top: 150px;
 }
 body .page-footer footer .foot {
   position: relative;
@@ -6882,8 +6881,11 @@ body #about-page .about-aptitude .aptitude-font {
   text-align: center;
   font-size: 16px;
   color: #333333;
+  margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 85px;
+  width: 70%;
+  height: 45px;
 }
 body #about-page .about-develop {
   width: 100%;
@@ -7371,6 +7373,7 @@ body #case-page .case-six .case-common-text .second-bottom .case-info-img span {
   color: #ffffff;
   font-size: 12px;
   display: block;
+  width: 90%;
 }
 body #case-page .case-six .case-common-text .second-bottom p {
   line-height: 30px;
@@ -7469,6 +7472,7 @@ body #case-page .case-second .case-common-text .second-bottom .case-info-img spa
   color: #ffffff;
   font-size: 12px;
   display: block;
+  width: 90%;
 }
 body #case-page .case-second .case-common-text .second-bottom p {
   line-height: 30px;
@@ -7562,6 +7566,7 @@ body #case-page .case-three .case-common-text .case-info-img span {
   color: #ffffff;
   font-size: 12px;
   display: block;
+  width: 90%;
 }
 body #case-page .case-three .case-common-text p {
   line-height: 30px;
@@ -7655,6 +7660,7 @@ body #case-page .case-four .case-common-text .case-info-img span {
   color: #ffffff;
   font-size: 12px;
   display: block;
+  width: 90%;
 }
 body #case-page .case-four .case-common-text p {
   line-height: 30px;
@@ -10749,7 +10755,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px!important;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-six .case-common-text .second-top h3 {
@@ -10830,7 +10836,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-second .case-common-text .second-top h3 {
@@ -10906,7 +10912,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-three .case-common-text h3 {
@@ -10982,7 +10988,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-four .case-common-text h3 {
@@ -11098,7 +11104,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-five .case-common-text h3 {
@@ -11183,6 +11189,17 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 600px) {
+  body section.dd_fullscreenslider article.slide:nth-of-type(4) {
+    /* 4th demo slide bgcolor */
+    background: url("../img/index/bg_04.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 32% 0%;
+  }
+  body footer .foot .bottom-link ul li {
+    font-size: 14px!important;
+  }
   body .more-text {
     display: none;
   }
@@ -11402,17 +11419,20 @@ body #case-page .case-five .case-common-text .img-down {
     margin-bottom: 10px;
   }
   body #index-page .first .first_center_text h3 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 800;
+    line-height: 40px;
   }
   body #index-page .first .first_center_text h3 span {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 800;
     color: #2bbfa5;
+    line-height: 40px;
   }
   body #index-page .first .first_center_text .first_text {
     margin-top: 20px;
     display: block;
+    font-size: 16px;
   }
   body #index-page .second {
     padding-top: 16.6%;
@@ -11436,10 +11456,10 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 22.9264px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
   body #index-page .second .second_text p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
     color: #ffffff;
   }
@@ -11482,7 +11502,7 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 22.9264px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
   body #index-page .three #three .three_text p {
     font-size: 16px;
@@ -11526,7 +11546,7 @@ body #case-page .case-five .case-common-text .img-down {
     width: 180px;
   }
   body #index-page .four #four-text .four_text h3 {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 25px;
     font-weight: 700;
     color: #ffffff;
@@ -11600,13 +11620,13 @@ body #case-page .case-five .case-common-text .img-down {
     margin-top: 20px;
   }
   body #join-us .intro-text-p {
-    font-size: 11px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 24px;
     color: #666666;
   }
   body #join-us .width-responsive {
     width: 100%;
-    height: 200px;
+    height: 220px;
     margin: 0 auto;
   }
   body #join-us .main-banner {
@@ -11627,10 +11647,10 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #join-us .content-div {
     position: absolute;
-    top: 1%;
-    width: 90%;
-    text-align: left;
-    left: 10%;
+    top: 30%;
+    width: 65%;
+    text-align: center;
+    left: 20%;
   }
   body #join-us .company-btn {
     width: 200px;
@@ -11647,6 +11667,7 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #join-us .content-div p {
     margin-bottom: 0px;
+    font-size: 14px;
   }
   body #join-us .company-recruit {
     /*width: 556px;*/
@@ -11660,7 +11681,7 @@ body #case-page .case-five .case-common-text .img-down {
     color: #ffffff;
   }
   body #join-us .company-recruit-span {
-    font-size: 35px;
+    font-size: 24px;
     font-weight: normal;
     letter-spacing: 0px;
     color: #0aa890;
@@ -11697,10 +11718,11 @@ body #case-page .case-five .case-common-text .img-down {
     padding: 0px 0;
   }
   body #join-us .intro-text {
-    margin-left: 10%;
+    margin-left: 2%;
     width: 90%;
     min-height: 200px;
     line-height: 1.3;
+    font-size: 14px;
   }
   body #join-us .intro-image {
     width: 100%;
@@ -11773,7 +11795,7 @@ body #case-page .case-five .case-common-text .img-down {
     padding-bottom: 90px;
   }
   body #join-us .want-text {
-    margin-left: 8%;
+    margin-left: 2%;
     width: 92%;
     min-height: 200px;
     line-height: 1.3;
@@ -12067,6 +12089,9 @@ body #case-page .case-five .case-common-text .img-down {
   body #about-page .about-ability .row .abilitycontent {
     width: 100%;
   }
+  body #about-page .about-ability .row .abilitycontent span {
+    font-size: 16px;
+  }
   body #about-page .about-join .container .row span {
     font-size: 14px;
     line-height: 30px;
@@ -12096,6 +12121,20 @@ body #case-page .case-five .case-common-text .img-down {
   body #about-page .about-join .container .row .about-middle {
     padding-left: 10%;
     padding-right: 4%;
+    margin-left: 72%;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-year {
+    font-size: 18px;
+    color: #333333;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+  }
+  body #about-page .about-aptitude .aptitude-font {
+    height: 50px;
+    width: 80%;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 768px) {

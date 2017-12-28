@@ -102,7 +102,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                           <div class="four_text">
                               <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
                               <h3>BETTER EFFICIENT REVIEW PLATFORM FOR VIDEO CONTENT COLLABORATION!</h3>
-                              <p>Solve your video content uploading, reviewing and team<br>
+                              <p>Solve your video content uploading, reviewing and team
                                   collaboration issues at anytime and anywhere!</p>
                               <a href="https://www.vivue.io/" target="_blank">More</a>
                           </div>
@@ -158,6 +158,21 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
 </div>
 
 <script>
+    (function () {
+
+        if ( typeof window.CustomEvent === "function" ) return false;
+
+        function CustomEvent ( event, params ) {
+            params = params || { bubbles: false, cancelable: false, detail: undefined };
+            var evt = document.createEvent( 'CustomEvent' );
+            evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+            return evt;
+        }
+
+        CustomEvent.prototype = window.Event.prototype;
+
+        window.CustomEvent = CustomEvent;
+    })();
     var fss;
     $(function() {
         fss = new ddfullscreenslider({

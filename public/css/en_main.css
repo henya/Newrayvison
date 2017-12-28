@@ -6341,6 +6341,8 @@ body #index-page .four #four-text .four_text h3 {
   line-height: 48px;
   font-weight: 700;
   color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -6348,6 +6350,8 @@ body #index-page .four #four-text .four_text p {
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
 }
 body #index-page .four #four-text .four_text a {
   display: inline-block;
@@ -6357,7 +6361,7 @@ body #index-page .four #four-text .four_text a {
   border-radius: 20px 20px 20px 20px;
   border: solid 1px #ffffff;
   font-size: 16px;
-  margin-top: 38px;
+  margin-top: 25px;
   cursor: pointer;
 }
 body #index-page .four #four-text .four_text a:hover {
@@ -6389,6 +6393,7 @@ body #about-page .about-intro {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 80px;
+  text-align: justify;
 }
 body #about-page .about-intro h3 {
   font-size: 36px;
@@ -10204,7 +10209,7 @@ body #case-page .case-five .case-common-text .img-down {
   body #case-page .case-one .case-first-logo {
     width: 100%;
     margin-left: 0;
-    margin-top: 15%;
+    margin-top: 25%;
   }
   body #case-page .case-one .case-first-logo .logo-first img {
     width: 100%;
@@ -10253,7 +10258,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-six .case-common-text .second-top h3 {
@@ -10334,7 +10339,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-second .case-common-text .second-top h3 {
@@ -10410,7 +10415,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-three .case-common-text h3 {
@@ -10486,7 +10491,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-four .case-common-text h3 {
@@ -10602,7 +10607,7 @@ body #case-page .case-five .case-common-text .img-down {
     letter-spacing: 0px;
     color: #ffffff;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 45px;
     margin-bottom: 10px;
   }
   body #case-page .case-five .case-common-text h3 {
@@ -10687,6 +10692,14 @@ body #case-page .case-five .case-common-text .img-down {
   }
 }
 @media screen and (max-width: 600px) {
+  body section.dd_fullscreenslider article.slide:nth-of-type(4) {
+    /* 4th demo slide bgcolor */
+    background: url("../img/index/bg_04.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 32% 0%;
+  }
   body .more-text {
     display: none;
   }
@@ -10782,6 +10795,7 @@ body #case-page .case-five .case-common-text .img-down {
     text-align: center;
     margin-bottom: 20px;
     line-height: 20px;
+    width: 94%;
   }
   body .header .head {
     background-color: #000000;
@@ -10907,18 +10921,19 @@ body #case-page .case-five .case-common-text .img-down {
     z-index: 9999;
     text-align: center;
     margin: 0 auto;
-    margin-top: -440px;
+    margin-top: -420px;
   }
   body #index-page .first .first_center_text p {
-    font-size: 10px;
+    font-size: 24px;
     line-height: 14px;
     letter-spacing: 0px;
     color: #ffffff;
     margin-bottom: 10px;
   }
   body #index-page .first .first_center_text h3 {
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 25px;
   }
   body #index-page .first .first_center_text h3 span {
     font-size: 40px;
@@ -10926,9 +10941,9 @@ body #case-page .case-five .case-common-text .img-down {
     color: #2bbfa5;
   }
   body #index-page .first .first_center_text .first_text {
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 30px;
     display: block;
-    font-size: 12px;
   }
   body #index-page .second {
     padding-top: 16.6%;
@@ -10952,7 +10967,7 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 40px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   body #index-page .second .second_text p {
     font-size: 14px;
@@ -10998,7 +11013,7 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 40px;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
   body #index-page .three #three .three_text p {
     font-size: 16px;
@@ -11044,7 +11059,7 @@ body #case-page .case-five .case-common-text .img-down {
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   body #index-page .four #four-text .four_text p {
     font-size: 15px;
@@ -11058,7 +11073,7 @@ body #case-page .case-five .case-common-text .img-down {
     border-radius: 20px 20px 20px 20px;
     border: solid 1px #ffffff;
     font-size: 12px;
-    margin-top: 38px;
+    margin-top: 25px;
     cursor: pointer;
     line-height: 28px;
   }
@@ -11555,6 +11570,7 @@ body #case-page .case-five .case-common-text .img-down {
   body #about-page .about-intro {
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
   }
   body #about-page .about-intro h3 {
     font-size: 20px;
@@ -11573,6 +11589,12 @@ body #case-page .case-five .case-common-text .img-down {
     line-height: 23.91654px;
     font-size: 20px;
     color: #333333;
+  }
+  body #about-page .about-ability .row .abilitycontent {
+    width: 100%;
+  }
+  body #about-page .about-ability .row .abilitycontent span {
+    font-size: 16px;
   }
   body #about-page .about-join {
     display: none;
@@ -11605,6 +11627,22 @@ body #case-page .case-five .case-common-text .img-down {
   }
   body #about-page .about-ability .row .abilitycontent {
     width: 100%;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-year {
+    font-size: 18px;
+    color: #333333;
+  }
+  body #about-page .about-develop .develop-content2 .develop-text .develop-event {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+  }
+  body #about-page .about-aptitude .aptitude-font {
+    height: 50px;
+    width: 80%;
+  }
+  body #about-page #englishMap iframe {
+    width: 340px!important;
   }
   body #case-page .case-five .case-common-text h3 {
     line-height: 24px;

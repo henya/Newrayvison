@@ -99,7 +99,7 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
                               <img src="<?php echo $this->basePath('img/index/vivue_logo_w.png')?>">
                               <h3>更高效的审片协作平台</h3>
                               <p>随时随地解决视频上传 评审 团队协作问题</p>
-                              <a href="https://www.vivue.io/" target="_blank">访问vivue官网</a>
+                              <a href="https://www.vivue.io/" target="_blank">访问VIVUE官网</a>
                           </div>
                       </div>
                       <div class="col-md-3 col-sm-12 col-xs-12">&nbsp;</div>
@@ -152,11 +152,11 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
 
                   </div>
               </div>
+
             </article>
         </div>
     </section>
 </div>
-
 <script>
     (function () {
 
@@ -182,40 +182,103 @@ $this->headScript()->prependFile($this->basePath('js/pages/index/ddfullscreensli
     });
     window.scrollReveal = new scrollReveal();
 
+//    判断浏览器型号,如果为ie为10以上执行正常文字出现，如果不是强制让文字出现
+//    function getBrowser(getVersion)
+//    {
+//        //注意关键字大小写
+//        var ua_str = navigator.userAgent.toLowerCase(), ie_Tridents, trident, match_str, ie_aer_rv, browser_chi_Type;
+//
+//        //判断IE 浏览器,
+//        //blog: http://blog.csdn.net/aerchi/article/details/51697592
+//        if("ActiveXObject" in self){
+//            // ie_aer_rv:  指示IE 的版本.
+//            // It can be affected by the current document mode of IE.
+//            ie_aer_rv= (match_str = ua_str.match(/msie ([\d.]+)/)) ?match_str[1] :
+//                (match_str = ua_str.match(/rv:([\d.]+)/)) ?match_str[1] : 0;
+//            console.log("ie_aer_rv"+ie_aer_rv);
+//            console.log("match_str"+match_str)
+//            // ie: Indicate the really version of current IE browser.
+//            ie_Tridents = {"trident/7.0": 11, "trident/6.0": 10, "trident/5.0": 9, "trident/4.0": 8};
+//            //匹配 ie8, ie11, edge
+//            trident = (match_str = ua_str.match(/(trident\/[\d.]+|edge\/[\d.]+)/)) ?match_str[1] : undefined;
+//            console.log("trident"+trident)
+//            browser_chi_Type = (ie_Tridents[trident] || ie_aer_rv) > 0 ? "ie" : undefined;
+//            console.log("ie_Tridents[trident] "+ie_Tridents[trident] );
+//            console.log("browser_chi_Type "+browser_chi_Type );
+//        }else{
+//            //判断 windows edge 浏览器
+//            // match_str[1]: 返回浏览器及版本号,如: "edge/13.10586"
+//            // match_str[1]: 返回版本号,如: "edge"
+//
+//            //若要返回 "edge" 请把下行的 "ie" 换成 "edge"。 注意引号及冒号是英文状态下输入的
+//            browser_chi_Type = (match_str = ua_str.match(/edge\/([\d.]+)/)) ? "ie" :
+//                //判断firefox 浏览器
+//                (match_str = ua_str.match(/firefox\/([\d.]+)/)) ? "firefox" :
+//                    //判断chrome 浏览器
+//                    (match_str = ua_str.match(/chrome\/([\d.]+)/)) ? "chrome" :
+//                        //判断opera 浏览器
+//                        (match_str = ua_str.match(/opera.([\d.]+)/)) ? "opera" :
+//                            //判断safari 浏览器
+//                            (match_str = ua_str.match(/version\/([\d.]+).*safari/)) ? "safari" : undefined;
+//        }
+//        //返回浏览器类型和版本号
+//
+//        var verNum, verStr;
+//        var BrowserResulte = new Array();
+//        verNum = trident && ie_Tridents[trident] ? ie_Tridents[trident] : match_str[1];
+//        BrowserResulte[0] = verNum;
+//        verStr = (getVersion != undefined) ? browser_chi_Type+"/"+verNum : browser_chi_Type;
+//        BrowserResulte[1] = verStr;
+//        return BrowserResulte;
+//    }
+//    var Browser = getBrowser();
 
 //    鼠标滚动动画出现事件
     if(document.attachEvent){
-        document.attachEvent('custSlideTo', function (event) {
-            console.info('kitsch,event.detail.delta',event.detail.delta)
-            var delta = event.detail.delta
-            var selectedParent1 = $("#selected1").parent();
-            var selectedParent2 = $("#selected2").parent();
-            var selectedParent3 = $("#selected3").parent();
-            var selectedParent4 = $("#selected4").parent();
-            if(delta < 0){
-                if(selectedParent1.hasClass("selected")){
-//                console.info('kitsch:', '1')
-                    $("#second").css({"margin-top":"0px","opacity":"1"})
-                }
-                if(selectedParent2.hasClass("selected")){
-                    $("#three").css({"margin-top":"0px","opacity":"1"})
-//                console.info('kitsch:', '2')
-                }
-                if(selectedParent3.hasClass("selected")){
-                    $("#four-text").css({"margin-top":"0px","opacity":"1"})
-                    $(".page-footer").css({"bottom":"0px","opacity":"1"})
-//                console.info('kitsch:', '3')
-                }
-            }
-            if(delta > 0){
-                if(selectedParent3.hasClass("selected")){
-                    $("#second").css({"margin-top":"0px","opacity":"1"})
-                }
-                if(selectedParent4.hasClass("selected")){
-                    $("#three").css({"margin-top":"0px","opacity":"1"})
-                }
-            }
-        })
+//        if(10<Browser[0]&&Browser[1]=='ie'){
+//            console.log("dddd1");
+//            document.attachEvent('custSlideTo', function (event) {
+//                console.log("dddd2");
+//                console.info('kitsch,event.detail.delta',event.detail.delta)
+//                var delta = event.detail.delta
+//                var selectedParent1 = $("#selected1").parent();
+//                var selectedParent2 = $("#selected2").parent();
+//                var selectedParent3 = $("#selected3").parent();
+//                var selectedParent4 = $("#selected4").parent();
+//                if(delta < 0){
+//                    if(selectedParent1.hasClass("selected")){
+////                console.info('kitsch:', '1')
+//                        $("#second").css({"margin-top":"0px","opacity":"1"})
+//                    }
+//                    if(selectedParent2.hasClass("selected")){
+//                        $("#three").css({"margin-top":"0px","opacity":"1"})
+////                console.info('kitsch:', '2')
+//                    }
+//                    if(selectedParent3.hasClass("selected")){
+//                        $("#four-text").css({"margin-top":"0px","opacity":"1"})
+//                        $(".page-footer").css({"bottom":"0px","opacity":"1"})
+////                        $(".page-footer").css({"position":"absolute"})
+//
+////                console.info('kitsch:', '3')
+//                    }
+//                }
+//                if(delta > 0){
+//                    if(selectedParent3.hasClass("selected")){
+//                        $("#second").css({"margin-top":"0px","opacity":"1"})
+//                    }
+//                    if(selectedParent4.hasClass("selected")){
+//                        $("#three").css({"margin-top":"0px","opacity":"1"})
+//                    }
+//                }
+//            })
+//        }else{
+//            console.log("dddd3");
+            $("#second").css({"margin-top":"0px","opacity":"1"})
+            $("#three").css({"margin-top":"0px","opacity":"1"})
+            $("#four-text").css({"margin-top":"0px","opacity":"1"})
+            $(".page-footer").css({"bottom":"0px","opacity":"1"})
+//            $(".page-footer").css({"position":"relative"})
+//        }
     }else {
         document.addEventListener('custSlideTo', function (event) {
             console.info('kitsch,event.detail.delta', event.detail.delta)

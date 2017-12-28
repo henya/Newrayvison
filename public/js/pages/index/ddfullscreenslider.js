@@ -289,6 +289,7 @@ var ddfullscreenslider = (function($){
 
 		this.slideTo = function(indx, noanimation){
 			var delta = selectedindx - indx;
+		    console.log('test2');
             var event = new CustomEvent("custSlideTo", {
                 detail: {
                     delta: delta

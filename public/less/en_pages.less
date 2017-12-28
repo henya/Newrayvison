@@ -750,6 +750,8 @@ body {
             line-height: 48px;
             font-weight: 700;
             color: #ffffff;
+            width: 80%;
+            margin: 0 auto;
             margin-bottom: 20px;
             margin-top: 20px;
           }
@@ -757,6 +759,8 @@ body {
             font-size: 18px;
             line-height: 30px;
             color: #ffffff;
+            width: 70%;
+            margin: 0 auto;
           }
           a {
             display: inline-block;
@@ -766,7 +770,7 @@ body {
             border-radius: 20px 20px 20px 20px;
             border: solid 1px rgba(255, 255, 255, 1);
             font-size: 16px;
-            margin-top: 38px;
+            margin-top: 25px;
             cursor: pointer;
             &:hover {
               background-color: rgba(45, 190, 195, 1);
@@ -808,6 +812,7 @@ body {
       max-width: 1200px;
       margin: 0 auto;
       margin-bottom: 80px;
+      text-align: justify;
       h3{
         font-size: 36px;
         line-height: 30px;
@@ -4725,7 +4730,7 @@ body {
         .case-first-logo {
           width: 100%;
           margin-left: 0;
-          margin-top: 15%;
+          margin-top: 25%;
           .logo-first {
             img {
               width: 100%;
@@ -4780,7 +4785,7 @@ body {
               letter-spacing: 0px;
               color: #ffffff;
               font-size: 16px;
-              margin-top: 10px;
+              margin-top: 45px;
               margin-bottom: 10px;
             }
             h3 {
@@ -4865,7 +4870,7 @@ body {
               letter-spacing: 0px;
               color: #ffffff;
               font-size: 16px;
-              margin-top: 10px;
+              margin-top: 45px;
               margin-bottom: 10px;
             }
             h3 {
@@ -4944,7 +4949,7 @@ body {
             letter-spacing: 0px;
             color: #ffffff;
             font-size: 16px;
-            margin-top: 10px;
+            margin-top: 45px;
             margin-bottom: 10px;
           }
           h3{
@@ -5021,7 +5026,7 @@ body {
             letter-spacing: 0px;
             color: #ffffff;
             font-size: 16px;
-            margin-top: 10px;
+            margin-top: 45px;
             margin-bottom: 10px;
           }
           h3{
@@ -5138,7 +5143,7 @@ body {
             letter-spacing: 0px;
             color: #ffffff;
             font-size: 16px;
-            margin-top: 10px;
+            margin-top: 45px;
             margin-bottom: 10px;
           }
           h3{
@@ -5229,7 +5234,15 @@ body {
 
 }
 @media screen and (max-width: 600px){
+
   body {
+    section.dd_fullscreenslider article.slide:nth-of-type(4){ /* 4th demo slide bgcolor */
+      background: url("../img/index/bg_04.jpg");
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position:32% 0%;
+    }
     .more-text{
       display: none;
     }
@@ -5242,6 +5255,9 @@ body {
     .container {
       width: 100%;
     }
+
+
+
     .page-footer{
       position: absolute;
       bottom: 0px;
@@ -5322,6 +5338,7 @@ body {
             text-align: center;
             margin-bottom:20px;
             line-height: 20px;
+            width: 94%;
           }
         }
       }
@@ -5448,17 +5465,18 @@ body {
           z-index: 9999;
           text-align: center;
           margin: 0 auto;
-          margin-top: -440px;
+          margin-top: -420px;
           p{
-            font-size: 10px;
+            font-size: 24px;
             line-height: 14px;
             letter-spacing: 0px;
             color: #ffffff;
             margin-bottom: 10px;
           }
           h3{
-            font-size: 30px;
-            font-weight: 800;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 25px;
             span{
               font-size: 40px;
               font-weight: 800;
@@ -5466,9 +5484,9 @@ body {
             }
           }
           .first_text{
-            margin-top: 20px;
+            font-size: 14px;
+            margin-top: 30px;
             display: block;
-            font-size: 12px;
           }
         }
       }
@@ -5492,7 +5510,7 @@ body {
             line-height: 40px;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
           }
           p{
             font-size: 14px;
@@ -5538,7 +5556,7 @@ body {
               line-height: 40px;
               font-weight: 700;
               color: #ffffff;
-              margin-bottom: 25px;
+              margin-bottom: 10px;
             }
             p {
               font-size: 16px;
@@ -5585,7 +5603,7 @@ body {
               font-weight: 700;
               color: #ffffff;
               margin-bottom: 20px;
-              margin-top: 20px;
+              margin-top: 10px;
             }
             p {
               font-size: 15px;
@@ -5599,7 +5617,7 @@ body {
               border-radius: 20px 20px 20px 20px;
               border: solid 1px #ffffff;
               font-size: 12px;
-              margin-top: 38px;
+              margin-top: 25px;
               cursor: pointer;
               line-height: 28px;
               &:hover {
@@ -6143,6 +6161,7 @@ body {
       .about-intro{
         padding-left: 10px;
         padding-right: 10px;
+        text-align: justify;
       }
       .about-intro  h3 {
         font-size: 20px;
@@ -6161,6 +6180,12 @@ body {
         line-height: 23.91654px;
         font-size: 20px;
         color: #333333;
+      }
+      .about-ability .row .abilitycontent {
+        width: 100%;
+        span{
+          font-size: 16px;
+        }
       }
       .about-join{
         display: none;
@@ -6193,6 +6218,29 @@ body {
       }
       .about-ability .row .abilitycontent {
          width: 100%;
+      }
+      .about-develop .develop-content2 .develop-text {
+        .develop-year {
+          font-size: 18px;
+          color: #333333;
+
+        }
+        .develop-event {
+          font-size: 14px;
+          color: #666666;
+          line-height: 24px;
+        }
+      }
+      .about-aptitude {
+        .aptitude-font {
+          height: 50px;
+          width: 80%;
+        }
+      }
+      #englishMap{
+        iframe{
+          width: 340px!important;
+        }
       }
     }
     #case-page .case-five .case-common-text h3 {
