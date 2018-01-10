@@ -85,7 +85,7 @@ $this->headMeta()
                                     <p>注册用户&工作室</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <h4>500万</h4>
+                                    <h4>600万</h4>
                                     <p>帧月输出</p>
                                 </div>
                                 <div class="col-md-4">
@@ -99,7 +99,7 @@ $this->headMeta()
                             <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="col-md-4">
                                     <h4>10部<span style="font-size: 16px">/18部</span></h4>
-                                    <p>2017国产3D动画渲染</p>
+                                    <p>2017国产三维动画渲染</p>
                                 </div>
                                 <div class="col-md-4">
                                     <h4>150+</h4>
@@ -252,7 +252,7 @@ $this->headMeta()
             <div class="col-md-4 col-sm-4 col-xs-12 abilitycontent">
                 <img src="<?php echo $this->basePath('img/about/about_11.png')?>" class="" alt="rayvision" />
                 <h3>大规模集群调度</h3>
-                <span style="color: #666666;display: block; padding-left: 8%;padding-right: 8%;">瑞云的任务调度引擎能轻松管理上百万的渲染帧队列，毫秒级调度，单集群能管理5000节点，远超业界平均水平。</span>
+                <span style="color: #666666;display: block; padding-left: 8%;padding-right: 8%;">瑞云的任务调度引擎能轻松管理上百万的渲染帧队列，毫秒级调度，单集群能管理10000节点，远超业界平均水平。</span>
                 <p style="visibility: hidden">瑞云的任务调度</p>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12 abilitycontent">
@@ -349,7 +349,7 @@ $this->headMeta()
         </div>
     </div>
 </div>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=243Xa35VWTO5RmW4tb8p0aq2koZmSDG4"></script>
 <script type="text/javascript">
     //创建和初始化地图函数：
     function initMap(){
@@ -357,9 +357,6 @@ $this->headMeta()
         setMapEvent();//设置地图事件
         addMapControl();//向地图添加控件
         addMarker();//向地图中添加marker
-
-
-
     }
 
     //创建地图函数：
@@ -405,39 +402,39 @@ $this->headMeta()
             var p0 = json.point.split("|")[0];
             var p1 = json.point.split("|")[1];
             var point = new BMap.Point(p0,p1);
-            var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
+//            var iconImg = createIcon(json.icon);
+//            var marker = new BMap.Marker(point,{icon:iconImg});
             var iw = createInfoWindow(i);
             var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-            marker.setLabel(label);
-            map.addOverlay(marker);
+//            marker.setLabel(label);
+//            map.addOverlay(marker);
             label.setStyle({
                 borderColor:"#808080",
                 color:"#333",
                 cursor:"pointer"
             });
 
-            (function(){
-                var index = i;
-                var _iw = createInfoWindow(i);
-                var _marker = marker;
-                _marker.addEventListener("click",function(){
-                    this.openInfoWindow(_iw);
-                });
-                _iw.addEventListener("open",function(){
-                    _marker.getLabel().hide();
-                })
-                _iw.addEventListener("close",function(){
-                    _marker.getLabel().show();
-                })
-                label.addEventListener("click",function(){
-                    _marker.openInfoWindow(_iw);
-                })
-                if(!!json.isOpen){
-                    label.hide();
-                    _marker.openInfoWindow(_iw);
-                }
-            })()
+//            (function(){
+//                var index = i;
+//                var _iw = createInfoWindow(i);
+//                var _marker = marker;
+//                _marker.addEventListener("click",function(){
+//                    this.openInfoWindow(_iw);
+//                });
+//                _iw.addEventListener("open",function(){
+//                    _marker.getLabel().hide();
+//                })
+//                _iw.addEventListener("close",function(){
+//                    _marker.getLabel().show();
+//                })
+//                label.addEventListener("click",function(){
+//                    _marker.openInfoWindow(_iw);
+//                })
+//                if(!!json.isOpen){
+//                    label.hide();
+//                    _marker.openInfoWindow(_iw);
+//                }
+//            })()
         }
     }
     //创建InfoWindow
@@ -447,10 +444,10 @@ $this->headMeta()
         return iw;
     }
     //创建一个Icon
-    //    function createIcon(json){
-    //        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
-    ////        return icon;
-    //    }
+//        function createIcon(json){
+//            var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+//    //        return icon;
+//        }
 
     initMap();//创建和初始化地图
 </script>
